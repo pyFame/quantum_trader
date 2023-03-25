@@ -25,8 +25,7 @@ ic.configureOutput(prefix=prefix_time, outputFunction=info, includeContext=False
 # log.basicConfig(filename='app.log', filemode='w', format='%(asctime)s %(process)d %(name)s - %(levelname)s - %(
 # message)s ', datefmt='%d-%b-%y %H:%M:%S',level=log.INFO) log.basicConfig(level=log.INFO)
 
-
-ic.configureOutput(prefix=prefix_time, outputFunction=info, includeContext=False)
 # ic.configureOutput(outputFunction=info)
-log_config.fileConfig(fname='conf/log.conf', disable_existing_loggers=False)  # Auto calles basicConfig and mods
+log_config.fileConfig(fname='conf/log.conf', disable_existing_loggers=False)  # Auto calls basicConfig and mods
 bLog = log.getLogger('binanceLogger')
+
