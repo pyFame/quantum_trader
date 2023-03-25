@@ -1,2 +1,0 @@
-# binance
-My Bot trading
