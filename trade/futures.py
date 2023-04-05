@@ -1,5 +1,5 @@
 from utils.pandas_ops import to_date
-from conf.binance_client import client
+from conf.client import client
 import pandas as pd
 def my_trades():
   df = pd.DataFrame(client.futures_account_trades())

@@ -1,4 +1,4 @@
-from conf.binance_client import  client
+from conf.client import  client
 import pandas as pd
 
 from utils.pandas_ops import *
