@@ -1,8 +1,13 @@
+"""
+FIXME: rename to Cache
+
+"""
 
 from cachetools import TTLCache
 
+
 class Cache:
-    def __init__(self, ttl:int=None,maxsize:int=None): # ttl - 1 hr, 128
+    def __init__(self, ttl: int = None, maxsize: int = None):  # ttl - 1 hr, 128
         self.cache = TTLCache(maxsize=maxsize, ttl=ttl)
 
     def get(self, key):
@@ -24,4 +29,4 @@ class Cache:
         return self.cache
 
     def __call__(self):
-      return self.cache
+        return self.cache

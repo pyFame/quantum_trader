@@ -1,4 +1,3 @@
-
 from threading import Thread, enumerate as threads, current_thread,Lock
 from multiprocessing import Process
 
@@ -13,3 +12,4 @@ def undead(fc):
         p = Process(name=fc.__name__, target=fc, args=args, daemon=True)
         p.start()
     return inner
+
