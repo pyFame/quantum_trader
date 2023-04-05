@@ -1,21 +1,23 @@
+from binance import BinanceSocketManager
+from  unsync import unsync
 class Socket():
+    @unsync
+    async def socket_manager(client):
+        # c1 = await AsyncClient.create() if not client else client
+        self.socket = BinanceSocketManager(client)
+        return self.socket
     async def trade_socket(self, type='F'):
-        crypto = self.SYMBOL
+        coin = self.SYMBOL
         if type == 'F':
-            conn = socket.aggtrade_futures_socket(crypto)
+            conn = self.socket.aggtrade_futures_socket(coin)
         elif type == 'S':
-            conn = socket.trade_socket(crypto)
+            conn = self.socket.trade_socket(coin)
         elif type == 'SA':
-            conn = socket.aggtrade_socket(crypto)
+            conn = self.socket.aggtrade_socket(coin)
         return conns
 
-    async def kline_socket(self, interval='1m', type='F'):
-        d = {'symbol': self.SYMBOL, 'interval': interval}
-        if type == 'S': return socket.kline_socket(**d)
-        return socket.kline_futures_socket(**d)
-
     async def market_socket(self):
-        return socket.symbol_mark_price_socket(self.SYMBOL)
+        return self.socket.symbol_mark_price_socket(self.SYMBOL)
 
 
 class SocketHandler():

@@ -2,12 +2,12 @@ class Position():
     q, c = 0, 0  # c is entry price, qis quantity
     flag = True
 
-    def __init__(self, mode, crypto, profit, hedge=True, open_args={}, close_args={},
+    def __init__(self, mode, coin, profit, hedge=True, open_args={}, close_args={},
                  trend=math.inf):  # basically take 0-long
         self.pos = 'SHORT' if mode == 'S' else 'LONG'
         self.profit = profit
-        self.crypto = crypto
-        self.PRECISION = precision(crypto)
+        self.coin = coin
+        self.PRECISION = precision(coin)
         self.hedge = hedge
         self.open_args = open_args
         self.close_args = close_args
@@ -35,13 +35,13 @@ class Position():
 
     @delayed
     def open(self, q, p=''):
-        if not (self.hedge and self.flag): return f"{self.crypto} {self.pos} disabled"
+        if not (self.hedge and self.flag): return f"{self.coin} {self.pos} disabled"
         d = self.open_args
         d['quantity'] = q
         paras = ['price', 'profit', 'loss']
         for i in paras:
             if i in d: d[i] = d[i] or p
-        x = order(self.crypto, 'OPEN', self.pos, **d)
+        x = order(self.coin, 'OPEN', self.pos, **d)
         self.refresh()
         return x
 
@@ -54,13 +54,13 @@ class Position():
             paras = ['price', 'profit', 'loss']
             for i in paras:
                 if i in d: d[i] = p
-        x = order(self.crypto, 'CLOSE', self.pos, **d)
+        x = order(self.coin, 'CLOSE', self.pos, **d)
         self.refresh()
         return x
 
     @keepAlive
     def refresh(self):
-        data = positions(self.crypto, self.pos)
+        data = positions(self.coin, self.pos)
         self.q, self.c = pluck_row(data, 'positionAmt', 'entryPrice')
 
     def sell_signal(self, p, q=''):
@@ -68,7 +68,7 @@ class Position():
 
     @property
     def liqPrice(self):
-        data = positions(self.crypto, self.pos)
+        data = positions(self.coin, self.pos)
         liq = pluck_row(data, 'liquidationPrice')
         return liq
 

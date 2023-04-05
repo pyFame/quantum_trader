@@ -1,7 +1,9 @@
-
-def history(crypto,interval='1m',start_str='7 day ago'):
+from . import client
+import pandas as pd
+from utils.coin import *
+def history(coin,interval='1m',start_str='7 day ago'):
   data = client.futures_historical_klines(
-    symbol=symboler(crypto),
+    symbol=symboler(coin),
     interval=interval,  # can play with this e.g. '1h', '4h', '1w', etc.
     start_str = start_str,
     # end_str='2021-06-30'
