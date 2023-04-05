@@ -2,7 +2,8 @@ from kafka import Kafka, ConsumerProperties, LATEST
 from orders.config import cg_id
 from orders.order_computing import order_computing, callback
 
-if __name__ == "__main__":
+
+def main():
     order_computing()  # daemon thread
 
     POLLING_TIMEOUT = 1.0
@@ -13,3 +14,7 @@ if __name__ == "__main__":
 
     consumer = k.consumer(consumer_ppt)
     consumer.consume()
+
+
+if __name__ == "__main__":
+    main()
