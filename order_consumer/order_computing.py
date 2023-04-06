@@ -4,13 +4,13 @@ from typing import Optional
 from icecream import ic
 
 from conf import client
-from orders.globals import order_q, pb_order
+from order_consumer.globals import order_q, pb_order
 
 import logging as log
 
 from dask import delayed
 
-from orders.order import Order
+from order_consumer.order import Order
 from utils.thread import keepAlive
 
 

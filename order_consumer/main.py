@@ -1,7 +1,10 @@
 from lib.kafka import Kafka, ConsumerProperties, LATEST
-from orders.config import cg_id
+from order_consumer.config import cg_id
 from lib.kafka.enums import ConsumerProperties
-from orders.order_computing import order_computing, callback
+from order_consumer.order_computing import order_computing, callback
+
+import logging as log
+from icecream import ic
 
 
 def main():
@@ -18,4 +21,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    log.info("hey")
+    # main()
