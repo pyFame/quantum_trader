@@ -15,10 +15,10 @@ from utils.Futures import Futures
 
 
 def main():
-    symbol: Symbol = Symbol('EOS')
+    symbol: Symbol = Symbol('BTC')
     interval: str = '1m'
     timeout: float = 1
-    AMOUNT: float = 5
+    AMOUNT: float = .01
 
     df = Futures.History(symbol, interval, "4 hour ago", "1 min ago")
 
@@ -71,7 +71,7 @@ def main():
             expired_at = now_ + timedelta(seconds=timeout)
 
             ic(o)
-            
+
             val = {
                 "order": o.binance_order,
                 "created_at": now_.timestamp(),
