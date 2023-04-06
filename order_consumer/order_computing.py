@@ -1,17 +1,11 @@
 import json
-from typing import Optional
+import logging as log
 
 from icecream import ic
 
-from conf import client
-from order_consumer.globals import order_q, pb_order
-
-import logging as log
-
-from dask import delayed
-
-from order_consumer.order import Order
 from utils.thread import keepAlive
+from order_consumer.globals import order_q, pb_order
+from order_consumer.order import Order
 
 
 @keepAlive

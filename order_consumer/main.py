@@ -1,9 +1,11 @@
+import logging as log
+
 from lib.kafka import Kafka, ConsumerProperties, LATEST
-from order_consumer.config import cg_id
 from lib.kafka.enums import ConsumerProperties
+
+from order_consumer.config import cg_id
 from order_consumer.order_computing import order_computing, callback
 
-import logging as log
 from icecream import ic
 
 

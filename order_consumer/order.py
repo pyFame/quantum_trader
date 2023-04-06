@@ -1,11 +1,10 @@
 from typing import Union, Optional
-
 import pandas as pd
-from binance.exceptions import BinanceAPIException
 from dask import delayed
 from icecream import ic
-
 import logging as log
+
+from binance.exceptions import BinanceAPIException
 
 from conf import client
 
