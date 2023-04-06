@@ -1,12 +1,6 @@
-import logging as log
-
 from lib.kafka import Kafka, ConsumerProperties, LATEST
-from lib.kafka.enums import ConsumerProperties
-
-from order_consumer.config import cg_id
-from order_consumer.order_computing import order_computing, callback
-
-from icecream import ic
+from config import cg_id
+from order_computing import order_computing, callback
 
 
 def main():
@@ -23,5 +17,5 @@ def main():
 
 
 if __name__ == "__main__":
-    log.info("hey")
-    # main()
+    # log.info("hey") #causing error when
+    main()

@@ -43,20 +43,19 @@ def Order(req_json: dict, return_type=pd.DataFrame) -> Union[pd.DataFrame, dict]
 
     return df
 
-
-@delayed
-def order(order: dict) -> Optional[dict]:  # FIXME: deprecate and use order()
-    order_res = None
-
-    try:
-        order_res = client.futures_create_order(**order)
-    except Exception as e:
-        if hasattr(e, 'code'):
-            log.error(order_res)
-            log.error(f"@order {e.code} {e.message}")
-        else:
-            log.exception(f'@order {e}')
-    else:
-        log.info(order_res)
-
-    return order_res
+# @delayed
+# def order(order: dict) -> Optional[dict]:  # FIXME: deprecate and use order()
+#     order_res = None
+#
+#     try:
+#         order_res = client.futures_create_order(**order)
+#     except Exception as e:
+#         if hasattr(e, 'code'):
+#             log.error(order_res)
+#             log.error(f"@order {e.code} {e.message}")
+#         else:
+#             log.exception(f'@order {e}')
+#     else:
+#         log.info(order_res)
+#
+#     return order_res
