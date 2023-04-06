@@ -1,0 +1,97 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "offset": {
+      "type": "integer"
+    },
+    "partition": {
+      "type": "integer"
+    },
+    "timestamp": {
+      "type": "integer"
+    },
+    "timestampType": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "value": {
+      "additionalProperties": true,
+      "properties": {
+        "created_at": {
+          "type": "integer"
+        },
+        "expired_at": {
+          "type": "integer"
+        },
+        "order": {
+          "additionalProperties": true,
+          "properties": {
+            "activationPrice": {
+              "type": "number"
+            },
+            "callbackRate": {
+              "maximum": 5,
+              "minimum": 0.1,
+              "type": "number"
+            },
+            "closePosition": {
+              "type": "boolean"
+            },
+            "positionSide": {
+              "type": "string"
+            },
+            "priceProtect": {
+              "type": "boolean"
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "side": {
+              "type": "string"
+            },
+            "stopPrice": {
+              "type": "number"
+            },
+            "symbol": {
+              "type": "string"
+            },
+            "timeInForce": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "symbol",
+            "positionSide",
+            "side"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "order",
+        "created_at",
+        "expired_at"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "topic",
+    "partition",
+    "offset",
+    "timestamp",
+    "timestampType",
+    "key",
+    "value"
+  ],
+  "type": "object"
+}
