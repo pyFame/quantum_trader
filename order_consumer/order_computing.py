@@ -33,6 +33,7 @@ def callback(key, val):
     log.info(order)
 
     if order is None:
+        log.debug("received invalid order")
         return  # shortcircuit
 
     delayed_order = Order(order)
