@@ -2,6 +2,8 @@
 
 [![Github](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml/badge.svg?branch=main)](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml)
 
+[![Github](https://github.com/pythoneerHiro/binance/actions/workflows/conda.yml/badge.svg?branch=main)](https://github.com/pythoneerHiro/binance/actions/workflows/conda.yml)
+
 ## Idea and Inspiration
 
 I wanted to simplify and abstract binance client implementations in my projects
