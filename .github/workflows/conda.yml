@@ -1,4 +1,4 @@
-name: Python Package using Conda
+name: Conda
 
 on: [ push ]
 
@@ -20,7 +20,9 @@ jobs:
           echo $CONDA/bin >> $GITHUB_PATH
       - name: Install dependencies
         run: |
-          conda env update --file environment.yml --name base
+          conda install -y ta-lib
+      #          conda env update --file environment.yml --name base
+
       - name: Lint with flake8
         run: |
           echo "linting bypassed"
