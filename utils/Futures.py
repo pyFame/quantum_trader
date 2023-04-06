@@ -61,7 +61,8 @@ class Futures():
                  'timeInForce', 'orderTypes', 'settlePlan', 'underlyingSubType', 'underlyingType', 'liquidationFee'],
                 axis=1, inplace=True)
 
-        if symbol == None: return df
+        if symbol is None:
+            return df
 
         return df.loc[df['symbol'] == symbol]
 

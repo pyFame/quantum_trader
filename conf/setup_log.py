@@ -13,7 +13,7 @@ import time
 
 
 def info(s):
-    log.info(f'{s}')
+    blog.info(f'{s}')
 
 
 def prefix_time():
@@ -27,4 +27,7 @@ ic.configureOutput(prefix=prefix_time, outputFunction=info, includeContext=False
 
 # ic.configureOutput(outputFunction=info)
 log_config.fileConfig(fname='conf/log.conf', disable_existing_loggers=False)  # Auto calls basicConfig and mods
-bLog = log.getLogger('binanceLogger')
+apl = log.getLogger('app')
+
+blog = apl
+dog = apl
