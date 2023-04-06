@@ -2,7 +2,7 @@ from queue import Queue
 
 from utils.thread import keepAlive
 
-from conf.setup_log import *
+from conf.log import *
 
 closes = Queue(100)
 opens = Queue(100)

@@ -38,9 +38,10 @@ class Order:
         d = self.d
 
         quantity = self.quantity
+        mode = self.mode
 
         d.update(
-            {"symbol": str(self.symbol), "quantity": quantity, "positionSide": self.mode}
+            {"symbol": str(self.symbol), "quantity": quantity, "positionSide": mode}
         )  # d|= merge operator
 
         price = self.price
@@ -78,7 +79,6 @@ class Order:
             d["priceProtect"] = self.protect
 
         side = self.side
-        mode = self.mode
 
         if side == OPEN:
             d["side"] = "BUY" if mode == LONG else "SELL"
