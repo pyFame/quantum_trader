@@ -30,5 +30,4 @@ def setup_log() -> [logging.Logger]:
     # ic.configureOutput(outputFunction=info)
     log_config.fileConfig(fname='conf/log.conf', disable_existing_loggers=False)  # Auto calls basicConfig and mods
     apl = log.getLogger('app')
-
     return apl
