@@ -6,11 +6,10 @@ import datetime as dt
 
 from icecream import ic
 
-from enums import Symbol
 from lib.kafka import Kafka, KafkaMessage
-from .order import Order
-from .macd import Macd_Strategy
-from .order import *
+
+from order import *
+from macd import Macd_Strategy
 from utils import Time, Pandas
 from utils.Futures import Futures
 

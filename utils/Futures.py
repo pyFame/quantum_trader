@@ -2,12 +2,12 @@ from typing import Tuple
 import pandas as pd
 import numpy as np
 
+from . import Pandas
 from .cache import Cache
 
-from ..conf import client
+from conf import client
 
 from enums.Symbol import Symbol
-import Pandas
 
 cache_precision = Cache(ttl=60 * 30, maxsize=50)  # TODO: change when scale
 get_price = lambda symbol: float(client.futures_symbol_ticker(symbol=symbol)['price'])
