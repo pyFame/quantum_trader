@@ -1,4 +1,4 @@
-from kafka import Kafka, ConsumerProperties, LATEST
+from lib.kafka import Kafka, ConsumerProperties, LATEST
 from orders.config import cg_id
 from orders.order_computing import order_computing, callback
 
