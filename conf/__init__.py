@@ -2,4 +2,4 @@
 #
 # from binance_client import client, async_client
 
-from binance_client import client, async_client, gen_client
+from .binance_client import client, async_client, gen_client
