@@ -59,7 +59,7 @@ def main():
             # o = Order(symbol,CLOSE,LONG,AMOUNT,trail=0.5)
             # o = Order(symbol,CLOSE,LONG,AMOUNT,profit=df_high)
 
-            o = Order(symbol, OPEN, SHORT, AMOUNT, price=df_high)
+            o = Order(symbol, OPEN, SHORT, AMOUNT, profit=df_high)
 
             macd_1.sell()
 
