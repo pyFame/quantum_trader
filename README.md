@@ -1,6 +1,6 @@
 # Monorepo for my binance futures bot trading
 
-[![Github](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml/badge.svg?branch=main)]
+[![Github](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml/badge.svg?branch=main)](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml)
 
 ## Idea and Inspiration
 
