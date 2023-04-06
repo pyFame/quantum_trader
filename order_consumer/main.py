@@ -1,16 +1,14 @@
 from lib.kafka import Kafka, ConsumerProperties, LATEST
-from config import cg_id
+from config_kafka import CG_ID, TOPIC, POLLING_TIMEOUT
 from order_computing import order_computing, callback
 
 
 def main():
     order_computing()  # daemon thread
 
-    POLLING_TIMEOUT = 1.0
-
     k = Kafka()
 
-    consumer_ppt = ConsumerProperties("futures_orders", cg_id, LATEST, POLLING_TIMEOUT, callback)
+    consumer_ppt = ConsumerProperties(TOPIC, CG_ID, LATEST, POLLING_TIMEOUT, callback)
 
     consumer = k.consumer(consumer_ppt)
     consumer.consume()
