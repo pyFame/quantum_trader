@@ -5,22 +5,23 @@ Logging Config
 
 """
 
-from icecream import ic
+from icecream import ic, install
 import logging as log
 import logging.config as log_config
 
 import time
 
 
-def info(s):
-    blog.info(f'{s}')
+def _info(s):
+    apl.info(f'{s}')
 
 
-def prefix_time():
+def _prefix_time():
     return f"{time.strftime('%X')}"
 
 
-ic.configureOutput(prefix=prefix_time, outputFunction=info, includeContext=False)
+ic.configureOutput(prefix=_prefix_time, outputFunction=_info, includeContext=False)
+# install()
 
 # log.basicConfig(filename='app.log', filemode='w', format='%(asctime)s %(process)d %(name)s - %(levelname)s - %(
 # message)s ', datefmt='%d-%b-%y %H:%M:%S',level=log.INFO) log.basicConfig(level=log.INFO)
@@ -31,3 +32,4 @@ apl = log.getLogger('app')
 
 blog = apl
 dog = apl
+alog = apl
