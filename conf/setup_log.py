@@ -28,4 +28,3 @@ ic.configureOutput(prefix=prefix_time, outputFunction=info, includeContext=False
 # ic.configureOutput(outputFunction=info)
 log_config.fileConfig(fname='conf/log.conf', disable_existing_loggers=False)  # Auto calls basicConfig and mods
 bLog = log.getLogger('binanceLogger')
-

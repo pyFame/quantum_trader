@@ -1,5 +1,6 @@
 from lib.kafka import Kafka, ConsumerProperties, LATEST
 from orders.config import cg_id
+from lib.kafka.enums import ConsumerProperties
 from orders.order_computing import order_computing, callback
 
 
