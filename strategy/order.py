@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional, Union, Final
 
 from enums import Symbol
@@ -30,12 +30,14 @@ class Order:
 
     protect: bool = True  # priceProtect
 
-    d = {"type": "MARKET"}
+    d: dict = field(init=False, default=None)
 
     def __post_init__(self):
         self.correct_with_precision()
 
-        d = self.d
+        d = {"type": "MARKET"}
+
+        self.d = d
 
         quantity = self.quantity
         mode = self.mode

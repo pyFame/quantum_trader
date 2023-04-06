@@ -3,14 +3,14 @@ import pytest
 from enums import Symbol
 from strategy.order import *
 
-import logging as log
+
+# import logging as log
 
 
-# @pytest.mark.no_cache
-# @pytest.mark.parametrize("i", range(50))
+@pytest.mark.no_cache
 def test_order():
-    log.basicConfig(filename='test.log', level=log.INFO)
-    log.info("Starting test...")
+    # log.basicConfig(filename='test.log', level=log.INFO)
+    # log.info("Starting test...")
 
     symbol = Symbol("EOS")
     AMOUNT: float = 5

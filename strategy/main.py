@@ -70,6 +70,8 @@ def main():
 
             expired_at = now_ + timedelta(seconds=timeout)
 
+            ic(o)
+            
             val = {
                 "order": o.binance_order,
                 "created_at": now_.timestamp(),
