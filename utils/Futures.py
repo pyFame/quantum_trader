@@ -18,7 +18,7 @@ from enums import Symbol
 from enums.position import SHORT, LONG
 from utils import Pandas
 
-cache_precision = Cache(ttl=60 * 30, maxsize=50)  # TODO: change when scale,make this private
+cache_precision = Cache(ttl=60 * 30, maxsize=50)  # change
 
 get_price = lambda symbol: float(client.futures_symbol_ticker(symbol=symbol)['price'])
 market_price = lambda symbol: float(client.get_symbol_ticker(symbol=symbol)['price'])
@@ -42,8 +42,8 @@ def history(symbol: Symbol, interval='1m', start_str='1 day ago', end_str=None) 
 
     df.set_index('date', inplace=True)
 
-    # df['date'] = df.index #TODO: is this required!
-    for col in df.columns[1:]:
+    # df['date'] = df.index #is this required
+    for col in df.columns:  # [1:] but since date is the index its not required
         df[col] = pd.to_numeric(df[col])
     return df
 
