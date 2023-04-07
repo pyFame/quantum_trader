@@ -3,8 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - libta-lib=0.4.0=hb7f2c08_1
-  - ta-lib=0.4.19=py39h86b5767_4
+  - ta-lib
 
   - pip:
       - aiohttp==3.8.4
