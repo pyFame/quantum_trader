@@ -42,7 +42,6 @@ class Position:
             net = -1 * net
         return net
 
-    # @delayed
     def open(self, quantity: float, price=None) -> Order:
         if self.disable_open:
             ic(f"{self.symbol} {self.mode} disabled")
@@ -63,7 +62,6 @@ class Position:
 
         return o
 
-    # @delayed
     def close(self, price: float = None, quantity: float = None, **args) -> Order:
         d = self.close_args
         d.update(args)
