@@ -22,7 +22,7 @@ def opening():
             if hasattr(e, 'code'):
                 alog.error(f"@open {e.code} {e.message}")
                 over_flow = [-2027, -2019, -4164]  # max lev,margin insufficient,order notional
-                if e.code in over_flow and pos.q > 0: pos.flag = False
+                if e.code in over_flow and pos.quantity > 0: pos.disable_open = False
             else:
                 log.exception('@open')
 
@@ -45,4 +45,4 @@ def closing():
                 log.exception('@close')
         else:
             ic('Sell Successfull')
-            pos.flag = True
+            pos.disable_open = True

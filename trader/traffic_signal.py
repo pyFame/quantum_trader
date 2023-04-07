@@ -10,8 +10,8 @@ class SignalHandler():
             p = self.buys.get()
             if short.sell_signal(p): closes.put([short.close(p), short])
 
-            if long.flag:
-                if short.q > 0 and short.c < p: continue
+            if long.disable_open:
+                if short.quantity > 0 and short.entry_price < p: continue
                 opens.put([long.open(self.AMOUNT, p), long])
 
     @keepAlive
@@ -23,6 +23,6 @@ class SignalHandler():
             if long.sell_signal(s):
                 closes.put([long.close(s), long])
 
-            if short.flag:
-                if long.q > 0 and long.c > s: continue
+            if short.disable_open:
+                if long.quantity > 0 and long.entry_price > s: continue
                 opens.put([short.open(self.AMOUNT, s), short])
