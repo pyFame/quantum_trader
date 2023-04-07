@@ -10,5 +10,4 @@ confluent-kafka
 pytest~=7.1.2
 requests==2.28.2
 tqdm~=4.64.1
-dataclasses~=0.8
 websockets~=10.4
