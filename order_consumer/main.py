@@ -1,6 +1,6 @@
 from lib.kafka import Kafka, ConsumerProperties, LATEST
-from config_kafka import CG_ID, TOPIC, POLLING_TIMEOUT
-from order_computing import order_computing, callback
+from order_consumer.config_kafka import CG_ID, TOPIC, POLLING_TIMEOUT
+from order_consumer.order_computing import order_computing, callback
 
 
 def main():

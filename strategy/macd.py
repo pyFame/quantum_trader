@@ -6,7 +6,7 @@ import pandas as pd
 import talib
 from icecream import ic
 
-from strategy import Strategy
+from strategy.Strategy import Strategy
 
 
 @dataclass

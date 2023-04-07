@@ -8,11 +8,10 @@ from icecream import ic
 
 from lib.kafka import Kafka, KafkaMessage
 
-from order import *
-from macd import Macd_Strategy
-from utils import Time, Pandas
-from utils import Futures
+from strategy.order import *
+from strategy.macd import Macd_Strategy
 
+from utils import Time, Pandas, Futures
 from enums import Symbol
 
 

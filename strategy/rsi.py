@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 import pandas as pd
 import talib
 
-from .strategy import Strategy
+from .Strategy import Strategy
 
 
 @dataclass
