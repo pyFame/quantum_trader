@@ -1,6 +1,7 @@
 from queue import Queue
 
 from conf import alog
+from utils import Futures
 from utils.thread import keepAlive
 
 from conf.log import *
@@ -33,7 +34,7 @@ def closing():
         try:
             x = n.compute()
             alog.info(x)
-            transfer_to('SPOT', amt=.6 * pos.profit)  # babylonian
+            Futures.transfer_to('SPOT', amt=.6 * pos.profit)  # babylonian
         except Exception as e:
             # alog.exception("@close")
             if hasattr(e, 'code'):
