@@ -1,7 +1,7 @@
 from queue import Queue
 
 from conf import alog
-from utils import Futures
+from utils import Futures, account
 from utils.thread import keepAlive
 
 from conf.log import *
@@ -39,7 +39,8 @@ def closing():
             # alog.exception("@close")
             if hasattr(e, 'code'):
                 alog.error(f"@close {e.code} {e.message}")
-                if e.code == -4045: cancel_order(pos.coin)  # max stop Order  #-2021 would immediately trigger
+                if e.code == -4045:
+                    account.cancel_order(pos.coin)  # max stop Order  #-2021 would immediately trigger
             else:
                 log.exception('@close')
         else:

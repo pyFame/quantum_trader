@@ -96,7 +96,7 @@ def precision(symbol: Symbol, cache=True) -> Tuple[int, int, int, int, float, fl
     return res
 
 
-def positions(symbol: Symbol = None, pos: Union[LONG, SHORT] = None) -> pd.DataFrame:
+def current_positions(symbol: Symbol = None, mode: Union[LONG, SHORT] = None) -> pd.DataFrame:
     data = client.futures_position_information()
     df = pd.DataFrame(data)
     cols = ['positionAmt', 'entryPrice', 'markPrice', 'unRealizedProfit', 'liquidationPrice', 'leverage',
@@ -108,7 +108,7 @@ def positions(symbol: Symbol = None, pos: Union[LONG, SHORT] = None) -> pd.DataF
         df[col] = pd.to_numeric(df[col])
 
     df = Pandas.filter_df(df, 'symbol', symbol) if symbol else df.loc[df['positionAmt'] > 0]
-    df = Pandas.filter_df(df, 'positionSide', pos) if pos else df
+    df = Pandas.filter_df(df, 'positionSide', mode) if mode else df
     df['positionAmt'] = df['positionAmt'].apply(abs)
     return df
 
