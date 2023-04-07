@@ -1,8 +1,7 @@
-from utils import keepAlive
+from utils.thread import keepAlive
 
 
 class SignalHandler():
-
     @keepAlive
     def buying(self):
         short = self.SHORT
