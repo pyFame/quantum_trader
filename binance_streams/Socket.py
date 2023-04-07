@@ -33,10 +33,10 @@ class Socket():
             FUTURES_KLINE: bm.kline_futures_socket,
         }
 
-        # Set up the socket based on the socket type
+        # Set up the binance_streams based on the binance_streams type
         socket = sockets.get(socket_type, None)
 
-        if socket == None: raise ValueError("Invalid socket type")
+        if socket == None: raise ValueError("Invalid binance_streams type")
 
         return socket(symbol)
 
