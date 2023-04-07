@@ -53,7 +53,7 @@ def exchange(symbol: Symbol = None) -> pd.DataFrame:
 
     info = client.futures_exchange_info()
     df = pd.DataFrame(info['symbols'])
-    df = Pandas.filter_df(df, 'contractType', 'PERPETUAL')  # TODO: should be flexible
+    df = Pandas.filter_df(df, 'contractType', 'PERPETUAL')
     df = Pandas.filter_df(df, 'quoteAsset', quote)
 
     df.drop(['pair', 'deliveryDate', 'onboardDate', 'contractType', 'status', 'quoteAsset', 'marginAsset',
