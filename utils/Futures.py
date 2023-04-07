@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Tuple, Union
 import pandas as pd
 import numpy as np
 
@@ -107,7 +107,7 @@ class Futures():
         return res
 
     @staticmethod
-    def Positions(symbol: Symbol = None, pos: Optional[LONG, SHORT] = None) -> pd.DataFrame:
+    def Positions(symbol: Symbol = None, pos: Union[LONG, SHORT] = None) -> pd.DataFrame:
         data = client.futures_position_information()
         df = pd.DataFrame(data)
         cols = ['positionAmt', 'entryPrice', 'markPrice', 'unRealizedProfit', 'liquidationPrice', 'leverage',
