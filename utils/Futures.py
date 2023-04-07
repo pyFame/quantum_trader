@@ -9,6 +9,15 @@ from conf import client
 
 from enums.Symbol import Symbol
 
+from typing import Optional
+
+from conf.binance_client import client
+import pandas as pd
+
+from enums import Symbol
+from enums.position import SHORT, LONG
+from utils import Pandas
+
 cache_precision = Cache(ttl=60 * 30, maxsize=50)  # TODO: change when scale
 get_price = lambda symbol: float(client.futures_symbol_ticker(symbol=symbol)['price'])
 market_price = lambda symbol: float(client.get_symbol_ticker(symbol=symbol)['price'])
@@ -83,7 +92,7 @@ class Futures():
         filter = pd.DataFrame(e['filters'].iloc[0])
         num_cols = [i for i in filter.columns if i != 'filterType']
         for i in num_cols:
-            filter[i] = Pandas.num_col(filter[i])
+            filter[i] = Pandas.pd.to_numeric(filter[i])
 
         filter['notional'] = filter['notional'].apply(lambda x: min_notional_q(symbol, x, res[1]))
 
@@ -96,3 +105,30 @@ class Futures():
         cache_precision.set(symbol, res)
 
         return res
+
+    @staticmethod
+    def Positions(symbol: Symbol = None, pos: Optional[LONG, SHORT] = None) -> pd.DataFrame:
+        data = client.futures_position_information()
+        df = pd.DataFrame(data)
+        cols = ['positionAmt', 'entryPrice', 'markPrice', 'unRealizedProfit', 'liquidationPrice', 'leverage',
+                'isolatedWallet']
+
+        df.drop(['updateTime'], axis=1, inplace=True)
+
+        for col in cols:
+            df[col] = pd.to_numeric(df[col])
+
+        df = Pandas.filter_df(df, 'symbol', symbol) if symbol else df.loc[df['positionAmt'] > 0]
+        df = Pandas.filter_df(df, 'positionSide', pos) if pos else df
+        df['positionAmt'] = df['positionAmt'].apply(abs)
+        return df
+
+    @staticmethod
+    def Open_orders(symbol: Symbol) -> Optional[pd.DataFrame]:
+        data = client.futures_get_open_orders(symbol=symbol)
+        if len(data) == 0:
+            return
+        df = pd.DataFrame(data)
+        df['date'] = pd.to_numeric(df['time'])
+        # df.drop(['updateTime','time','cumQuote','price','avgPrice','origQty','executedQty','status'],axis=1,inplace=True)
+        return df

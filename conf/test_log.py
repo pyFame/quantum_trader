@@ -67,7 +67,7 @@ def test_logs(testcase: Testcase):
 def test_app_logs(testcase: Testcase):
     level = testcase.level
     cnt = f"app{testcase.content}"
-    ignored_levels = [WARN]
+    ignored_levels = []
 
     if level in ignored_levels: return
 
