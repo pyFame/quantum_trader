@@ -16,7 +16,7 @@ def start_order_consumer():
 
 
 def main():
-    compute([
+    compute(*[
         start_strategy(),
         start_order_consumer(),
     ], scheduler="processes")
