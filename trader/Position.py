@@ -14,8 +14,8 @@ from utils.thread import keepAlive
 
 @dataclass
 class Position:
-    mode: Union[LONG, SHORT]
     symbol: Symbol
+    mode: Union[LONG, SHORT]
 
     profit: float
     # hedge: Optional[bool] = True  # Do SHORT,LONG Simultaneously
@@ -115,7 +115,7 @@ class Position:
         print(self.status())
 
     def status(self):
-        return self.quantity, self.entry_price, self.pos
+        return self.quantity, self.entry_price, self.mode
 
     def __repr__(self):
         return f'{self.status()}'

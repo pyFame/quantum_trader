@@ -19,7 +19,8 @@ def _prefix_time():
 
 def setup_log() -> [logging.Logger]:
     def _info(s):
-        apl.info(f'{s}')
+        print(s)
+        # alog.info(f'{s}')
 
     ic.configureOutput(prefix=_prefix_time, outputFunction=_info, includeContext=False)
     # install()
@@ -29,5 +30,5 @@ def setup_log() -> [logging.Logger]:
 
     # ic.configureOutput(outputFunction=info)
     log_config.fileConfig(fname='conf/log.conf', disable_existing_loggers=False)  # Auto calls basicConfig and mods
-    apl = log.getLogger('app')
-    return apl
+    alog = log.getLogger('app')
+    return alog
