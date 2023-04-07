@@ -11,7 +11,7 @@ from enums.Symbol import Symbol
 
 from typing import Optional
 
-from conf.binance_client import client
+from conf import client
 import pandas as pd
 
 from enums import Symbol
