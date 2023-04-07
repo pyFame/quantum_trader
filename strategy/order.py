@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from typing import Optional, Union, Final
 
 from enums import Symbol
-from utils.Futures import Futures
+from utils import Futures
 
 BUY: Final[str] = "BUY"
 SELL: Final[str] = "SELL"
@@ -96,7 +96,7 @@ class Order:
 
     def correct_with_precision(self):  # TODO: make this a static method
 
-        p, q, bP, qP, minP, maxP, minQ = Futures.Precision(self.symbol)
+        p, q, bP, qP, minP, maxP, minQ = Futures.precision(self.symbol)
 
         quantity = self.quantity
 

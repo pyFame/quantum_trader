@@ -11,7 +11,7 @@ from lib.kafka import Kafka, KafkaMessage
 from order import *
 from macd import Macd_Strategy
 from utils import Time, Pandas
-from utils.Futures import Futures
+from utils import Futures
 
 from enums import Symbol
 
@@ -22,7 +22,7 @@ def main():
     timeout: float = 1
     AMOUNT: float = .01
 
-    df = Futures.History(symbol, interval, "4 hour ago", "1 min ago")
+    df = Futures.history(symbol, interval, "4 hour ago", "1 min ago")
 
     ic(df.tail(1))
 
@@ -35,7 +35,7 @@ def main():
     while True:
         last_updated = Pandas.latest_time(df)
 
-        df_1 = Futures.History(symbol, interval, last_updated)
+        df_1 = Futures.history(symbol, interval, last_updated)
 
         df.drop(last_updated, inplace=True)
 

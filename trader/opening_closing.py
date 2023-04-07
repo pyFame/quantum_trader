@@ -1,5 +1,6 @@
 from queue import Queue
 
+from conf import alog
 from utils.thread import keepAlive
 
 from conf.log import *
@@ -15,10 +16,10 @@ def opening():
         try:
             x = n.compute()
             # if pos.max_profit>0: closes.put([pos.close(price=pos.max_profit),pos])   #can cause losses in case...
-            bLog.info(x)
+            alog.info(x)
         except Exception as e:
             if hasattr(e, 'code'):
-                bLog.error(f"@open {e.code} {e.message}")
+                alog.error(f"@open {e.code} {e.message}")
                 over_flow = [-2027, -2019, -4164]  # max lev,margin insufficient,order notional
                 if e.code in over_flow and pos.q > 0: pos.flag = False
             else:
@@ -31,12 +32,12 @@ def closing():
         n, pos = closes.get()
         try:
             x = n.compute()
-            bLog.info(x)
+            alog.info(x)
             transfer_to('SPOT', amt=.6 * pos.profit)  # babylonian
         except Exception as e:
-            # bLog.exception("@close")
+            # alog.exception("@close")
             if hasattr(e, 'code'):
-                bLog.error(f"@close {e.code} {e.message}")
+                alog.error(f"@close {e.code} {e.message}")
                 if e.code == -4045: cancel_order(pos.coin)  # max stop Order  #-2021 would immediately trigger
             else:
                 log.exception('@close')
