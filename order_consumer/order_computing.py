@@ -1,8 +1,8 @@
 import json
-import logging as log
 
 from icecream import ic
 
+from conf import alog
 from utils.thread import keepAlive
 from order_consumer.globals import order_q, pb_order
 from order_consumer.order import Order
@@ -16,8 +16,7 @@ def order_computing():
         try:
             _order = o.compute()
         except Exception as e:
-            log.error(e)
-            ic(e)
+            alog.error(e)
         else:
             ic(_order)
         finally:
@@ -25,15 +24,15 @@ def order_computing():
             # pb_order.refresh()
 
 
-def callback(key, val):
+def callback(key: str, val: str):
     val = json.loads(val)
 
     order = val.get("order", None)
 
-    log.info(order)
+    alog.info(order)
 
     if order is None:
-        log.debug("received invalid order")
+        alog.debug("received invalid order")
         return  # shortcircuit
 
     delayed_order = Order(order)

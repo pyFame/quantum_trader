@@ -6,7 +6,7 @@ import logging as log
 
 from binance.exceptions import BinanceAPIException
 
-from conf import client
+from conf import client, alog
 
 
 @delayed
@@ -14,19 +14,15 @@ def Order(req_json: dict, return_type=pd.DataFrame) -> Union[pd.DataFrame, dict]
 
     d = req_json
 
-    ic(d)
-
-    log.info(f"order - {d}")
+    ic(f"order - {d}")
 
     try:
         _order: dict = client.futures_create_order(**d)
     except BinanceAPIException as e:
-        log.error(f"Order creation failed for order with error code {e.code}: {e.message} ...{d}")  # TODO: change logs
-        ic(e)
+        alog.error(f"Order creation failed for order with error code {e.code}: {e.message} ...{d}")
         return
     except Exception as e:
-        log.error(f"order failed due to - {e}")
-        ic(e)
+        alog.error(f"order failed due to - {e}")
         return
 
     df = pd.DataFrame(_order, index=[0]).rename(columns={"": "position"})
