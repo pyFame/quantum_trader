@@ -6,6 +6,7 @@ import datetime as dt
 
 from icecream import ic
 
+from conf import alog
 from lib.kafka import Kafka, KafkaMessage
 
 from strategy.order import *
@@ -16,6 +17,8 @@ from enums import Symbol
 
 
 def main():
+    alog.info("starting microservice-strategy")
+
     symbol: Symbol = Symbol('BTC')
     interval: str = '1m'
     timeout: float = 1
