@@ -13,6 +13,8 @@ from macd import Macd_Strategy
 from utils import Time, Pandas
 from utils.Futures import Futures
 
+from enums import Symbol
+
 
 def main():
     symbol: Symbol = Symbol('BTC')
