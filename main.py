@@ -2,7 +2,7 @@ from dask import compute, delayed
 
 from order_consumer.main import main as main_order_consumer
 from strategy.main import main as main_start_strategy
-from utils.thread import undead
+from trader.main import main as main_trader
 
 
 @delayed
@@ -15,10 +15,16 @@ def start_order_consumer():
     main_order_consumer()
 
 
+@delayed
+def start_trader():
+    main_trader()
+
+
 def main():
     compute(*[
         start_strategy(),
         start_order_consumer(),
+        start_trader,
     ], scheduler="processes")
 
 
