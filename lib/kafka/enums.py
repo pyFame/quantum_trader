@@ -17,7 +17,7 @@ class KafkaMessage:
 class ConsumerProperties():
     topic: str
     cgid: str = "kafka.py"  # ConsumerGroup id
-    resume_at: Union[LATEST, EARLIEST] = EARLIEST  # in case of resuming from downtime latest by default
+    resume_at: Union[LATEST, EARLIEST] = LATEST  # in case of resuming from downtime latest by default
 
     callback: Callable[[str, str], None] = log.info
     poll_timeout: float = 1.0  # timeout

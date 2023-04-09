@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
+     height="1184px" preserveAspectRatio="none" style="width:840px;height:1184px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 840 1184" width="840px" zoomAndPan="magnify">
+    <defs/>
+    <g><!--cluster quantum_trader-->
+        <g id="cluster_quantum_trader">
+            <rect fill="none" height="812" rx="2.5" ry="2.5"
+                  style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="775" x="19.5778" y="195"/>
+            <text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="152" x="331.0778" y="211.8516">Quantum Trader
+            </text>
+            <text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="64" x="375.0778" y="226.7637">[System]
+            </text>
+        </g><!--entity maestro-->
+        <g id="elem_maestro">
+            <rect fill="#08427B" height="102.625" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="84"
+                  x="431.5778" y="254"/>
+            <image height="64" width="64" x="441.5778"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAE6ElEQVR4Xu2aMY7UQBBFN/QR5ghzBadkm3AAcwCkickcIcKFkASNCCGxREBCMhKkCCIihEQEIXeg1F/+Kle52227PbMjrfQ1snvt7v+qq9o9nr2pHrVXrRvfdF16ALi0zgewf/Ly9tnb5vl70eHVB/mU0/rp693jF/7ifJ0DQFyK4/bNJ/k0kkaRwCzG2BZAok7rCLkRZgPXyKnvYVIbAoghWEeqiDwARc65U7EVANxLgBPWUQ8QThcwbAIgjifdJxjk0/cZU3kAiR8Cqd3jWCvNIBf4nkdVHuA2JA9Mx9ynGVAPmYlUGADhR/J497IoTQJA+YtSYYA6ZD+daQBxTxkG+uZqi7XV9+9VGAAmPIB2nwCA0JKZRYUBEDkPkDkDWgIgV/ohjAoDoADSAMa9AUAWAaDOWIs2B9AMRvcUACmkMbz1mPvLA7AGYGJ0KkyjAaAuUwMIobZl7Oa4R/tlViGJGcsgzeB9N/fhOcCNUMxiQnTfZBdAVRygUhvpuQwLwl9tAbBsEpaFv9oCQBx0n38YBgTV+6Z17f7u3Zec9QcqDCDDn779EgAxAQY6I4YWMbR79JA5CSUBMPbx41c5wGfbv3SIrTxsP/RvKHCv9CPKYSgGAPcwLQ4khGDgVHA2KE4LrZNcJD3kMJQBQObQvQEgRkz6Mn0jcildDwUAJIrIHLqnaEuOderrOeGVIBHHhkGOE4/ktQASHsQJw3sA2pJPsxGS0yYsWbgd/DglwzHUg/zJDw2tBaA57x4igBybDek+vLfTAHSvGbpkMawCQPjh0luHyCY+mvAOlN9s8MiDV15jxESST2+gWgnQ9rXLGKfVhg0mJQwwDU5e5hmOIZFGJ2EVAMZm7nrHXlhSUJRiiDdi4YfQSB0DXqwSpgFQalowIe06/BwsLaldzgAKwNjFkmDEIfxylALALB+GG0NpAYO0A8A46OIYXShW5g8Tj6bl4PvPPyLTZyKLBgB1+CVCL9UoNXOPtGD2j8MancRAI/pkDyJxrN3j1HSFLGrce98BAN1zqTZXU0gAXMOFMkfHkEWYRrZo6yJMiM4lAph0qAxAM3y7jXw1N0D78IMXjmcBdGEx1U+ALvgz7iEeE8DXcQrAPDiNuJ7MBWjD9xVT+qPHJ7UuzQZA7LlieOGWBQB3YU+hjWohh3GsAZBpM1LIO45pLoBYYQH4P+klAbVx6te60+QqZFKIz/yYlgF0IYt8o85+tgCASDtXkykAH+zdcCezGCCWP0bIHx77/JkA8CH34ScA0tSbWCP2CQwf/gkAH3XvXgPcxR9qc8Xeun4eYg+lFID3PQrAkfTA66Vj34RHB8bNBYjF3mOY8XwtLhD6wfrT9L83c8RcAO94r35fMQBt2DsZEkrvFLzMxWCQrg7qRQZGxKC5AKMMzBx0pAGa/h2JnhPAwOjvv/+MzPaBGYhweIDZM8B4xyaRANjbYdR2+J5Hk4wG21iPuffhHwfAcqsj7YW+9mFTSYA67J0wD56EMFr8E64ctT4auAkA71jfz3gg5HDQhIUC42Hsxr0PpUtjl6a974T1eQD6sjr8n1jdf/sBANbpXV82zDoY0tJGtXhLjm/KAiAZEu6r8D1Bh1YDUPp2GJpUbLi0BgCcZT2zXiYNRgHOJgvAqpqrewGAzPbZOanabdPPpgHANeoB4NK6eoD/ZJddNWSd+jUAAAAASUVORK5CYII="
+                   y="264"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="34" x="456.5778" y="342.8516">Nas
+            </text>
+        </g><!--entity order_computer-->
+        <g id="elem_order_computer">
+            <rect fill="#008000" height="133.1875" rx="2.5" ry="2.5" style="stroke:#D73027;stroke-width:0.5;"
+                  width="196" x="282.5778" y="647.5"/>
+            <image height="48" width="48" x="356.5778"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACRUlEQVR4XuWXMVLDQAxF9wpcgStwBa7AFbhCWsqUtClpU9KmpE1Jm5I2JW34QWEn/C9p13YyZoaZV+R7bOlbq2jXpTyVvwXr2WE9O6xnh/VAbpZHbp9PP/SGwbDu4GFdVtuy25fDwQHX1+/l/oWf6oV1CtLsP9lBxGY3qmasYxDdMsETatDjbPvBQdqwjsFKWRp7b/SNOlAGrx3rmMfXYwK0SL3SU6TlG8dpwDpmsTnlQKnKj78maH8NlcE6phoaxH8yhC7GYrkgq1q5vKG71bFRUJgmGDlq5dzQeRxrwRDWP1aiQTwUM0T/R0ik0Ly+IdyqcUfjGjr8Hh8NQ5eqjREZAlg+zc4ag1WfnIINRteQv7GQxvP65BTQzgir1w1n9yUN1/rYFJAyqbqz05HWZ6Zg5Ule0mmjKxnCP8PmTTIzD+7YPBf1xJOA10WmemZ1sWgYH0ltDJyrMkOlVSFbAiw8AiFZgvu3UiYZsvXOl2AojSUr8VTEG5fuM1A/VvLMUFQAe5XI7mjQiw1DUQ3y+TYOqzrDOsh6DUP+cZt1sHtcw5Czb7iGijdbL27IaefEUPluJpwD61yxsatxKzqKIhof2qxT1EdF5zUN7l5Yp6iPHjROBusUTdaDxslgnaLJFEwX9B96rm5nGieDdYqmV+oRp85YjZPBOqVn6yBDW/fgnMA6JdpY1BOwJWt8FiqsWyyGfOGH0y+BdQfYoqNDgYHa4AZnJ++B9RDs4x97H4YvHOAH5EgfFdazw3p2WM8O69lhPTdfhkyqGVClQ2wAAAAASUVORK5CYII="
+                   y="657.5"/>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="115" x="323.0778" y="720.3516">Microservice
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="53" x="354.0778" y="735.2637">[python]
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="378.5778" y="751.0889">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65"
+                  x="292.5778" y="767.3857">Executes
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="357.5778" y="767.3857">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57"
+                  x="361.5778" y="767.3857">binance
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="418.5778" y="767.3857">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46"
+                  x="422.5778" y="767.3857">orders
+            </text>
+        </g><!--entity chanakya-->
+        <g id="elem_chanakya">
+            <rect fill="#008000" height="165.7813" rx="2.5" ry="2.5" style="stroke:#D73027;stroke-width:0.5;"
+                  width="196" x="51.5778" y="631"/>
+            <image height="48" width="48" x="125.5778"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACRUlEQVR4XuWXMVLDQAxF9wpcgStwBa7AFbhCWsqUtClpU9KmpE1Jm5I2JW34QWEn/C9p13YyZoaZV+R7bOlbq2jXpTyVvwXr2WE9O6xnh/VAbpZHbp9PP/SGwbDu4GFdVtuy25fDwQHX1+/l/oWf6oV1CtLsP9lBxGY3qmasYxDdMsETatDjbPvBQdqwjsFKWRp7b/SNOlAGrx3rmMfXYwK0SL3SU6TlG8dpwDpmsTnlQKnKj78maH8NlcE6phoaxH8yhC7GYrkgq1q5vKG71bFRUJgmGDlq5dzQeRxrwRDWP1aiQTwUM0T/R0ik0Ly+IdyqcUfjGjr8Hh8NQ5eqjREZAlg+zc4ag1WfnIINRteQv7GQxvP65BTQzgir1w1n9yUN1/rYFJAyqbqz05HWZ6Zg5Ule0mmjKxnCP8PmTTIzD+7YPBf1xJOA10WmemZ1sWgYH0ltDJyrMkOlVSFbAiw8AiFZgvu3UiYZsvXOl2AojSUr8VTEG5fuM1A/VvLMUFQAe5XI7mjQiw1DUQ3y+TYOqzrDOsh6DUP+cZt1sHtcw5Czb7iGijdbL27IaefEUPluJpwD61yxsatxKzqKIhof2qxT1EdF5zUN7l5Yp6iPHjROBusUTdaDxslgnaLJFEwX9B96rm5nGieDdYqmV+oRp85YjZPBOqVn6yBDW/fgnMA6JdpY1BOwJWt8FiqsWyyGfOGH0y+BdQfYoqNDgYHa4AZnJ++B9RDs4x97H4YvHOAH5EgfFdazw3p2WM8O69lhPTdfhkyqGVClQ2wAAAAASUVORK5CYII="
+                   y="641"/>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="115" x="92.0778" y="703.8516">Microservice
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="53" x="123.0778" y="718.7637">[python]
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="147.5778" y="734.5889">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65"
+                  x="61.5778" y="750.8857">Produces
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="126.5778" y="750.8857">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55"
+                  x="130.5778" y="750.8857">buy/sell
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="185.5778" y="750.8857">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48"
+                  x="189.5778" y="750.8857">signals
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43"
+                  x="82.5778" y="767.1826">based
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="125.5778" y="767.1826">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18"
+                  x="129.5778" y="767.1826">on
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="147.5778" y="767.1826">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65"
+                  x="151.5778" y="767.1826">different
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71"
+                  x="114.0778" y="783.4795">indicators
+            </text>
+        </g><!--entity trader-->
+        <g id="elem_trader">
+            <rect fill="#008000" height="165.7813" rx="2.5" ry="2.5" style="stroke:#D73027;stroke-width:0.5;"
+                  width="219" x="514.0778" y="631"/>
+            <image height="48" width="48" x="599.5778"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACRUlEQVR4XuWXMVLDQAxF9wpcgStwBa7AFbhCWsqUtClpU9KmpE1Jm5I2JW34QWEn/C9p13YyZoaZV+R7bOlbq2jXpTyVvwXr2WE9O6xnh/VAbpZHbp9PP/SGwbDu4GFdVtuy25fDwQHX1+/l/oWf6oV1CtLsP9lBxGY3qmasYxDdMsETatDjbPvBQdqwjsFKWRp7b/SNOlAGrx3rmMfXYwK0SL3SU6TlG8dpwDpmsTnlQKnKj78maH8NlcE6phoaxH8yhC7GYrkgq1q5vKG71bFRUJgmGDlq5dzQeRxrwRDWP1aiQTwUM0T/R0ik0Ly+IdyqcUfjGjr8Hh8NQ5eqjREZAlg+zc4ag1WfnIINRteQv7GQxvP65BTQzgir1w1n9yUN1/rYFJAyqbqz05HWZ6Zg5Ule0mmjKxnCP8PmTTIzD+7YPBf1xJOA10WmemZ1sWgYH0ltDJyrMkOlVSFbAiw8AiFZgvu3UiYZsvXOl2AojSUr8VTEG5fuM1A/VvLMUFQAe5XI7mjQiw1DUQ3y+TYOqzrDOsh6DUP+cZt1sHtcw5Czb7iGijdbL27IaefEUPluJpwD61yxsatxKzqKIhof2qxT1EdF5zUN7l5Yp6iPHjROBusUTdaDxslgnaLJFEwX9B96rm5nGieDdYqmV+oRp85YjZPBOqVn6yBDW/fgnMA6JdpY1BOwJWt8FiqsWyyGfOGH0y+BdQfYoqNDgYHa4AZnJ++B9RDs4x97H4YvHOAH5EgfFdazw3p2WM8O69lhPTdfhkyqGVClQ2wAAAAASUVORK5CYII="
+                   y="641"/>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="115" x="566.0778" y="703.8516">Microservice
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="53" x="597.0778" y="718.7637">[python]
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="621.5778" y="734.5889">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63"
+                  x="549.5778" y="750.8857">Analyzes
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="612.5778" y="750.8857">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25"
+                  x="616.5778" y="750.8857">the
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="641.5778" y="750.8857">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52"
+                  x="645.5778" y="750.8857">signals,
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70"
+                  x="524.0778" y="767.1826">maintains
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="594.0778" y="767.1826">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25"
+                  x="598.0778" y="767.1826">the
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="623.0778" y="767.1826">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66"
+                  x="627.0778" y="767.1826">positions
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="693.0778" y="767.1826">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26"
+                  x="697.0778" y="767.1826">and
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66"
+                  x="565.5778" y="783.4795">produces
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="631.5778" y="783.4795">&#160;
+            </text>
+            <text fill="#FFFF00" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46"
+                  x="635.5778" y="783.4795">orders
+            </text>
+        </g><!--entity DB-->
+        <g id="elem_DB">
+            <path d="M423.0778,442 C423.0778,432 473.5778,432 473.5778,432 C473.5778,432 524.0778,432 524.0778,442 L524.0778,531.5938 C524.0778,541.5938 473.5778,541.5938 473.5778,541.5938 C473.5778,541.5938 423.0778,541.5938 423.0778,531.5938 L423.0778,442 "
+                  fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <path d="M423.0778,442 C423.0778,452 473.5778,452 473.5778,452 C473.5778,452 524.0778,452 524.0778,442 "
+                  fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <image height="48" width="37" x="455.0778"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAwCAIAAAAZ5yR8AAABa0lEQVR4Xu2YO0oEQRRFZ2+1ADfgAtyAC3ABGhmJmYGB4WRGYmZoIKIgCCIIguAOPMxrih5vv+JVTY0g03CC7vrcU59mqqcX6fjhL1lo0VYZfPvnz5d3nzdP37Us77/oq7keg49umhWEvprrMfg0pQrN9dhBH/sfoZtPG03S0CVN+hrQXI/ZF0FzPWZfBM31mH0RNNdj9kXQXI9/5Ttavu2dPoLmejT6Dq9ecwRn78HFCyXoM9xSqK9uLT5LYVon1+9aq9Asr0G1j9dU2jN2rSpjo2z0sVxaVYYhtvuATQq+JdMs73ejz57MtNpFss5uP365uaWQqtxso/W0J4VrLgjV5zCtnluqaGD/TGyKEz7GVYCZZV8Vrk9HqvT06Zy2O78y4/2rYmd9VlKmp8+OmAKdfWX6r2eZ2eew5uMmiB1j/MpoYpm186+Bqu9R/BBar3Zfin0Fo8H4tNrIl7EvJKxYhtv8jjSmjy/OD9bw9ljxTipEAAAAAElFTkSuQmCC"
+                   y="456"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="68" x="439.5778" y="518.8516">NO/SQL
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="81" x="433.0778" y="533.7637">[Coachroach]
+            </text>
+        </g><!--entity kafka-->
+        <g id="elem_kafka">
+            <path d="M413.5778,896 C413.5778,886 503.5778,886 503.5778,886 C503.5778,886 593.5778,886 593.5778,896 L593.5778,972.5156 C593.5778,982.5156 503.5778,982.5156 503.5778,982.5156 C503.5778,982.5156 413.5778,982.5156 413.5778,972.5156 L413.5778,896 "
+                  fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <path d="M413.5778,896 C413.5778,906 503.5778,906 503.5778,906 C503.5778,906 593.5778,906 593.5778,896 "
+                  fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="501.5778" y="922.9951">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="51" x="423.5778" y="941.1484">Event
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="6" x="474.5778" y="941.1484">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="33" x="480.5778" y="941.1484">Bus
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="6" x="513.5778" y="941.1484">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="14" x="519.5778" y="941.1484">+
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="6" x="533.5778" y="941.1484">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="44" x="539.5778" y="941.1484">Data
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="51" x="429.5778" y="959.7734">Store
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="6" x="480.5778" y="959.7734">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="91" x="486.5778" y="959.7734">[Streams]
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="43" x="482.0778" y="974.6855">[Kafka]
+            </text>
+        </g><!--entity Binance-->
+        <g id="elem_Binance">
+            <rect fill="#999999" height="119.2188" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;"
+                  width="139" x="213.0778" y="7"/>
+            <image height="48" width="48" x="258.5778"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABMElEQVR4Xu2XIRODMAyF9///QRVuDodD4XA4XBUOh8OxdyvL2jCOu92WPtHn0su13zVpmtwcmW56IbcK0JUSoKqq7uaKAVwMNE3Tlklt22qgcRy1l60QnARonmftYiu5pB1oWRbt8gut69p1XdM0kg8IBcxhGFJHKyDQhP0hwCEOYqokMQKq61oIcIT3Xkywxp5GQEKAMIUVeecqa42AtmcaqbNhYjFe2Y5AGYtQkAR3B5IrzaI42d+VGozIfG+uvu+FwbF/rgxiDRldUtM9e7rC+Ccgf/J1oPtRJxoB0X2udO3HWYOGp546HoDoWli6Jh92xlL0YQwK4hoUSUR8Q1w5RPfK6OqQcaUuo/RLdL/9WT/kDllrBLR93TFmLEJBuqemmzoc21zGowJ0pQJ0pQcF+Tk5H60arwAAAABJRU5ErkJggg=="
+                   y="17"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+                  textLength="71" x="247.0778" y="79.8516">Binance
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4"
+                  x="280.5778" y="96.6201">&#160;
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119"
+                  x="223.0778" y="112.917">CryptoExchange
+            </text>
+        </g><!--link order_computer to kafka-->
+        <g id="link_order_computer_kafka">
+            <path d="M326.7828,780.748 C313.2428,805.391 306.3588,832.978 321.5778,856 C340.7768,885.042 373.3088,903.236 405.6048,914.619 "
+                  fill="none" id="order_computer-to-kafka"
+                  style="stroke:#FF00FF;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/>
+            <polygon fill="#FF00FF" points="413.3608,917.228,406.7346,911.8341,404.8219,917.5211,413.3608,917.228"
+                     style="stroke:#FF00FF;stroke-width:1.0;"/>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="52" x="338.5778" y="839.1387">publish
+            </text>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="84" x="322.5778" y="853.1074">[dead_orders]
+            </text>
+        </g><!--reverse link order_computer to kafka-->
+        <g id="link_order_computer_kafka">
+            <path d="M421.5498,787.783 C439.6958,820.019 460.5358,857.04 476.6688,885.699 " fill="none"
+                  id="order_computer-backto-kafka" style="stroke:#FFA500;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#FFA500" points="417.4818,780.557,418.7918,789,424.0204,786.0568,417.4818,780.557"
+                     style="stroke:#FFA500;stroke-width:1.0;"/>
+            <text fill="#FFA500" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="64" x="458.5778" y="839.1387">consume
+            </text>
+            <text fill="#FFA500" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="48" x="466.5778" y="853.1074">[orders]
+            </text>
+        </g><!--link chanakya to kafka-->
+        <g id="link_chanakya_kafka">
+            <path d="M165.8378,797.24 C173.7078,818.915 185.3568,840.538 202.5778,856 C257.7368,905.524 340.3728,924.214 405.1128,930.901 "
+                  fill="none" id="chanakya-to-kafka" style="stroke:#FF00FF;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/>
+            <polygon fill="#FF00FF" points="413.3178,931.6947,405.6437,927.9387,405.0662,933.9108,413.3178,931.6947"
+                     style="stroke:#FF00FF;stroke-width:1.0;"/>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="52" x="228.0778" y="839.1387">publish
+            </text>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="51" x="203.5778" y="853.1074">[buy/sell
+            </text>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="4" x="254.5778" y="853.1074">&#160;
+            </text>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="46" x="258.5778" y="853.1074">signals]
+            </text>
+        </g><!--link trader to kafka-->
+        <g id="link_trader_kafka">
+            <path d="M570.6478,797.215 C564.7138,807.148 558.8978,817.234 553.5778,827 C544.6388,843.411 535.7028,861.694 527.9098,878.415 "
+                  fill="none" id="trader-to-kafka" style="stroke:#FF00FF;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/>
+            <polygon fill="#FF00FF" points="524.4138,885.975,530.4941,879.9724,525.0479,877.4546,524.4138,885.975"
+                     style="stroke:#FF00FF;stroke-width:1.0;"/>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="52" x="554.5778" y="839.1387">publish
+            </text>
+            <text fill="#FF0000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="48" x="556.5778" y="853.1074">[orders]
+            </text>
+        </g><!--reverse link trader to kafka-->
+        <g id="link_trader_kafka">
+            <path d="M627.3878,805.316 C625.0268,822.965 620.2598,840.718 611.5778,856 C605.2508,867.137 596.5918,877.087 586.9078,885.842 "
+                  fill="none" id="trader-backto-kafka"
+                  style="stroke:#FFA500;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#FFA500" points="628.3088,797.223,624.4224,804.8319,630.3838,805.5112,628.3088,797.223"
+                     style="stroke:#FFA500;stroke-width:1.0;"/>
+            <text fill="#FFA500" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="64" x="634.5778" y="839.1387">consume
+            </text>
+            <text fill="#FFA500" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing"
+                  textLength="84" x="624.5778" y="853.1074">[dead_orders]
+            </text>
+        </g><!--link DB to trader-->
+        <g id="link_DB_trader">
+            <path d="M461.2958,550.425 C460.6948,567.575 462.7958,585.658 470.5778,601 C475.8168,611.328 489.7338,624.439 507.1618,638.023 "
+                  fill="none" id="DB-trader" style="stroke:#EE82EE;stroke-width:2.0;"/>
+            <polygon fill="#EE82EE" points="461.7958,542.097,458.3212,549.9026,464.3104,550.2626,461.7958,542.097"
+                     style="stroke:#EE82EE;stroke-width:2.0;"/>
+            <polygon fill="#EE82EE" points="513.7318,643.045,509.1973,635.8036,505.5539,640.5707,513.7318,643.045"
+                     style="stroke:#EE82EE;stroke-width:2.0;"/>
+            <text fill="#EE82EE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="104" x="494.0778" y="584.1387">store/retrieve
+            </text>
+            <text fill="#EE82EE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="53" x="471.5778" y="598.1074">custom
+            </text>
+            <text fill="#EE82EE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="4" x="524.5778" y="598.1074">&#160;
+            </text>
+            <text fill="#EE82EE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="92" x="528.5778" y="598.1074">configs/data
+            </text>
+        </g><!--link maestro to kafka-->
+        <g id="link_maestro_kafka">
+            <path d="M515.5918,352.19 C525.8198,363.488 536.6658,375.618 546.5778,387 C558.1818,400.325 744.5498,614.391 750.5778,631 C785.0608,726.005 794.6098,790.569 717.5778,856 C684.6848,883.939 640.9068,902.145 601.5188,913.837 "
+                  fill="none" id="maestro-to-kafka" style="stroke:#0000FF;stroke-width:1.0;"/>
+            <polygon fill="#0000FF" points="593.7038,916.09,602.2218,916.757,600.56,910.9917,593.7038,916.09"
+                     style="stroke:#0000FF;stroke-width:1.0;"/>
+            <text fill="#0000FF" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="104" x="728.5778" y="591.1387">topics,schema
+            </text>
+        </g><!--link maestro to DB-->
+        <g id="link_maestro_DB">
+            <path d="M473.5778,357.457 C473.5778,378.045 473.5778,402.004 473.5778,423.621 " fill="none"
+                  id="maestro-to-DB" style="stroke:#0000FF;stroke-width:1.0;"/>
+            <polygon fill="#0000FF" points="473.5778,431.779,476.5778,423.779,470.5778,423.779,473.5778,431.779"
+                     style="stroke:#0000FF;stroke-width:1.0;"/>
+            <text fill="#0000FF" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="63" x="474.5778" y="399.1387">schemas
+            </text>
+        </g><!--link maestro to Binance-->
+        <g id="link_maestro_Binance">
+            <path d="M462.1068,253.961 C454.9158,229.702 443.8518,201.166 427.5778,179 C409.1188,153.857 383.4788,131.594 358.8858,113.702 "
+                  fill="none" id="maestro-to-Binance"
+                  style="stroke:#FFA500;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+            <polygon fill="#FFA500" points="352.3238,109.011,357.0865,116.1045,360.5763,111.2238,352.3238,109.011"
+                     style="stroke:#FFA500;stroke-width:1.0;"/>
+            <text fill="#FFA500" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="22" x="419.5778" y="168.1387">API
+            </text>
+            <text fill="#FFA500" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="4" x="441.5778" y="168.1387">&#160;
+            </text>
+            <text fill="#FFA500" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="42" x="445.5778" y="168.1387">Creds
+            </text>
+        </g><!--link Binance to quantum_trader-->
+        <g id="link_Binance_quantum_trader">
+            <path d="M205.0678,80.655 C148.1658,94.696 74.3092,123.015 35.5778,179 C19.9271,201.623 17.7445,232.3788 19.5638,257.7811 "
+                  fill="none" id="Binance-quantum_trader" style="stroke:#EE82EE;stroke-width:2.0;"/>
+            <polygon fill="#EE82EE" points="212.9788,78.767,204.501,77.7061,205.8938,83.5422,212.9788,78.767"
+                     style="stroke:#EE82EE;stroke-width:2.0;"/>
+            <polygon fill="#EE82EE" points="19.5638,257.7811,21.9847,249.5873,16,250.0159,19.5638,257.7811"
+                     style="stroke:#EE82EE;stroke-width:2.0;"/>
+            <text fill="#EE82EE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="21" x="55.5778" y="168.1387">via
+            </text>
+            <text fill="#EE82EE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="4" x="76.5778" y="168.1387">&#160;
+            </text>
+            <text fill="#EE82EE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing"
+                  textLength="114" x="80.5778" y="168.1387">python-binance
+            </text>
+        </g>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="57" x="668.5778" y="1043.9951">Legend
+        </text>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="725.5778"
+              y="1043.9951">&#160;
+        </text>
+        <rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="668.5778"
+              y="1047.2969"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="672.5778"
+              y="1060.292">person
+        </text>
+        <rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="668.5778"
+              y="1063.5938"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="672.5778"
+              y="1076.5889">system
+        </text>
+        <rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="668.5778"
+              y="1079.8906"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="672.5778"
+              y="1092.8857">container
+        </text>
+        <rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="668.5778"
+              y="1096.1875"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114"
+              x="672.5778" y="1109.1826">external person
+        </text>
+        <rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="668.5778"
+              y="1112.4844"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116"
+              x="672.5778" y="1125.4795">external system
+        </text>
+        <rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="668.5778"
+              y="1128.7813"/>
+        <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133"
+              x="672.5778" y="1141.7764">external container
+        </text>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1031" y2="1031"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1047.2969" y2="1047.2969"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1063.5938" y2="1063.5938"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1079.8906" y2="1079.8906"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1096.1875" y2="1096.1875"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1112.4844" y2="1112.4844"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1128.7813" y2="1128.7813"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="809.5778" y1="1145.0781" y2="1145.0781"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="668.5778" x2="668.5778" y1="1031" y2="1145.0781"/>
+        <line style="stroke:#FFFFFF;stroke-width:1.0;" x1="809.5778" x2="809.5778" y1="1031" y2="1145.0781"/>
+        <text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="372"
+              x="227.2889" y="1174.3604">drawn with PlantUML v. 1.2023.6beta1 and C4-PlantUML v. 2.6.0beta2
+        </text><!--SRC=[hLPjRzis4FwkNy5g6MPZjbMa6GeCImlRSRUWpajhPyKm3C99f6p2bAYHb1rts7_VKH9bMKtIRDWNlnplddlkbNp1irWKb96rCRd-CGWKx4OhRjP5L6YcOfaPbfbHBDCW5v2P8XL3RQZWKJ0z6zvQqTtLF4X16wPG54xH0dZ6r2X7NS_J6vxbe20bb2LG2BDazsOi-2fB4PZ4-C6Kvyt7lztSBSDFbyjVmldivzdrHQ_lUI_G1h78kvlhvVZJR75pDNi6KLFaGDMh0s6EfyC4DOOwLzmmxVYMCjWnBLCs_E7Wxt9wStttSVx_-DgUZiv6Bn7SfReLJP3lpLfcLQuULDY1Ock9Rf_GGKxR9k4k1gdX5WNFY66gGAyPJNb60rVHeSnPfbbSO0nxKF4QGubDeTXf6Q7Bu85FxIwOoZJz8Y1tU8UU0n32KNNdFyaauJ4B5cKWEg1W80BDmYgoDuzh9bmyGmloNF0O39VPuyhOkJ7BZIxJYOAmPVMKUi8Lss5GRpnliSUafE7itlGcF0DK6FZr3t_WJzK-Dt9s7wyXMrd1IWQPfFZhfEgLSxyYvsFhZodzoCGILZq_Lv8M5e6S61oUgHHIdVkAKIiHMEjQai8AImfEkZ1xmSWvkP36C3f7IQ_VR-FQEXPf5rUgYjqHzB6mGIxxvW5a4DWR7Tn855tKjiXXBgJW3MGRC-8K4ntRQdIGjrmAPZhOnqA7Ff7Y27mcc5r3fOEKnqhMjRTsTeXhi3qJGkwmJf5KbAbQ-Wrz_UhbwMihNjMYbM8CwPq8XgMWTjMT7-EMQMfsPEcNHjQRwu1EwvS1jC3SCOaTXcsMxqWt5iWA49qeoexvQWWJ0V6c4y9L1OUUBFrR72cPLOMsMwDD7oSzjFibX89oqsLVgdDjL3bKn2gMe6vm9hB8AAXzxy-YNASXQYBPWV-X-a-MvN-__vT7I4MZbm93G3dmhq4ZRGChNJkoq8GqoUwLWOUuyV82stD0_AlZYllLChQ_PlUu-d1vawYQNbBQwjQaEjtQOQV8RRTst66pXoSTtbOpZWwBFIuW8OZ6An842h3Qb62sA4yIfkobYOlQxYNv7mdLINsApXXTxpyZ7RDcZic0f6XlCIfnBZMtPTG4Cafo5y2_p5IRsKNKkvXW8M-2nOUvNPWIuhMo7uqr3ak_OxA1P0C3VxQrgPaKcdoFYya0MM226FbzOHI3LF-1UE-jPeiPv0ZDgW72DTDBb4m7nCW14H0nCI1lyT9RP_XDcOunOsyhItk0RF0BTyl6yh7MdVQgQUL59BZ607pAW8PDTgfmt6ft64slTAs9tssCHp7gydxX_r7NQ3VXQ1dUELjR1MtJ5oXc56TRt3S52bAxTXA-gcxe1ggzcaiu2pR1DV98JfgBfyl97VJR6CVn76mVokS1e4w6smwrjP4vZ_L0OzdJ0__gkkftJCeab8hwAvhDNJ- -lIHJNBCF4lhRyroQE-kjiTzo8DMu32FtR7WunucKo8HGVDLbP8VFEk9URcGx8j_QLmzgzlhbRBPUwlPqUlQhE_u7]-->
+    </g>
+</svg>

@@ -7,7 +7,7 @@ from trader.publish_orders import publish_order, delayed_orders
 
 
 def consume_signal(key: str, val: str):
-    alog.info(key, val)
+    # alog.info(key, val)
 
     symbol = Symbol.Loads(key)
 
