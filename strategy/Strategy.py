@@ -1,8 +1,6 @@
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 
-from typing import Union, Set, Tuple, List
-
 import pandas as pd
 
 
@@ -15,7 +13,7 @@ class Strategy(ABC):
 
     price: float = field(init=False, default=0.)
 
-    signal: int = field(init=False, default=-1)
+    signal: int = field(init=False, default=-1)  # FIXME - evaluate necessity...
 
     # price,signal = 0.,-1
 

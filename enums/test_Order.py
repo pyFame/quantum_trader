@@ -1,7 +1,6 @@
 import pytest
 
-from enums import Symbol
-from strategy.order import *
+from enums.Order import *
 
 
 # import logging as log
