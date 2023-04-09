@@ -6,7 +6,7 @@ from dask import delayed
 
 from conf.kafka import TOPIC_ORDERS
 from enums import Symbol
-from enums.order import Order
+from enums.Order import Order
 from lib.kafka import Kafka, KafkaMessage
 from utils import Time
 from utils.thread import keepAlive

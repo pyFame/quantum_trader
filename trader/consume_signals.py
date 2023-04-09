@@ -5,7 +5,7 @@ from conf import alog
 from conf.kafka import TOPIC_SIGNALS
 from enums import Symbol
 from enums.indicators import BUY, SELL, Message_Signal
-from enums.order import Order, CLOSE, OPEN
+from enums.Order import Order, CLOSE, OPEN
 from enums.position import SHORT
 from lib.kafka import Kafka, ConsumerProperties, LATEST
 from trader.publish_orders import publish_order, delayed_orders, handle_delayed_orders
