@@ -1,5 +1,6 @@
 import dataclasses
 import json
+from abc import abstractmethod
 
 
 def jsonify(obj: dataclasses.dataclass) -> str:
@@ -10,6 +11,12 @@ def jsonify(obj: dataclasses.dataclass) -> str:
 
 
 class DataClassJson:
+
+    @staticmethod
+    @abstractmethod
+    def Loads(json_str: str) -> object:
+        pass
+
     @property
     def json(self) -> str:
         return jsonify(self)

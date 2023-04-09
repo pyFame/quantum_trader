@@ -1,28 +1,24 @@
-import json
 import time
-from datetime import timedelta
-
-import datetime as dt
 
 from icecream import ic
 
 from conf import alog
-from conf.kafka import TOPIC_ORDERS
+from conf.kafka import TOPIC_SIGNALS
+from enums.Order import *
+from enums.indicators import Message_Signal, MACD
 from lib.kafka import Kafka, KafkaMessage
-
-from strategy.order import *
 from strategy.macd import Macd_Strategy
-
-from utils import Time, Pandas, Futures
-from enums import Symbol
+from utils import Pandas, Futures
 
 
 def main():
     alog.info("starting microservice-strategy")
 
+    indicator = MACD
+
     symbol: Symbol = Symbol('BTC')
     interval: str = '1m'
-    timeout: float = 1
+    TIMEOUT: float = 1
     AMOUNT: float = .01
 
     df = Futures.history(symbol, interval, "4 hour ago", "1 min ago")
@@ -31,7 +27,7 @@ def main():
 
     macd_1 = Macd_Strategy(df, 12, 26, 9)
 
-    k = Kafka().producer()
+    kafka_client = Kafka().producer()
 
     while True:
         last_updated = Pandas.latest_time(df)
@@ -56,35 +52,15 @@ def main():
 
         if signal is not None:
             key = symbol.json
-            val = {
-                "symbol": symbol.json,
-                "signal": signal,
-                "low": df_low,
-                "high": df_high,
-            }
 
-        if o is not None:
-            now_: dt.datetime = Time.now(timedelta())
+            signal_msg = Message_Signal(indicator, signal, low=df_low, high=df_high, filters=[{"SMA", 200}])
 
-            key = symbol
+            msg = KafkaMessage(TOPIC_SIGNALS, key, signal_msg.json)
+            ic(msg)
 
-            expired_at = now_ + timedelta(seconds=timeout)
+            kafka_client.publish(msg)  # TODO add a callback
 
-            ic(o)
-
-            val = {
-                "order": o.binance_order,
-                "created_at": now_.timestamp(),
-                "expired_at": expired_at.timestamp(),
-                "created": str(now_),
-                "expired": str(now_),
-            }
-
-        msg = KafkaMessage(TOPIC_ORDERS, key, json.dumps(val))
-        ic(msg)
-        k.publish(msg)
-
-        time.sleep(timeout)
+        time.sleep(TIMEOUT)
 
 
 if __name__ == "__main__":

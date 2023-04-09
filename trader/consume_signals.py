@@ -1,14 +1,11 @@
 import json
-from typing import Final
 
 from conf import alog
-from conf.kafka import TOPIC_SIGNALS
 from enums import Symbol
-from enums.indicators import BUY, SELL, Message_Signal
 from enums.Order import Order, CLOSE, OPEN
+from enums.indicators import BUY, SELL, Message_Signal
 from enums.position import SHORT
-from lib.kafka import Kafka, ConsumerProperties, LATEST
-from trader.publish_orders import publish_order, delayed_orders, handle_delayed_orders
+from trader.publish_orders import publish_order, delayed_orders
 
 
 def consume_signal(key: str, val: str):
