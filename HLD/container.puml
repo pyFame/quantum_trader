@@ -1,0 +1,80 @@
+@startuml quantum_trader
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+skinparam defaultTextAlignment center
+
+LAYOUT_WITH_LEGEND()
+
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+
+!include FONTAWESOME/python.puml
+!include FONTAWESOME/warehouse.puml
+!include FONTAWESOME/server.puml
+
+!define osaPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons/master
+!include osaPuml/Common.puml
+!include osaPuml/User/all.puml
+
+!include <office/Servers/database_server>
+!include <office/Servers/file_server>
+!include <office/Servers/application_server>
+!include <office/Concepts/service_application>
+!include <office/Concepts/firewall>
+
+System_Ext(Binance,"Binance","CryptoExchange","go/node",$sprite="server")
+
+AddRelTag("produce", $textColor="red", $lineColor="magenta", $lineStyle = DottedLine())
+AddRelTag("consume", $textColor="orange", $lineColor="orange", $lineStyle = DashedLine())
+AddRelTag("alter", $textColor="blue", $lineColor="blue", $lineStyle = SolidLine())
+
+AddRelTag("bidirection", $textColor="violet", $lineColor="violet", $lineStyle = BoldLine())
+
+AddElementTag("microservice", $fontColor="yellow",$borderColor="#d73027",$bgColor="green",$legendText="microservice")
+AddContainerTag("db", $sprite="database_server", $legendText="database container")
+
+' AddElementTag("manual", $fontColor="red",$borderColor="#d73027",$bgColor="Black",$legendText="Manual")
+
+
+AddPersonTag("admin", $sprite="osa_user_audit", $legendText="administration user")
+
+
+
+System_Boundary(quantum_trader,"Quantum Trader"){
+  Person(maestro,"Nas",$tags="admin")
+
+  Container(order_computer, "Microservice", "python", "Executes binance orders",$sprite="python",$tags="microservice")
+  Container(chanakya, "Microservice", "python", "Produces buy/sell signals based on different indicators",$sprite="python",$tags="microservice")
+  Container(trader, "Microservice", "python", "Analyzes the signals, maintains the positions and produces orders",$sprite="python",$tags="microservice")
+
+  ContainerDb(DB,"NO/SQL","Coachroach",$tags="db")
+  ContainerDb(kafka,"Event Bus + Data Store [Streams]","Kafka",$sprite="apache")
+
+' Rel(from, to, label, ?techn, ?descr, ?sprite, ?tags, ?link)
+  Rel(order_computer,kafka,"publish","dead_orders",$tags="produce")
+  Rel(chanakya,kafka,"publish", "buy/sell signals",$tags="produce")
+  Rel(trader,kafka,"publish","orders",$tags="produce")
+
+  BiRel_U(trader,DB,"store/retrieve custom configs/data",$tags="bidirection")
+
+  Rel_Back(order_computer,kafka,"consume","orders",$tags="consume")
+  Rel_Back(trader,kafka,"consume","dead_orders",$tags="consume")
+
+  Rel(maestro,kafka,"topics,schema",$tags="alter")
+  Rel(maestro,DB,"schemas",$tags="alter")
+  Rel(maestro,Binance,"API Creds",$tags="consume")
+
+}
+
+BiRel_U(quantum_trader,Binance,"via python-binance",$tags="bidirection")
+
+footer drawn with PlantUML v. %version() and C4-PlantUML v. C4Version()
+
+@enduml
+
+' https://github.com/tupadr3/plantuml-icon-font-sprites
+' https://github.com/tupadr3/plantuml-icon-font-sprites/blob/master/devicons2/index.md
+' https://github.com/tupadr3/plantuml-icon-font-sprites/blob/master/font-awesome-5/index.md
+
+' https://github.com/plantuml-stdlib/C4-PlantUML
