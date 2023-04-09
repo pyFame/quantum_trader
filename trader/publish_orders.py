@@ -4,6 +4,7 @@ from queue import Queue
 
 from dask import delayed
 
+from conf import alog
 from conf.kafka import TOPIC_ORDERS
 from enums import Symbol
 from enums.Order import Order
@@ -18,6 +19,7 @@ kafka_client = Kafka()
 
 @keepAlive
 def handle_delayed_orders():
+    alog.info("started handle_delayed_orders")
     while True:
         d_order = delayed_orders.get()
         d_order.compute()

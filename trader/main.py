@@ -1,5 +1,6 @@
 from typing import Final
 
+from conf import alog
 from conf.kafka import TOPIC_SIGNALS
 from lib.kafka import Kafka, ConsumerProperties, LATEST
 from trader.consume_signals import consume_signal
@@ -7,8 +8,10 @@ from trader.publish_orders import handle_delayed_orders
 
 
 def main():
+    alog.info("starting microservice- trader")
+
     CG_ID: Final[str] = "trader"
-    POLLING_TIMEOUT = 10.0  # FIXME
+    POLLING_TIMEOUT = 1.0  # FIXME
 
     handle_delayed_orders()
 
@@ -21,4 +24,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print("bye")
     main()
