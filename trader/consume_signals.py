@@ -1,5 +1,3 @@
-import json
-
 from conf import alog
 from enums import Symbol
 from enums.Order import Order, CLOSE, OPEN
@@ -11,10 +9,9 @@ from trader.publish_orders import publish_order, delayed_orders
 def consume_signal(key: str, val: str):
     alog.info(key, val)
 
-    symbol = Symbol.Parse(key)
+    symbol = Symbol.Loads(key)
 
-    message_args = json.loads(val)
-    signal_message = Message_Signal(**message_args)
+    signal_message = Message_Signal.Loads(val)
 
     signal = signal_message.signal
 

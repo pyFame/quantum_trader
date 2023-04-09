@@ -1,6 +1,6 @@
 import json
-from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from dataclasses import dataclass
+from datetime import datetime
 from typing import Final, Union, List
 
 from utils import Time, Dataclass
@@ -22,14 +22,14 @@ class Message_Signal(Dataclass.DataClassJson):
     indicator_value: float = None
     filters: List[dict] = None  # {"SMA",200}
 
-    created_at: float = field(init=False, default=None)
-    created: str = field(init=False, default=None)
+    created_at: float = None  # field(init=False, default=None)
+    created: str = None  # field(init=False, default=None)
 
     def __post_init__(self):
-        now_: datetime = Time.now(timedelta())
-
-        self.created_at = now_.timestamp()
-        self.created = str(now_)
+        if self.created_at is None:
+            now_: datetime = Time.now_utc()
+            self.created_at = now_.timestamp()
+            self.created = str(now_)
 
     @staticmethod
     def Loads(json_str: str) -> object:

@@ -1,8 +1,5 @@
 from dataclasses import dataclass
 
-from typing import Type
-import json
-
 
 @dataclass(frozen=True)
 class Symbol(str):
@@ -26,12 +23,12 @@ class Symbol(str):
         return f"{self.base}/{self.quote}"
 
     @staticmethod
-    def loads(symbol_str: str) -> 'Symbol':
+    def Loads(symbol_str: str) -> 'Symbol':
         return Symbol(*symbol_str.split('/'))
 
     @staticmethod
     def Parse(symbol_str: str) -> 'Symbol':
-        return Symbol.loads(symbol_str)
+        return Symbol.Loads(symbol_str)
 
     @property
     def json(self) -> str:

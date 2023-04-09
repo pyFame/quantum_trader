@@ -19,7 +19,7 @@ kafka_client = Kafka()
 
 @keepAlive
 def handle_delayed_orders():
-    alog.info("started handle_delayed_orders")
+    alog.info("starting handle_delayed_orders")
     while True:
         d_order = delayed_orders.get()
         d_order.compute()
@@ -32,8 +32,9 @@ def publish_order(symbol: Symbol, o: Order):
     key = symbol.json
     val = {
         "created_at": now_.timestamp(),
+        "expired_at": now_.timestamp(),
         "created": str(now_),
-        "order": o.json,
+        "order": o.binance_order,
     }
     msg = KafkaMessage(TOPIC_ORDERS, symbol)
 

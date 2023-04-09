@@ -10,6 +10,7 @@ def jsonify(obj: dataclasses.dataclass) -> str:
     return json_str
 
 
+@dataclasses.dataclass
 class DataClassJson:
 
     @staticmethod

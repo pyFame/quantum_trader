@@ -11,7 +11,7 @@ def main():
 
     k = Kafka()
 
-    consumer_ppt = ConsumerProperties(TOPIC_ORDERS, CG_ID, LATEST, POLLING_TIMEOUT, callback)
+    consumer_ppt = ConsumerProperties(TOPIC_ORDERS, CG_ID, LATEST, callback, POLLING_TIMEOUT)
 
     consumer = k.consumer(consumer_ppt)
     consumer.consume()

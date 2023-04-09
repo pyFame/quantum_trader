@@ -10,6 +10,10 @@ def now(utc_offset=timedelta(hours=5, minutes=30)) -> datetime:  # default ist
     return now_ist
 
 
+def now_utc():
+    return now(timedelta())
+
+
 def today():
     from datetime import datetime as dt
     x = dt.now()

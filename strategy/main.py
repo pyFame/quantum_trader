@@ -53,7 +53,7 @@ def main():
         if signal is not None:
             key = symbol.json
 
-            signal_msg = Message_Signal(indicator, signal, low=df_low, high=df_high, filters=[{"SMA", 200}])
+            signal_msg = Message_Signal(indicator, signal, low=df_low, high=df_high)  # filters=[{"SMA", 200}])
 
             msg = KafkaMessage(TOPIC_SIGNALS, key, signal_msg.json)
             ic(msg)
