@@ -7,6 +7,7 @@ import datetime as dt
 from icecream import ic
 
 from conf import alog
+from conf.kafka import TOPIC_ORDERS
 from lib.kafka import Kafka, KafkaMessage
 
 from strategy.order import *
@@ -30,9 +31,7 @@ def main():
 
     macd_1 = Macd_Strategy(df, 12, 26, 9)
 
-    k = Kafka()
-    k.producer()
-    topic = "futures_orders"
+    k = Kafka().producer()
 
     while True:
         last_updated = Pandas.latest_time(df)
@@ -48,29 +47,26 @@ def main():
         df_high = df['high'].iloc[-1]
         df_low = df['low'].iloc[-1]
 
-        o: Order = None
+        signal = None
 
         if macd_1.buy_signal():
-
-            # o = Order(symbol,OPEN,LONG,AMOUNT,trail=0.5)
-            # o = Order(symbol,OPEN,LONG,AMOUNT)
-            o = Order(symbol, CLOSE, SHORT, AMOUNT, profit=df_low)  # ,trail=0.1)
-
-            macd_1.buy()
-
+            signal = BUY
         elif macd_1.sell_signal():
+            signal = SELL
 
-            # o = Order(symbol,CLOSE,LONG,AMOUNT,trail=0.5)
-            # o = Order(symbol,CLOSE,LONG,AMOUNT,profit=df_high)
-
-            o = Order(symbol, OPEN, SHORT, AMOUNT, profit=df_high)
-
-            macd_1.sell()
+        if signal is not None:
+            key = symbol.json
+            val = {
+                "symbol": symbol.json,
+                "signal": signal,
+                "low": df_low,
+                "high": df_high,
+            }
 
         if o is not None:
             now_: dt.datetime = Time.now(timedelta())
 
-            key = f"{symbol}"
+            key = symbol
 
             expired_at = now_ + timedelta(seconds=timeout)
 
@@ -84,9 +80,9 @@ def main():
                 "expired": str(now_),
             }
 
-            msg = KafkaMessage(topic, key, json.dumps(val))
-            ic(msg)
-            k.publish(msg)
+        msg = KafkaMessage(TOPIC_ORDERS, key, json.dumps(val))
+        ic(msg)
+        k.publish(msg)
 
         time.sleep(timeout)
 

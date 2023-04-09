@@ -1,29 +1,22 @@
-from icecream import ic
+from typing import Final
 
-from enums import Symbol
-from enums.indicators import MACD, RSI
-from enums.position import SHORT
+from conf.kafka import TOPIC_SIGNALS
 from lib.kafka import Kafka, ConsumerProperties, LATEST
-from trader.config_kafka import SIGNAL_TOPIC, CG_ID, POLLING_TIMEOUT
-from trader.Position import Position
-
-indicators = {
-    MACD: 1,  # priority stuffs
-    RSI: .1
-}
+from trader.consume_signals import consume_signal
+from trader.publish_orders import handle_delayed_orders
 
 
 def main():
-    symbol = Symbol("BTC")
+    CG_ID: Final[str] = "trader"
+    POLLING_TIMEOUT = 10.0  # FIXME
 
-    position = Position(symbol, SHORT, 1)
-    ic(position)
+    handle_delayed_orders()
 
-    while True:  # msg: BUY:  val: symbol: BTC/USDT indicator: MACD
-        k = Kafka()
-        consumer_ppt = ConsumerProperties(SIGNAL_TOPIC, CG_ID, LATEST, POLLING_TIMEOUT, callback)
+    kafka_client = Kafka()
 
-        consumer = k.consumer(consumer_ppt)
+    while True:
+        consumer_ppt = ConsumerProperties(TOPIC_SIGNALS, CG_ID, LATEST, consume_signal, POLLING_TIMEOUT)
+        consumer = kafka_client.consumer(consumer_ppt)
         consumer.consume()
 
 

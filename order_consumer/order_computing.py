@@ -30,8 +30,6 @@ def order_computing():
             # if e.code == -4045:
             #     account.cancel_order(pos.coin)  # max stop Order  #-2021 would immediately trigger
 
-
-
         else:
             ic(_order)
         finally:

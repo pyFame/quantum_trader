@@ -23,13 +23,16 @@ class Symbol(str):
         return f"{self.base}{self.quote}"
 
     def dumps(self) -> str:
-        return json.dumps(f"{self.base}/{self.quote}")
+        return f"{self.base}/{self.quote}"
 
     @staticmethod
-    def loads(json_dump: str) -> 'Symbol':
-        symbol_str: str = json.loads(json_dump)
+    def loads(symbol_str: str) -> 'Symbol':
         return Symbol(*symbol_str.split('/'))
 
     @staticmethod
     def Parse(symbol_str: str) -> 'Symbol':
-        return Symbol.loads(json.dumps(symbol_str))
+        return Symbol.loads(symbol_str)
+
+    @property
+    def json(self) -> str:
+        return self.dumps()

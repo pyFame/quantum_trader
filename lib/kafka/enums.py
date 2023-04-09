@@ -19,6 +19,5 @@ class ConsumerProperties():
     cgid: str = "kafka.py"  # ConsumerGroup id
     resume_at: Union[LATEST, EARLIEST] = EARLIEST  # in case of resuming from downtime latest by default
 
-    poll_timeout: float = 1.0  # timeout
-
     callback: Callable[[str, str], None] = log.info
+    poll_timeout: float = 1.0  # timeout
