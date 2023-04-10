@@ -24,7 +24,7 @@ def main():
     compute(*[
         start_strategy(),
         start_order_consumer(),
-        start_trader,
+        start_trader(),
     ], scheduler="threads")  # FIXME make it processes after implementing logger that is process safe
 
 
