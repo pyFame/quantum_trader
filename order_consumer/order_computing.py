@@ -3,7 +3,7 @@ import json
 from icecream import ic
 
 from conf import alog
-from order_consumer.globals import order_q, pb_order
+from order_consumer.globals import order_q, pb
 from order_consumer.order import Order
 from utils.thread import keepAlive
 
@@ -33,7 +33,7 @@ def order_computing():
         else:
             ic(_order)
         finally:
-            pb_order.update()
+            pb.update()
             # pb_order.refresh()
 
 
@@ -52,5 +52,5 @@ def consume_raw_order(key: str, val: str):
 
     order_q.put(delayed_order)
 
-    pb_order.total += 1
-    pb_order.refresh()
+    pb.total += 1
+    pb.refresh()

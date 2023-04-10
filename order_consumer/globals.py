@@ -1,10 +1,10 @@
-from tqdm import tqdm
 from queue import Queue
 
+from tqdm import tqdm
+
 # tqdm_list = [1]
-order_q = Queue()  # TODO put a limit
+order_q = Queue(10)
 
 # progress bar
-pb_order = tqdm([], colour='green')  # iter(order_q.queue)
+pb = tqdm([], colour='green')  # iter(order_q.queue)
 # pb_order.total=1
-pb = pb_order

@@ -10,7 +10,6 @@ sells = Queue()
 # tqdm_list = [1]
 signals_q = Queue()  # TODO put a limit
 
-# progress bar
 pb = tqdm([], colour='red')
 
 indicators = {
