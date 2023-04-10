@@ -6,19 +6,21 @@ from typing import Final, Union, Callable
 LATEST: Final[str] = "latest"
 EARLIEST: Final[str] = "earliest"
 
+valid_kafka_json = [str, int, float]
+
 
 @dataclass(frozen=False)  # FIXME: frozen= true
 class KafkaMessage:
     topic: str
-    key: str
-    val: str
+    key: Union[str, int, float]
+    val: Union[str, int, float]
 
     def __post_init__(self):
         self.key = self._json(self.key)
         self.val = self._json(self.val)
 
-    def _json(self, value: object) -> str:
-        if type(value) is str:
+    def _json(self, value: Union[str, object, int]) -> Union[str, int, float]:
+        if type(value) in valid_kafka_json:
             return value
 
         log.warning(f"invalid json - {value}")
