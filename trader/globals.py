@@ -2,7 +2,9 @@ from queue import Queue
 
 from tqdm import tqdm
 
+from enums import Symbol
 from enums.indicators import RSI, MACD
+from trader.Position import Position
 
 buys = Queue()  # FIXME add a number
 sells = Queue()
@@ -18,3 +20,7 @@ indicators = {
 }
 
 delayed_orders = Queue(10)
+
+positions = [
+    Position(Symbol("BTC"))
+]

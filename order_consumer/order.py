@@ -1,16 +1,19 @@
-from typing import Union, Optional
+from typing import Union
+
 import pandas as pd
+from binance.exceptions import BinanceAPIException
 from dask import delayed
 from icecream import ic
-import logging as log
-
-from binance.exceptions import BinanceAPIException
 
 from conf import client, alog
+from conf.kafka import TOPIC_ORDERS_DLQ
+from lib.kafka import Kafka, KafkaMessage
+
+kafka_client = Kafka()
 
 
 @delayed
-def Order(req_json: dict, return_type=pd.DataFrame) -> Union[pd.DataFrame, dict]:  # d is the json request
+def Order(req_json: dict, return_type=pd.DataFrame) -> Union[pd.DataFrame, dict, None]:  # d is the json request
 
     d = req_json
 
@@ -20,6 +23,16 @@ def Order(req_json: dict, return_type=pd.DataFrame) -> Union[pd.DataFrame, dict]
         _order: dict = client.futures_create_order(**d)
     except BinanceAPIException as e:
         alog.error(f"Order creation failed for order with error code {e.code}: {e.message} ...{d}")
+
+        key = d["symbol"]
+        val = {
+            "code": e.code,
+            "message": e.message,
+            "order": d,
+        }
+
+        msg = KafkaMessage(TOPIC_ORDERS_DLQ, key, val)
+        kafka_client.publish(msg)
         return
     except Exception as e:
         alog.error(f"order failed due to - {e}")
