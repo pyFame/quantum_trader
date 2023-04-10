@@ -32,6 +32,6 @@ class Message_Signal(Dataclass.DataClassJson):
             self.created = str(now_)
 
     @staticmethod
-    def Loads(json_str: str) -> object:
+    def Loads(json_str: str) -> 'Message_Signal':
         args = json.loads(json_str)
         return Message_Signal(**args)

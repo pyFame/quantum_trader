@@ -2,13 +2,16 @@
 FIXME: rename to Cache
 
 """
-
-from cachetools import TTLCache
+from cachetools import TTLCache, LRUCache
 
 
 class Cache:
-    def __init__(self, ttl: int = None, maxsize: int = None):  # ttl - 1 hr, 128
-        self.cache = TTLCache(maxsize=maxsize, ttl=ttl)
+    def __init__(self, maxsize: float = 100, ttl: float = None):  # ttl - 1 hr, 128
+
+        if ttl is None:
+            self.cache = LRUCache(maxsize=maxsize)
+        else:
+            self.cache = TTLCache(maxsize=maxsize, ttl=ttl)
 
     def get(self, key):
         return self.cache.get(key)

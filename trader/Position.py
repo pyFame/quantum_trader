@@ -17,7 +17,7 @@ class Position:
     symbol: Symbol
     mode: Union[LONG, SHORT]
 
-    profit: float
+    profit: float = 1  # remove its meant to be more than 1 dollar
     # hedge: Optional[bool] = True  # Do SHORT,LONG Simultaneously
 
     open_args: Optional[dict] = None
@@ -80,8 +80,22 @@ class Position:
 
         return o
 
-    def sell_signal(self, p, q=None) -> bool:
-        return self.pnl(p, q) > self.cost  # FIXME self.profit
+    def open_signal(self, p: float) -> bool:
+        if self.disable_open: return False
+
+        if self.quantity > 0:
+            if self.mode is LONG:
+                return p < self.entry_price
+
+            if self.mode is SHORT:
+                return p > self.entry_price
+
+        return True
+
+    def close_signal(self, p: float, q: float = None) -> bool:
+        if self.quantity <= 0: return False
+
+        return self.pnl(p, q) > 0  # > self.cost  # FIXME self.profit
 
     @property
     def liquidation_price(self) -> float:
