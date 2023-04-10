@@ -36,30 +36,35 @@ AddContainerTag("db", $sprite="database_server", $legendText="database container
 
 ' AddElementTag("manual", $fontColor="red",$borderColor="#d73027",$bgColor="Black",$legendText="Manual")
 
-
 AddPersonTag("admin", $sprite="osa_user_audit", $legendText="administration user")
 
-
+System_Ext(Grafana,"Grafana",$sprite="server")
 
 System_Boundary(quantum_trader,"Quantum Trader"){
   Person(maestro,"Nas",$tags="admin")
 
-  Container(order_computer, "Microservice", "python", "Executes binance orders",$sprite="python",$tags="microservice")
-  Container(chanakya, "Microservice", "python", "Produces buy/sell signals based on different indicators",$sprite="python",$tags="microservice")
-  Container(trader, "Microservice", "python", "Analyzes the signals, maintains the positions and produces orders",$sprite="python",$tags="microservice")
+  Container(order_computer, "SwiftOrder", "microservice", "Executes binance orders",$sprite="python",$tags="microservice")
+  Container(chanakya, "Chanakya", "microservice", "Produces buy/sell signals based on different indicators",$sprite="python",$tags="microservice")
+  Container(trader, "Trader", "microservice", "Analyzes the signals, maintains the positions and produces orders",$sprite="python",$tags="microservice")
 
   ContainerDb(DB,"NO/SQL","Coachroach",$tags="db")
   ContainerDb(kafka,"Event Bus + Data Store [Streams]","Kafka",$sprite="apache")
 
 ' Rel(from, to, label, ?techn, ?descr, ?sprite, ?tags, ?link)
-  Rel(order_computer,kafka,"publish","dead_orders",$tags="produce")
+  Rel(order_computer,kafka,"publish","order_results",$tags="produce")
   Rel(chanakya,kafka,"publish", "buy/sell signals",$tags="produce")
   Rel(trader,kafka,"publish","orders",$tags="produce")
 
-  BiRel_U(trader,DB,"store/retrieve custom configs/data",$tags="bidirection")
+  BiRel_U(trader,DB,"CRUD configs",$tags="bidirection")
+  BiRel_U(trader,DB,"CRUD transactions",$tags="bidirection")
+
+  BiRel_U(chanakya,DB,"CRUD logs",$tags="bidirection")
+  BiRel_U(order_computer,DB,"CRUD logs",$tags="bidirection")
+  BiRel_U(order_computer,DB,"CRUD logs",$tags="bidirection")
 
   Rel_Back(order_computer,kafka,"consume","orders",$tags="consume")
-  Rel_Back(trader,kafka,"consume","dead_orders",$tags="consume")
+  Rel_Back(trader,kafka,"consume","order_results",$tags="consume")
+  ' Rel_Back(chanakya,kafka,"consume","order_results",$tags="consume")
 
   Rel(maestro,kafka,"topics,schema",$tags="alter")
   Rel(maestro,DB,"schemas",$tags="alter")
@@ -68,6 +73,7 @@ System_Boundary(quantum_trader,"Quantum Trader"){
 }
 
 BiRel_U(quantum_trader,Binance,"via python-binance",$tags="bidirection")
+BiRel_U(quantum_trader,Grafana,"via Prometheus",$tags="bidirection")
 
 footer drawn with PlantUML v. %version() and C4-PlantUML v. C4Version()
 
