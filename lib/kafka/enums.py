@@ -21,8 +21,12 @@ class KafkaMessage:
         if type(value) is str:
             return value
 
+        log.warning(f"invalid json - {value}")
+
         if hasattr(value, 'json'):
+            log.debug(f"implemented json attribute {value}")
             return value.json
+
         value = json.dumps(value)
 
         return value
