@@ -43,7 +43,7 @@ def main():
         df_high = df['high'].iloc[-1]
         df_low = df['low'].iloc[-1]
 
-        signal = BUY  # FIXME
+        signal = None
 
         if macd_1.buy_signal():
             signal = BUY
