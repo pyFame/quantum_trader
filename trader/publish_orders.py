@@ -1,18 +1,16 @@
 import datetime as dt
 from datetime import timedelta
-from queue import Queue
 
-from dask import delayed
+from dask import compute
 
 from conf import alog
 from conf.kafka import TOPIC_ORDERS
 from enums import Symbol
 from enums.Order import Order
 from lib.kafka import Kafka, KafkaMessage
+from trader.globals import delayed_orders, pb
 from utils import Time
 from utils.thread import keepAlive
-
-delayed_orders = Queue(10)
 
 kafka_client = Kafka()
 
@@ -22,20 +20,21 @@ def handle_delayed_orders():
     alog.info("starting handle_delayed_orders")
     while True:
         d_order = delayed_orders.get()
-        d_order.compute()
+        compute(d_order)
+        pb.update()
+        # d_order.compute()
 
 
-@delayed
+# @delayed
 def publish_order(symbol: Symbol, o: Order):
     now_: dt.datetime = Time.now(timedelta())
-
-    key = symbol.json
+    key = symbol
     val = {
         "created_at": now_.timestamp(),
         "expired_at": now_.timestamp(),
         "created": str(now_),
         "order": o.binance_order,
     }
-    msg = KafkaMessage(TOPIC_ORDERS, symbol)
+    msg = KafkaMessage(TOPIC_ORDERS, key, val)
 
     kafka_client.publish(msg)  # TODO: add a callback

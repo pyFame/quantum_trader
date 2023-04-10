@@ -3,9 +3,9 @@ import json
 from icecream import ic
 
 from conf import alog
-from utils.thread import keepAlive
 from order_consumer.globals import order_q, pb_order
 from order_consumer.order import Order
+from utils.thread import keepAlive
 
 
 @keepAlive
@@ -37,7 +37,7 @@ def order_computing():
             # pb_order.refresh()
 
 
-def callback(key: str, val: str):
+def consume_raw_order(key: str, val: str):
     val = json.loads(val)
 
     order = val.get("order", None)

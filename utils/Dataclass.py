@@ -1,10 +1,14 @@
 import dataclasses
 import json
 from abc import abstractmethod
+from typing import List
 
 
-def jsonify(obj: dataclasses.dataclass) -> str:
+def jsonify(obj: dataclasses.dataclass, unwanted_keys: List[str] = []) -> str:
     obj_dict = dataclasses.asdict(obj)
+    for key in unwanted_keys:
+        del obj_dict[key]
+
     json_str = json.dumps(obj_dict)
 
     return json_str

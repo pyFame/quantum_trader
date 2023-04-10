@@ -1,3 +1,4 @@
+import json
 import logging as log
 from dataclasses import dataclass
 from typing import Final, Union, Callable
@@ -11,6 +12,20 @@ class KafkaMessage:
     topic: str
     key: str
     val: str
+
+    def __post_init__(self):
+        self.key = self._json(self.key)
+        self.val = self._json(self.val)
+
+    def _json(self, value: object) -> str:
+        if type(value) is str:
+            return value
+
+        if hasattr(value, 'json'):
+            return value.json
+        value = json.dumps(value)
+
+        return value
 
 
 @dataclass

@@ -25,7 +25,7 @@ def main():
         start_strategy(),
         start_order_consumer(),
         start_trader,
-    ], scheduler="processes")
+    ], scheduler="threads")  # FIXME make it processes after implementing logger that is process safe
 
 
 if __name__ == "__main__":

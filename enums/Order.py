@@ -1,10 +1,8 @@
-import json
 from dataclasses import dataclass, field
 from typing import Optional, Union, Final
 
 from enums import Symbol
 from utils import Futures
-from utils.Dataclass import jsonify
 
 BUY: Final[str] = "BUY"
 SELL: Final[str] = "SELL"
@@ -125,14 +123,14 @@ class Order:
     def binance_order(self):
         return self.d
 
-    @property
-    def json(self) -> str:
-        return jsonify(self)
+    # @property
+    # def json(self) -> str:
+    #     return
 
-    @staticmethod
-    def Loads(json_str: str) -> "Order":
-        args = json.loads(json_str)
-        return Order(**args)
+    # @staticmethod
+    # def Loads(json_str: str) -> "Order":
+    #     args = json.loads(json_str)
+    #     return Order(**args)
 
     # def __call__(self)->Union[pd.DataFrame,None]:
     #   return order(o.d)

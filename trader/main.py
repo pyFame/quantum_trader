@@ -15,10 +15,11 @@ def main():
 
     handle_delayed_orders()
 
-    kafka_client = Kafka()
+    kafka_client = Kafka("conf/kafka.txt")
 
     while True:
-        consumer_ppt = ConsumerProperties(TOPIC_SIGNALS, CG_ID, LATEST, consume_signal, POLLING_TIMEOUT)
+        consumer_ppt = ConsumerProperties(TOPIC_SIGNALS, CG_ID, LATEST, callback=consume_signal,
+                                          poll_timeout=POLLING_TIMEOUT)
         consumer = kafka_client.consumer(consumer_ppt)
         consumer.consume()
 

@@ -3,7 +3,8 @@ from enums import Symbol
 from enums.Order import Order, CLOSE, OPEN
 from enums.indicators import BUY, SELL, Message_Signal
 from enums.position import SHORT
-from trader.publish_orders import publish_order, delayed_orders
+from trader.globals import delayed_orders, pb
+from trader.publish_orders import publish_order
 
 
 def consume_signal(key: str, val: str):
@@ -29,3 +30,6 @@ def consume_signal(key: str, val: str):
 
     d_o = publish_order(symbol, o)
     delayed_orders.put(d_o)
+
+    pb.total += 1
+    pb.refresh()
