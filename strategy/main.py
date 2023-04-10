@@ -16,7 +16,7 @@ def main():
 
     indicator = MACD
 
-    symbol: Symbol = Symbol('BTC')
+    symbol = Symbol('BTC')
     interval: str = '1m'
     TIMEOUT: float = 1
     AMOUNT: float = .01
