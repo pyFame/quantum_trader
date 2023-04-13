@@ -52,5 +52,4 @@ def consume_raw_order(key: str, val: str):
 
     order_q.put(delayed_order)
 
-    pb.total += 1
-    pb.refresh()
+    pb.add(1)

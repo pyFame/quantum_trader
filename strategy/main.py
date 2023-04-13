@@ -5,10 +5,22 @@ from icecream import ic
 from conf.kafka import TOPIC_SIGNALS
 from enums.Order import *
 from enums.indicators import Message_Signal, MACD
+from globals import pb
 from lib.kafka import Kafka, KafkaMessage
 from strategy import alog
 from strategy.macd import Macd_Strategy
 from utils import Pandas, Futures
+
+
+def delivery_signal(err: str, msg: object) -> None:
+    if err is not None:
+        err_msg = f'Message delivery failed: {err}'
+        alog.error(err_msg)
+    else:
+        alog.debug(msg)
+        alog.info(f'message delivered to {msg.topic()} [{msg.partition()}]')
+
+    pb.update()
 
 
 def main():
@@ -52,6 +64,8 @@ def main():
 
         if signal is not None:
             key = symbol.json
+
+            pb.add(1)
 
             signal_msg = Message_Signal(indicator, signal, low=df_low, high=df_high)  # filters=[{"SMA", 200}])
 
