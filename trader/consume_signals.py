@@ -25,17 +25,16 @@ def consume_signal(key: str, val: str):
     long, short = positions
 
     signal_message = Message_Signal.Loads(val)
+    low_price = signal_message.low
+    high_price = signal_message.high
 
-    signal = signal_message.signal
+    buy_sell_signal = signal_message.signal
 
     quantity: float = .01
 
     orders: List[Order] = []
 
-    low_price = signal.low
-    high_price = signal.high
-
-    if signal == BUY:
+    if buy_sell_signal == BUY:
         if long.open_signal(low_price):
             o = long.open(quantity=quantity, price=low_price)
             orders.append(o)
@@ -45,7 +44,7 @@ def consume_signal(key: str, val: str):
             orders.append(o)
 
         # o = Order(symbol, CLOSE, SHORT, AMOUNT)
-    elif signal == SELL:
+    elif buy_sell_signal == SELL:
         if long.close_signal(high_price):
             o = long.close(price=high_price)
             orders.append(o)
@@ -56,7 +55,7 @@ def consume_signal(key: str, val: str):
 
         # o = Order(symbol, OPEN, SHORT, quantity)  # , profit=df_high)
     else:
-        alog.warn(f"invalid signal - {signal}")
+        alog.warn(f"invalid signal - {buy_sell_signal}")
         return
 
     cache_positions.set(symbol, positions)

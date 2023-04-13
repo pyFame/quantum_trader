@@ -33,6 +33,9 @@ class Position:
         self.open_args = self.open_args or {}
         self.close_args = self.close_args or {}
 
+        self.open_args |= {"symbol": symbol}  # FIXME compatibility with python3.9
+        self.close_args |= {"symbol": symbol}
+
         self.refresh()
 
     def pnl(self, price: float, quantity: float = 0) -> float:

@@ -4,6 +4,7 @@ from queue import Queue
 from tqdm import tqdm
 
 from enums import Symbol
+from enums.Order import LONG
 from enums.indicators import RSI, MACD
 from trader.Position import Position
 from utils.cache import Cache
@@ -24,7 +25,7 @@ indicators = {
 delayed_orders = Queue(10)
 
 positions = [
-    Position(Symbol("BTC"))
+    Position(Symbol("BTC"), LONG)
 ]
 
 _ttl = timedelta(hours=10)

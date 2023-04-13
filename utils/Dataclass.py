@@ -3,8 +3,14 @@ import json
 from abc import abstractmethod
 from typing import List
 
+from conf import log
+
 
 def jsonify(obj: dataclasses.dataclass, unwanted_keys: List[str] = []) -> str:
+    if hasattr(obj, 'json'):
+        log.debug(f"implemented json attribute {obj.json}")
+        return obj.json
+
     obj_dict = dataclasses.asdict(obj)
     for key in unwanted_keys:
         del obj_dict[key]
