@@ -3,6 +3,8 @@ from typing import Final, Union, Optional
 
 from tqdm import tqdm
 
+from conf import alog
+
 RED: Final[str] = "RED"
 MAGENTA: Final[str] = "magenta"
 
@@ -16,7 +18,7 @@ BLACK: Final[str] = "BLACK"
 
 
 @dataclass
-class ProgresBar:
+class ProgressBar:
     color: Union[BLACK, RED, MAGENTA, BLUE, WHITE, YELLOW, CYAN, GREEN] = MAGENTA
     kwargs: dict = None
 
@@ -37,3 +39,9 @@ class ProgresBar:
         if noOfDoneTasks < 0:
             raise ValueError(f"invalid no of done tasks {noOfDoneTasks}")
         self.pb.update(noOfDoneTasks)
+
+    def refresh(self):
+        alog.debug("refreshing the progress bar")
+        self.pb.refresh()
+
+## TODO implmenta the total attribute and  total with support for __add__

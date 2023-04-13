@@ -1,13 +1,12 @@
 from datetime import timedelta
 from queue import Queue
 
-from tqdm import tqdm
-
 from enums import Symbol
 from enums.Order import LONG
 from enums.indicators import RSI, MACD
 from trader.Position import Position
 from utils.cache import Cache
+from utils.progress_bar import ProgressBar, BLUE
 
 buys = Queue()  # FIXME add a number
 sells = Queue()
@@ -15,7 +14,7 @@ sells = Queue()
 # tqdm_list = [1]
 signals_q = Queue()  # TODO put a limit
 
-pb = tqdm([], colour='red')
+pb = ProgressBar(color=BLUE)
 
 indicators = {
     MACD: 1,  # priority stuffs
