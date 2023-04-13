@@ -1,8 +1,8 @@
 from typing import Final
 
-from conf import alog
 from conf.kafka import TOPIC_SIGNALS
 from lib.kafka import Kafka, ConsumerProperties, LATEST
+from trader import alog
 from trader.consume_signals import consume_signal
 from trader.publish_orders import handle_delayed_orders
 

@@ -2,11 +2,11 @@ import time
 
 from icecream import ic
 
-from conf import alog
 from conf.kafka import TOPIC_SIGNALS
 from enums.Order import *
 from enums.indicators import Message_Signal, MACD
 from lib.kafka import Kafka, KafkaMessage
+from strategy import alog
 from strategy.macd import Macd_Strategy
 from utils import Pandas, Futures
 

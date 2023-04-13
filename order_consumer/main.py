@@ -1,6 +1,6 @@
-from conf import alog
 from conf.kafka import TOPIC_ORDERS
 from lib.kafka import Kafka, ConsumerProperties, LATEST
+from order_consumer import alog
 from order_consumer.config_kafka import CG_ID, POLLING_TIMEOUT
 from order_consumer.order_computing import order_computing, consume_raw_order
 

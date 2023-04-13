@@ -32,4 +32,4 @@ class DataClassJson:
     def json(self) -> str:
         self_dict = dataclasses.asdict(self)
         json_str = json.dumps(self_dict)
-        return jsonify(self)
+        return json_str

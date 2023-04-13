@@ -3,10 +3,10 @@ from typing import Union, Optional
 
 from icecream import ic
 
-from conf import alog
 from enums import Symbol
 from enums.Order import Order, OPEN, CLOSE
 from enums.position import SHORT, LONG
+from trader import alog
 from utils import Futures
 from utils.Pandas import pluck_row
 from utils.thread import keepAlive

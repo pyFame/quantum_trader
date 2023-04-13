@@ -1,1 +1,3 @@
-from conf import log
+import logging
+
+alog = logging.getLogger("order_consumer")

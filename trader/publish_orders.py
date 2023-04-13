@@ -3,11 +3,11 @@ from datetime import timedelta
 
 from dask import compute
 
-from conf import alog
 from conf.kafka import TOPIC_ORDERS
 from enums import Symbol
 from enums.Order import Order
 from lib.kafka import Kafka, KafkaMessage
+from trader import alog
 from trader.globals import delayed_orders, pb
 from utils import Time
 from utils.thread import keepAlive

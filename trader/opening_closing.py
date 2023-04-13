@@ -1,10 +1,9 @@
 from queue import Queue
 
-from conf import alog
+from conf.log import *
+from trader import alog
 from utils import Futures, account
 from utils.thread import keepAlive
-
-from conf.log import *
 
 closes = Queue(100)
 opens = Queue(100)  # Position

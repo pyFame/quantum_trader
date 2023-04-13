@@ -2,7 +2,7 @@ import json
 
 from icecream import ic
 
-from conf import alog
+from order_consumer import alog
 from order_consumer.globals import order_q, pb
 from order_consumer.order import Order
 from utils.thread import keepAlive
