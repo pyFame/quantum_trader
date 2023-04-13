@@ -7,7 +7,7 @@ from conf import log
 
 
 def jsonify(obj: dataclasses.dataclass, unwanted_keys: List[str] = []) -> str:
-    if hasattr(obj, 'json'):
+    if hasattr(obj, 'json') and unwanted_keys is []:
         log.debug(f"implemented json attribute {obj.json}")
         return obj.json
 
@@ -30,4 +30,6 @@ class DataClassJson:
 
     @property
     def json(self) -> str:
+        self_dict = dataclasses.asdict(self)
+        json_str = json.dumps(self_dict)
         return jsonify(self)
