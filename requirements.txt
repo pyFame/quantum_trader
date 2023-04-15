@@ -13,3 +13,4 @@ tqdm~=4.64.1
 websockets~=10.4
 
 sqlalchemy~=1.4.39
+alembic
