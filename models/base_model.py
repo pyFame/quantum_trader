@@ -19,8 +19,8 @@ class CommonModel:
 
     @declared_attr
     def created_at(self):
-        return Column(DateTime(), default=func.now())
+        return Column(DateTime(), default=func.utcnow())
 
     @declared_attr
     def updated_at(self):
-        return Column(DateTime(), default=func.now(), onupdate=func.now())
+        return Column(DateTime(), default=func.utcnow(), onupdate=func.utcnow())
