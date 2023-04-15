@@ -40,6 +40,11 @@ class TestProgresBar:
         assert pb.color == MAGENTA
         assert pb.kwargs is None
 
+    def test_colors(self):
+        color = "#36D7B7"
+        pb = ProgressBar(color=color)
+        pb.color == color
+
     def test_create_custom_instance(self):
         kwargs = {'desc': 'Test Progress Bar', 'total': 10}
         pb = ProgressBar(color=GREEN, kwargs=kwargs)

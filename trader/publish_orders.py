@@ -15,13 +15,24 @@ from utils.thread import keepAlive
 kafka_client = Kafka()
 
 
+def delivery_order(err: str, msg: object) -> None:
+    if err is not None:
+        err_msg = f'Message delivery failed: {err}'
+        alog.error(err_msg)
+    else:
+        alog.debug(msg)
+        alog.info(f'message delivered to {msg.topic()} [{msg.partition()}]')
+
+    pb.update(1)
+
+
 @keepAlive
 def handle_delayed_orders():
     alog.info("starting handle_delayed_orders")
     while True:
         d_order = delayed_orders.get()
         compute(d_order)
-        pb.update()
+        # pb_order.update() #added to callback
         # d_order.compute()
 
 
@@ -37,4 +48,4 @@ def publish_order(symbol: Symbol, o: Order):
     }
     msg = KafkaMessage(TOPIC_ORDERS, key, val)
 
-    kafka_client.publish(msg)  # TODO: add a callback
+    kafka_client.publish(msg, callback=delivery_order)  # TODO: add a callback

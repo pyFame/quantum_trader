@@ -1,7 +1,5 @@
 import time
 
-from icecream import ic
-
 from conf.kafka import TOPIC_SIGNALS
 from enums.Order import *
 from enums.indicators import Message_Signal, MACD
@@ -35,7 +33,7 @@ def main():
 
     df = Futures.history(symbol, interval, "4 hour ago", "1 min ago")
 
-    ic(df.tail(1))
+    alog.debug(df.tail(1))
 
     macd_1 = Macd_Strategy(df, 12, 26, 9)
 
@@ -56,6 +54,7 @@ def main():
         df_low = df['low'].iloc[-1]
 
         signal = None
+        signal = BUY  # FIXME debug
 
         if macd_1.buy_signal():
             signal = BUY
@@ -70,7 +69,7 @@ def main():
             signal_msg = Message_Signal(indicator, signal, low=df_low, high=df_high)  # filters=[{"SMA", 200}])
 
             msg = KafkaMessage(TOPIC_SIGNALS, key, signal_msg.json)
-            ic(msg)
+            alog.debug(msg)
 
             kafka_client.publish(msg, callback=delivery_signal)  # TODO add a callback
 

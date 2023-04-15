@@ -44,5 +44,5 @@ def closing():
             else:
                 log.exception('@close')
         else:
-            ic('Sell Successfull')
+            ic('Sell Successfully')
             pos.disable_open = True
