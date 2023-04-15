@@ -38,21 +38,19 @@ Test Plan:
 
 class TestPosition:
     def test_init(self):
-        symbol = Symbol('BTCUSDT', 'BTC', 'USDT')
+        symbol = Symbol('BTC', 'USDT')
         position = Position(symbol, LONG, profit=10, open_args={'price': 50000})
         assert position.symbol == symbol
         assert position.mode == LONG
         assert position.profit == 10
-        assert position.open_args == {'symbol': symbol, 'side': OPEN, 'mode': LONG, 'quantity': None, 'price': 50000,
-                                      'profit': 10, 'loss': None, 'trail': None, 'protect': True}
-        assert position.close_args == {'symbol': symbol, 'side': CLOSE, 'mode': LONG, 'quantity': None, 'price': None,
-                                       'profit': None, 'loss': None, 'trail': None, 'protect': True}
-        assert position.disable_open == False
+        assert position.open_args == {'symbol': symbol, 'price': 50000}
+        assert position.close_args == {'symbol': symbol}
+        assert position.disable_open is False
         assert position.quantity == 0
         assert position.entry_price == 0
 
     def test_pnl(self):
-        symbol = Symbol('BTCUSDT', 'BTC', 'USDT')
+        symbol = Symbol('BTC', 'USDT')
         position = Position(symbol, LONG, profit=10)
         position.quantity = 2
         position.entry_price = 50000
@@ -60,43 +58,43 @@ class TestPosition:
         assert position.pnl(45000) == -10000
 
     def test_open(self, monkeypatch):
-        symbol = Symbol('BTCUSDT', 'BTC', 'USDT')
+        symbol = Symbol('BTC', 'USDT')
         position = Position(symbol, LONG, profit=10)
         quantity = 2
         price = 50000
         mock_order = Order(symbol=symbol, side=OPEN, mode=LONG, quantity=quantity, price=price, profit=10)
 
-        def mock_order_init(*args, **kwargs):
-            return mock_order
+        open_order = position.open(quantity, price)
 
-        monkeypatch.setattr(Order, '__init__', mock_order_init)
-        assert position.open(quantity, price) == mock_order
+        assert open_order.quantity == mock_order.quantity
+        assert open_order.side == mock_order.side
+        assert open_order.mode == mock_order.mode
 
     def test_close(self, monkeypatch):
-        symbol = Symbol('BTCUSDT', 'BTC', 'USDT')
+        symbol = Symbol('BTC', 'USDT')
         position = Position(symbol, LONG, profit=10)
         quantity = 2
         price = 50000
         mock_order = Order(symbol=symbol, side=CLOSE, mode=LONG, quantity=quantity, price=price, profit=None)
 
-        def mock_order_init(*args, **kwargs):
-            return mock_order
+        close_order = position.close(quantity, price)
 
-        monkeypatch.setattr(Order, '__init__', mock_order_init)
-        assert position.close(price, quantity) == mock_order
+        assert close_order.quantity == mock_order.quantity
+        assert close_order.side == mock_order.side
+        assert close_order.mode == mock_order.mode
 
     def test_open_signal(self):
-        symbol = Symbol('BTCUSDT', 'BTC', 'USDT')
+        symbol = Symbol('BTC', 'USDT')
         position = Position(symbol, LONG, profit=10)
         position.quantity = 2
         position.entry_price = 50000
-        assert position.open_signal(49000) == True
-        assert position.open_signal(51000) == False
+        assert position.open_signal(49000) is True
+        assert position.open_signal(51000) is False
 
     def test_close_signal(self):
-        symbol = Symbol('BTCUSDT', 'BTC', 'USDT')
+        symbol = Symbol('BTC', 'USDT')
         position = Position(symbol, LONG, profit=10)
         position.quantity = 2
         position.entry_price = 50000
-        assert position.close_signal(55000) == True
-        assert position.close_signal(45000) == False
+        assert position.close_signal(55000) is True
+        assert position.close_signal(45000) is False

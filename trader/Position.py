@@ -45,7 +45,7 @@ class Position:
             net = -1 * net
         return net
 
-    def open(self, quantity: float, price=None) -> Order:
+    def open(self, quantity: float, price: float = None) -> Order:
         if self.disable_open:
             ic(f"{self.symbol} {self.mode} disabled")
             return
@@ -65,7 +65,7 @@ class Position:
 
         return o
 
-    def close(self, price: float = None, quantity: float = None, **args) -> Order:
+    def close(self, quantity: float = None, price: float = None, **args) -> Order:
         d = self.close_args
         d.update(args)
 

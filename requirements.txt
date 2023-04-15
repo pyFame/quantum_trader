@@ -14,3 +14,4 @@ websockets~=10.4
 
 sqlalchemy~=1.4.39
 alembic
+
