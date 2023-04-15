@@ -1,5 +1,7 @@
 from dataclasses import dataclass, field
+from typing import Union
 
+import numpy as np
 import pandas as pd
 import talib
 
@@ -45,7 +47,7 @@ class RSI_Strategy(Strategy):
 
         buy_signal = cur_rsi <= under and signal != 0
         if buy_signal:
-            ic("OverSold")
+            alog.debug("OverSold")
 
         return buy_signal
 
@@ -57,6 +59,6 @@ class RSI_Strategy(Strategy):
         sell_signal = cur_rsi >= over and signal != 1
 
         if sell_signal:
-            ic("OverBought")
+            alog.debug("OverBought")
 
         return sell_signal

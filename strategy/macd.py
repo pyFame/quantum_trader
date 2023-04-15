@@ -4,9 +4,9 @@ from typing import Union
 import numpy as np
 import pandas as pd
 import talib
-from icecream import ic
 
 from strategy.Strategy import Strategy
+from . import alog
 
 
 @dataclass
@@ -54,18 +54,18 @@ class Macd_Strategy(Strategy):
         buy_signal = m > s  # not sure there is more to it and m > 0
 
         if buy_signal and signal != 0:
-            ic("Buy signal")
+            alog.debug("Buy signal")
 
             closes = self.closes.values
 
             # Add a trend filter (200-day SMA)
             sma_200 = talib.SMA(closes, timeperiod=200)
             if closes[-1] > sma_200[-1]:
-                ic("Trend is up")
+                alog.debug("Trend is up")
                 # Add a momentum filter (RSI)
                 rsi = talib.RSI(closes, timeperiod=14)
                 if rsi[-1] > 50:
-                    ic("Momentum is strong")
+                    alog.debug("Momentum is strong")
                     return True
 
         return False
@@ -78,19 +78,19 @@ class Macd_Strategy(Strategy):
 
         # Check if MACD is below zero
         if sell_signal and signal != 1:
-            ic("Sell signal")
+            alog.debug("Sell signal")
 
             closes = self.closes.values  # np.array
 
             # Add a trend filter (200-day SMA)
             sma_200 = talib.SMA(closes, timeperiod=200)
             if closes[-1] < sma_200[-1]:
-                ic("Trend is down")
+                alog.debug("Trend is down")
 
                 # Add a momentum filter (RSI)
                 rsi = talib.RSI(closes, timeperiod=14)
                 if rsi[-1] < 50:
-                    ic("Momentum is weak")
+                    alog.debug("Momentum is weak")
                     return True
 
         return False
