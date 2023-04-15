@@ -72,7 +72,7 @@ def main():
             msg = KafkaMessage(TOPIC_SIGNALS, key, signal_msg.json)
             ic(msg)
 
-            kafka_client.publish(msg)  # TODO add a callback
+            kafka_client.publish(msg, callback=delivery_signal)  # TODO add a callback
 
         time.sleep(TIMEOUT)
 
