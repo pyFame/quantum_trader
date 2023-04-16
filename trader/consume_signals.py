@@ -66,4 +66,4 @@ def consume_signal(key: str, val: str):
         d_o = publish_order(symbol, o)
         delayed_orders.put(d_o)
 
-        pb.add(1)
+    pb.add(len(orders))
