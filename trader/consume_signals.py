@@ -49,7 +49,7 @@ def consume_signal(key: str, val: str):
             o = long.close(price=high_price)
             orders.append(o)
 
-        if short.close_signal(high_price):
+        if short.open_signal(high_price):
             o = short.close(price=high_price)
             orders.append(o)
 

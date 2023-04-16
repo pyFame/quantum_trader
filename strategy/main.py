@@ -54,7 +54,7 @@ def main():
         df_low = df['low'].iloc[-1]
 
         signal = None
-        signal = BUY  # FIXME debug
+        # signal = BUY  # FIXME debug
 
         if macd_1.buy_signal():
             signal = BUY
@@ -71,7 +71,7 @@ def main():
             msg = KafkaMessage(TOPIC_SIGNALS, key, signal_msg.json)
             alog.debug(msg)
 
-            kafka_client.publish(msg, callback=delivery_signal)  # TODO add a callback
+            kafka_client.publish(msg, callback=delivery_signal)
 
         time.sleep(TIMEOUT)
 
