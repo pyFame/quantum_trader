@@ -5,10 +5,10 @@ from icecream import ic
 from order_consumer import alog
 from order_consumer.globals import order_q, pb
 from order_consumer.order import Order
-from utils.thread import keepAlive
+from utils.thread import keepAliveD
 
 
-@keepAlive
+@keepAliveD(daemon=True)
 def order_computing():
     while True:
         o = order_q.get()

@@ -6,7 +6,7 @@ from trader.main import main as main_trader
 from utils.thread import keepAlive
 
 
-@keepAlive(daemon=False)
+@keepAlive
 def start_strategy():
     # asyncio.gather(main_start_strategy())
     asyncio.run(main_start_strategy())
@@ -18,7 +18,7 @@ def start_order_consumer():
 
 
 # @undead
-@keepAlive(daemon=False)
+@keepAlive
 def start_trader():
     main_trader()
 
