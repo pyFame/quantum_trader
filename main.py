@@ -25,7 +25,7 @@ def main():
         start_strategy(),
         start_order_consumer(),
         start_trader(),
-    ], scheduler="processes")  # make root logger safe
+    ], scheduler="threads")  # make root logger safe
 
 
 if __name__ == "__main__":
