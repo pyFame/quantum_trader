@@ -21,8 +21,10 @@ def consume_signal(key: str, val: str):
         long = Position(symbol, LONG)
         short = Position(symbol, SHORT)
         positions = [long, short]
-
-    long, short = positions
+    else:
+        long, short = positions
+        long.refresh()  # FIXME - these are all blocking calls async ...
+        short.refresh()
 
     signal_message = Message_Signal.Loads(val)
     low_price = signal_message.low

@@ -122,7 +122,6 @@ class Position:
     def precision(self):
         return Futures.precision(self.symbol, cache=True)
 
-    # @keepAlive #FIXME - blocking call
     def refresh(self):
         data = Futures.current_positions(self.symbol, self.mode)
         self.quantity, self.entry_price = pluck_row(data, 'positionAmt', 'entryPrice')
