@@ -2,6 +2,7 @@ import datetime as dt
 from datetime import timedelta
 
 from dask import compute
+from icecream import ic
 
 from conf.kafka import TOPIC_ORDERS
 from enums import Symbol
@@ -20,9 +21,10 @@ def delivery_order(err: str, msg: object) -> None:
         err_msg = f'Message delivery failed: {err}'
         alog.error(err_msg)
     else:
-        alog.debug(msg)
+        ic(msg)
         alog.info(f'message delivered to {msg.topic()} [{msg.partition()}]')
 
+    # pb_kafka.update(1)
     pb.update(1)
 
 
@@ -47,5 +49,7 @@ def publish_order(symbol: Symbol, o: Order):
         "order": o.binance_order,
     }
     msg = KafkaMessage(TOPIC_ORDERS, key, val)
+    # pb.update(1)
 
     kafka_client.publish(msg, callback=delivery_order)  # TODO: add a callback
+    # pb_kafka.add(1)

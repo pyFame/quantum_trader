@@ -7,20 +7,18 @@ from trader.Position import Position
 from utils.cache import Cache
 from utils.progress_bar import ProgressBar
 
-buys = Queue()  # FIXME add a number
-sells = Queue()
-
 # tqdm_list = [1]
 signals_q = Queue()  # TODO put a limit
 
 pb = ProgressBar(color="#36D7B7")
+# pb_kafka = ProgressBar(color="#F7B801")
 
 indicators = {
     MACD: 1,  # priority stuffs
     RSI: .1
 }
 
-delayed_orders = Queue(10)
+delayed_orders = Queue()
 
 positions = [
     Position(Symbol("BTC"), LONG)

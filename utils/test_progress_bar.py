@@ -45,6 +45,12 @@ class TestProgresBar:
         pb = ProgressBar(color=color)
         pb.color == color
 
+        for i in range(10):
+            pb.add()
+
+        for i in range(10):
+            pb.update()
+
     def test_create_custom_instance(self):
         kwargs = {'desc': 'Test Progress Bar', 'total': 10}
         pb = ProgressBar(color=GREEN, kwargs=kwargs)

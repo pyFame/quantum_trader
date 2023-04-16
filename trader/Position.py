@@ -9,7 +9,6 @@ from enums.position import SHORT, LONG
 from trader import alog
 from utils import Futures
 from utils.Pandas import pluck_row
-from utils.thread import keepAlive
 
 
 @dataclass
@@ -123,7 +122,7 @@ class Position:
     def precision(self):
         return Futures.precision(self.symbol, cache=True)
 
-    @keepAlive
+    # @keepAlive #FIXME - blocking call
     def refresh(self):
         data = Futures.current_positions(self.symbol, self.mode)
         self.quantity, self.entry_price = pluck_row(data, 'positionAmt', 'entryPrice')

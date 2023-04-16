@@ -50,7 +50,7 @@ def consume_signal(key: str, val: str):
             orders.append(o)
 
         if short.close_signal(high_price):
-            o = short.close(price=high_price)  # TOOO
+            o = short.close(price=high_price)
             orders.append(o)
 
         # o = Order(symbol, OPEN, SHORT, quantity)  # , profit=df_high)

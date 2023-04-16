@@ -1,0 +1,47 @@
+{
+  "fields": [
+    {
+      "name": "indicator",
+      "type": "string"
+    },
+    {
+      "name": "signal",
+      "type": "string"
+    },
+    {
+      "name": "low",
+      "type": "float"
+    },
+    {
+      "name": "high",
+      "type": "float"
+    },
+    {
+      "default": null,
+      "name": "indicator_value",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "default": null,
+      "name": "filters",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "created_at",
+      "type": "double"
+    },
+    {
+      "name": "created",
+      "type": "string"
+    }
+  ],
+  "name": "KafkaValue",
+  "namespace": "com.binance",
+  "type": "record"
+}
