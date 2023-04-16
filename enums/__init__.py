@@ -1,1 +1,1 @@
-from .Symbol import Symbol
+from .symbol import Symbol

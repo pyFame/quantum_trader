@@ -43,5 +43,3 @@ class ProgressBar:
     def refresh(self):
         alog.debug("refreshing the progress bar")
         self.pb.refresh()
-
-## TODO implmenta the total attribute and  total with support for __add__
