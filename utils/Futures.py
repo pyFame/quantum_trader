@@ -3,7 +3,6 @@ from typing import Tuple, Union
 
 import pandas as pd
 
-from conf import async_client
 from conf import client
 from enums.position import SHORT, LONG
 from enums.symbol import Symbol
@@ -18,8 +17,8 @@ min_q = lambda symbol: precision(symbol)[-1]
 min_notional_q = lambda symbol, notional, qP: round(notional / get_price(symbol), qP) or pow(10, -qP)
 
 
-async def history(symbol: Symbol, interval='1m', start_str='1 day ago', end_str=None) -> pd.DataFrame:
-    data = await async_client.futures_historical_klines(
+def history(symbol: Symbol, interval='1m', start_str='1 day ago', end_str=None) -> pd.DataFrame:
+    data = client.futures_historical_klines(
         symbol=symbol,
         interval=interval,  # can play with this e.g. '1h', '4h', '1w', etc.
         start_str=start_str,

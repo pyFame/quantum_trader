@@ -1,4 +1,4 @@
-import asyncio
+import time
 
 from conf.kafka import TOPIC_SIGNALS
 from enums.Order import *
@@ -21,7 +21,7 @@ def delivery_signal(err: str, msg: object) -> None:
     pb.update()
 
 
-async def main():
+def main():
     alog.info("starting microservice-strategy")
 
     indicator = MACD
@@ -30,7 +30,7 @@ async def main():
     interval: str = '1m'
     TIMEOUT: float = 1
 
-    df = await Futures.history(symbol, interval, "4 hour ago", "1 min ago")
+    df = Futures.history(symbol, interval, "4 hour ago", "1 min ago")
 
     alog.debug(df.tail(1))
 
@@ -41,7 +41,7 @@ async def main():
     while True:
         last_updated = Pandas.latest_time(df)
 
-        df_1 = await Futures.history(symbol, interval, last_updated)
+        df_1 = Futures.history(symbol, interval, last_updated)
 
         df.drop(last_updated, inplace=True)
 
@@ -72,8 +72,8 @@ async def main():
 
             kafka_client.publish(msg, callback=delivery_signal)
 
-        await asyncio.sleep(TIMEOUT)
+        time.sleep(TIMEOUT)
 
 
 if __name__ == "__main__":
-    asyncio.run(main(), debug=True)
+    main()

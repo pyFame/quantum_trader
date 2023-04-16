@@ -1,3 +1,3 @@
-from utils.progress_bar import ProgressBar, WHITE
+from utils.progress_bar import ProgressBar
 
-pb = ProgressBar(color=WHITE)
+pb = ProgressBar(color="#D8BFD8")
