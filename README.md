@@ -1,8 +1,16 @@
 # Monorepo for my binance futures bot trading
 
+<div>
+<span>
 [![Github](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml/badge.svg?branch=main)](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml)
-
 [![Github](https://github.com/pythoneerHiro/binance/actions/workflows/conda.yml/badge.svg?branch=main)](https://github.com/pythoneerHiro/binance/actions/workflows/conda.yml)
+</span>
+
+<span> <img src="static/logo.png" width="200" height="200" /> </span>
+</div>
+
+
+[//]: # ([![Logo]&#40;static/logo.png&#41;]&#40;static/closeup.png&#41;)
 
 ## Idea and Inspiration
 
@@ -10,14 +18,16 @@ I wanted to simplify and abstract binance client implementations in my projects
 
 ## Support
 
-You can file an [Issue](https://github.com/pythoneerHiro/binance/issues/new).
+You can file an [Issue](https://github.com/pythoneerHiro/quantum_trader/issues/new).
 
 ## Getting Started
 
 ```shell
-git clone https://github.com/pythoneerHiro/binance
-pip install binance/requirements.txt
-conda env create --name hiro -f $envfile --prefix conda/env
+git clone https://github.com/pythoneerHiro/quantum_trader
+cd quantum_trader
+pip install requirements.txt
+pip install requirements-test.txt
+conda env create --name hiro -f environment.yml --prefix conda/env
 ```
 
 ## Important Notes/Caveats/Pitfalls
@@ -30,7 +40,7 @@ conda env create --name hiro -f $envfile --prefix conda/env
 
 - You can submit an issue or create a Pull Request (PR)
 
-## Logging Colors
+## Progress Bar Colors
 
 ```bytes
 008000 (dark green)
