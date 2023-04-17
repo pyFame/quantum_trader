@@ -1,186 +1,103 @@
 <?xml version="1.0" encoding="us-ascii" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
-     height="391px" preserveAspectRatio="none" style="width:447px;height:391px;background:#FFFFFF;" version="1.1"
-     viewBox="0 0 447 391" width="447px" zoomAndPan="magnify">
+     height="511px" preserveAspectRatio="none" style="width:551px;height:511px;background:#000000;" version="1.1"
+     viewBox="0 0 551 511" width="551px" zoomAndPan="magnify">
     <defs/>
-    <g><!--class symbol-->
-        <g id="elem_symbol">
-            <rect codeLine="19" fill="#F2F2F2" height="113.1875" id="symbol" rx="5" ry="5"
-                  style="stroke:#2688D4;stroke-width:0.5;" width="195.3333" x="245" y="271"/>
-            <ellipse cx="312.4167" cy="287" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
-            <path d="M312.8542,284.5313 L314.6979,284.5313 L314.6979,286.125 C314.6979,286.5156 314.7292,286.6875 314.8229,286.8281 C314.9792,287.0781 315.2604,287.2344 315.5573,287.2344 C315.8229,287.2344 316.0729,287.1094 316.2448,286.8906 C316.3854,286.7188 316.401,286.5938 316.401,286.125 L316.401,282.8438 L307.6354,282.8438 L307.6354,286.125 C307.6354,286.5156 307.6667,286.6875 307.7448,286.8281 C307.901,287.0938 308.1979,287.2344 308.4792,287.2344 C308.7604,287.2344 309.0104,287.1094 309.1823,286.8906 C309.2917,286.7188 309.3229,286.5781 309.3229,286.125 L309.3229,284.5313 L311.151,284.5313 L311.151,291.0469 L310.0417,291.0469 C309.6042,291.0469 309.4792,291.0625 309.3229,291.1719 C309.0729,291.3281 308.9167,291.6094 308.9167,291.9063 C308.9167,292.1563 309.0573,292.4219 309.276,292.5781 C309.4323,292.7031 309.651,292.75 310.0417,292.75 L313.9792,292.75 C314.3073,292.75 314.5729,292.7031 314.6823,292.625 C314.9479,292.4844 315.0885,292.1875 315.0885,291.9063 C315.0885,291.625 314.9635,291.375 314.7292,291.2031 C314.5729,291.0781 314.4323,291.0469 313.9792,291.0469 L312.8542,291.0469 L312.8542,284.5313 Z "
-                  fill="#000000"/>
-            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52"
-                  x="332.9167" y="291.8467">symbol
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="246" x2="439.3333" y1="303" y2="303"/>
-            <path d="M258.4167,310.4635 C256.8067,310.4635 255.5,311.7702 255.5,313.3802 C255.5,313.5669 255.5,313.7535 255.535,313.9285 L252,317.4635 L252,319.7969 L255.5,319.7969 L255.5,317.4635 L257.8333,317.4635 L257.8333,316.2969 L257.8683,316.2619 C258.0433,316.2969 258.23,316.2969 258.4167,316.2969 C260.0267,316.2969 261.3333,314.9902 261.3333,313.3802 C261.3333,311.7702 260.0267,310.4635 258.4167,310.4635 M259,311.6302 C259.6417,311.6302 260.1667,312.1552 260.1667,312.7969 C260.1667,313.4385 259.6417,313.9635 259,313.9635 C258.3583,313.9635 257.8333,313.4385 257.8333,312.7969 C257.8333,312.1552 258.3583,311.6302 259,311.6302 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="15" x="267.3333" y="319.9951">id
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29"
-                  x="282.3333" y="319.9951">: int
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="246" x2="439.3333" y1="327.2969" y2="327.2969"/>
-            <path d="M258.4167,334.7604 C256.8067,334.7604 255.5,336.0671 255.5,337.6771 C255.5,337.8638 255.5,338.0504 255.535,338.2254 L252,341.7604 L252,344.0938 L255.5,344.0938 L255.5,341.7604 L257.8333,341.7604 L257.8333,340.5938 L257.8683,340.5588 C258.0433,340.5938 258.23,340.5938 258.4167,340.5938 C260.0267,340.5938 261.3333,339.2871 261.3333,337.6771 C261.3333,336.0671 260.0267,334.7604 258.4167,334.7604 M259,335.9271 C259.6417,335.9271 260.1667,336.4521 260.1667,337.0938 C260.1667,337.7354 259.6417,338.2604 259,338.2604 C258.3583,338.2604 257.8333,337.7354 257.8333,337.0938 C257.8333,336.4521 258.3583,335.9271 259,335.9271 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="44" x="267.3333" y="344.292">name
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81"
-                  x="311.3333" y="344.292">: varchar(9)
-            </text>
-            <path d="M255.5,351.0573 C253.5633,351.0573 252,352.6206 252,354.5573 C252,356.494 253.5633,358.0573 255.5,358.0573 C257.4367,358.0573 259,356.494 259,354.5573 C259,352.6206 257.4367,351.0573 255.5,351.0573 "
-                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160"
-                  x="266.3333" y="360.5889">base_asset: varchar(5)
-            </text>
-            <path d="M255.5,367.3542 C253.5633,367.3542 252,368.9175 252,370.8542 C252,372.7908 253.5633,374.3542 255.5,374.3542 C257.4367,374.3542 259,372.7908 259,370.8542 C259,368.9175 257.4367,367.3542 255.5,367.3542 "
-                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168"
-                  x="266.3333" y="376.8857">quote_asset: varchar(5)
-            </text>
-        </g><!--class futures_symbols-->
-        <g id="elem_futures_symbols">
-            <rect codeLine="26" fill="#F2F2F2" height="113.1875" id="futures_symbols" rx="5" ry="5"
-                  style="stroke:#2688D4;stroke-width:0.5;" width="166.3333" x="13" y="271"/>
-            <ellipse cx="35.8" cy="287" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
-            <path d="M36.2375,284.5313 L38.0813,284.5313 L38.0813,286.125 C38.0813,286.5156 38.1125,286.6875 38.2063,286.8281 C38.3625,287.0781 38.6438,287.2344 38.9406,287.2344 C39.2063,287.2344 39.4563,287.1094 39.6281,286.8906 C39.7688,286.7188 39.7844,286.5938 39.7844,286.125 L39.7844,282.8438 L31.0188,282.8438 L31.0188,286.125 C31.0188,286.5156 31.05,286.6875 31.1281,286.8281 C31.2844,287.0938 31.5813,287.2344 31.8625,287.2344 C32.1438,287.2344 32.3938,287.1094 32.5656,286.8906 C32.675,286.7188 32.7063,286.5781 32.7063,286.125 L32.7063,284.5313 L34.5344,284.5313 L34.5344,291.0469 L33.425,291.0469 C32.9875,291.0469 32.8625,291.0625 32.7063,291.1719 C32.4563,291.3281 32.3,291.6094 32.3,291.9063 C32.3,292.1563 32.4406,292.4219 32.6594,292.5781 C32.8156,292.7031 33.0344,292.75 33.425,292.75 L37.3625,292.75 C37.6906,292.75 37.9563,292.7031 38.0656,292.625 C38.3313,292.4844 38.4719,292.1875 38.4719,291.9063 C38.4719,291.625 38.3469,291.375 38.1125,291.2031 C37.9563,291.0781 37.8156,291.0469 37.3625,291.0469 L36.2375,291.0469 L36.2375,284.5313 Z "
-                  fill="#000000"/>
-            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117"
-                  x="51.5333" y="291.8467">futures_symbols
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="14" x2="178.3333" y1="303" y2="303"/>
-            <path d="M26.4167,310.4635 C24.8067,310.4635 23.5,311.7702 23.5,313.3802 C23.5,313.5669 23.5,313.7535 23.535,313.9285 L20,317.4635 L20,319.7969 L23.5,319.7969 L23.5,317.4635 L25.8333,317.4635 L25.8333,316.2969 L25.8683,316.2619 C26.0433,316.2969 26.23,316.2969 26.4167,316.2969 C28.0267,316.2969 29.3333,314.9902 29.3333,313.3802 C29.3333,311.7702 28.0267,310.4635 26.4167,310.4635 M27,311.6302 C27.6417,311.6302 28.1667,312.1552 28.1667,312.7969 C28.1667,313.4385 27.6417,313.9635 27,313.9635 C26.3583,313.9635 25.8333,313.4385 25.8333,312.7969 C25.8333,312.1552 26.3583,311.6302 27,311.6302 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="15" x="35.3333" y="319.9951">id
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38"
-                  x="50.3333" y="319.9951">: uuid
-            </text>
-            <path d="M23.5,326.7604 C21.5633,326.7604 20,328.3238 20,330.2604 C20,332.1971 21.5633,333.7604 23.5,333.7604 C25.4367,333.7604 27,332.1971 27,330.2604 C27,328.3238 25.4367,326.7604 23.5,326.7604 "
-                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102"
-                  x="34.3333" y="336.292">name: varchar
-            </text>
-            <path d="M23.5,343.0573 C21.5633,343.0573 20,344.6206 20,346.5573 C20,348.494 21.5633,350.0573 23.5,350.0573 C25.4367,350.0573 27,348.494 27,346.5573 C27,344.6206 25.4367,343.0573 23.5,343.0573 "
-                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98"
-                  x="34.3333" y="352.5889">isActive: bool
-            </text>
-            <path d="M26.4167,359.3542 C24.8067,359.3542 23.5,360.6608 23.5,362.2708 C23.5,362.4575 23.5,362.6442 23.535,362.8192 L20,366.3542 L20,368.6875 L23.5,368.6875 L23.5,366.3542 L25.8333,366.3542 L25.8333,365.1875 L25.8683,365.1525 C26.0433,365.1875 26.23,365.1875 26.4167,365.1875 C28.0267,365.1875 29.3333,363.8808 29.3333,362.2708 C29.3333,360.6608 28.0267,359.3542 26.4167,359.3542 M27,360.5208 C27.6417,360.5208 28.1667,361.0458 28.1667,361.6875 C28.1667,362.3292 27.6417,362.8542 27,362.8542 C26.3583,362.8542 25.8333,362.3292 25.8333,361.6875 C25.8333,361.0458 26.3583,360.5208 27,360.5208 "
-                  fill="#AAAAAA" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139"
-                  x="34.3333" y="368.8857">symbol_id: int &#171;FK&#187;
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="14" x2="178.3333" y1="376.1875" y2="376.1875"/>
-        </g><!--class futures_assets-->
-        <g id="elem_futures_assets">
-            <rect codeLine="33" fill="#F2F2F2" height="96.8906" id="futures_assets" rx="5" ry="5"
-                  style="stroke:#2688D4;stroke-width:0.5;" width="135" x="28.5" y="139"/>
-            <ellipse cx="43.5" cy="155" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
-            <path d="M43.9375,152.5313 L45.7813,152.5313 L45.7813,154.125 C45.7813,154.5156 45.8125,154.6875 45.9063,154.8281 C46.0625,155.0781 46.3438,155.2344 46.6406,155.2344 C46.9063,155.2344 47.1563,155.1094 47.3281,154.8906 C47.4688,154.7188 47.4844,154.5938 47.4844,154.125 L47.4844,150.8438 L38.7188,150.8438 L38.7188,154.125 C38.7188,154.5156 38.75,154.6875 38.8281,154.8281 C38.9844,155.0938 39.2813,155.2344 39.5625,155.2344 C39.8438,155.2344 40.0938,155.1094 40.2656,154.8906 C40.375,154.7188 40.4063,154.5781 40.4063,154.125 L40.4063,152.5313 L42.2344,152.5313 L42.2344,159.0469 L41.125,159.0469 C40.6875,159.0469 40.5625,159.0625 40.4063,159.1719 C40.1563,159.3281 40,159.6094 40,159.9063 C40,160.1563 40.1406,160.4219 40.3594,160.5781 C40.5156,160.7031 40.7344,160.75 41.125,160.75 L45.0625,160.75 C45.3906,160.75 45.6563,160.7031 45.7656,160.625 C46.0313,160.4844 46.1719,160.1875 46.1719,159.9063 C46.1719,159.625 46.0469,159.375 45.8125,159.2031 C45.6563,159.0781 45.5156,159.0469 45.0625,159.0469 L43.9375,159.0469 L43.9375,152.5313 Z "
-                  fill="#000000"/>
-            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103"
-                  x="57.5" y="159.8467">futures_assets
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="29.5" x2="162.5" y1="171" y2="171"/>
-            <path d="M41.9167,178.4635 C40.3067,178.4635 39,179.7702 39,181.3802 C39,181.5669 39,181.7535 39.035,181.9285 L35.5,185.4635 L35.5,187.7969 L39,187.7969 L39,185.4635 L41.3333,185.4635 L41.3333,184.2969 L41.3683,184.2619 C41.5433,184.2969 41.73,184.2969 41.9167,184.2969 C43.5267,184.2969 44.8333,182.9902 44.8333,181.3802 C44.8333,179.7702 43.5267,178.4635 41.9167,178.4635 M42.5,179.6302 C43.1417,179.6302 43.6667,180.1552 43.6667,180.7969 C43.6667,181.4385 43.1417,181.9635 42.5,181.9635 C41.8583,181.9635 41.3333,181.4385 41.3333,180.7969 C41.3333,180.1552 41.8583,179.6302 42.5,179.6302 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="15" x="50.8333" y="187.9951">id
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38"
-                  x="65.8333" y="187.9951">: uuid
-            </text>
-            <path d="M41.9167,194.7604 C40.3067,194.7604 39,196.0671 39,197.6771 C39,197.8637 39,198.0504 39.035,198.2254 L35.5,201.7604 L35.5,204.0938 L39,204.0938 L39,201.7604 L41.3333,201.7604 L41.3333,200.5938 L41.3683,200.5588 C41.5433,200.5938 41.73,200.5938 41.9167,200.5938 C43.5267,200.5938 44.8333,199.2871 44.8333,197.6771 C44.8333,196.0671 43.5267,194.7604 41.9167,194.7604 M42.5,195.9271 C43.1417,195.9271 43.6667,196.4521 43.6667,197.0938 C43.6667,197.7354 43.1417,198.2604 42.5,198.2604 C41.8583,198.2604 41.3333,197.7354 41.3333,197.0938 C41.3333,196.4521 41.8583,195.9271 42.5,195.9271 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="44" x="50.8333" y="204.292">name
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62"
-                  x="94.8333" y="204.292">: varchar
-            </text>
-            <path d="M39,211.0573 C37.0633,211.0573 35.5,212.6206 35.5,214.5573 C35.5,216.494 37.0633,218.0573 39,218.0573 C40.9367,218.0573 42.5,216.494 42.5,214.5573 C42.5,212.6206 40.9367,211.0573 39,211.0573 "
-                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89"
-                  x="49.8333" y="220.5889">quantity: int
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="29.5" x2="162.5" y1="227.8906" y2="227.8906"/>
-        </g><!--class indicators-->
-        <g id="elem_indicators">
-            <rect codeLine="38" fill="#F2F2F2" height="80.5938" id="indicators" rx="5" ry="5"
-                  style="stroke:#2688D4;stroke-width:0.5;" width="134.3333" x="275.5" y="15"/>
-            <ellipse cx="304.6" cy="31" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
-            <path d="M305.0375,28.5313 L306.8813,28.5313 L306.8813,30.125 C306.8813,30.5156 306.9125,30.6875 307.0063,30.8281 C307.1625,31.0781 307.4438,31.2344 307.7406,31.2344 C308.0063,31.2344 308.2563,31.1094 308.4281,30.8906 C308.5688,30.7188 308.5844,30.5938 308.5844,30.125 L308.5844,26.8438 L299.8188,26.8438 L299.8188,30.125 C299.8188,30.5156 299.85,30.6875 299.9281,30.8281 C300.0844,31.0938 300.3813,31.2344 300.6625,31.2344 C300.9438,31.2344 301.1938,31.1094 301.3656,30.8906 C301.475,30.7188 301.5063,30.5781 301.5063,30.125 L301.5063,28.5313 L303.3344,28.5313 L303.3344,35.0469 L302.225,35.0469 C301.7875,35.0469 301.6625,35.0625 301.5063,35.1719 C301.2563,35.3281 301.1,35.6094 301.1,35.9063 C301.1,36.1563 301.2406,36.4219 301.4594,36.5781 C301.6156,36.7031 301.8344,36.75 302.225,36.75 L306.1625,36.75 C306.4906,36.75 306.7563,36.7031 306.8656,36.625 C307.1313,36.4844 307.2719,36.1875 307.2719,35.9063 C307.2719,35.625 307.1469,35.375 306.9125,35.2031 C306.7563,35.0781 306.6156,35.0469 306.1625,35.0469 L305.0375,35.0469 L305.0375,28.5313 Z "
-                  fill="#000000"/>
-            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71"
-                  x="321.7333" y="35.8467">indicators
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="276.5" x2="408.8333" y1="47" y2="47"/>
-            <path d="M288.9167,54.4635 C287.3067,54.4635 286,55.7702 286,57.3802 C286,57.5669 286,57.7535 286.035,57.9285 L282.5,61.4635 L282.5,63.7969 L286,63.7969 L286,61.4635 L288.3333,61.4635 L288.3333,60.2969 L288.3683,60.2619 C288.5433,60.2969 288.73,60.2969 288.9167,60.2969 C290.5267,60.2969 291.8333,58.9902 291.8333,57.3802 C291.8333,55.7702 290.5267,54.4635 288.9167,54.4635 M289.5,55.6302 C290.1417,55.6302 290.6667,56.1552 290.6667,56.7969 C290.6667,57.4385 290.1417,57.9635 289.5,57.9635 C288.8583,57.9635 288.3333,57.4385 288.3333,56.7969 C288.3333,56.1552 288.8583,55.6302 289.5,55.6302 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="15" x="297.8333" y="63.9951">id
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29"
-                  x="312.8333" y="63.9951">: int
-            </text>
-            <path d="M288.9167,70.7604 C287.3067,70.7604 286,72.0671 286,73.6771 C286,73.8638 286,74.0504 286.035,74.2254 L282.5,77.7604 L282.5,80.0937 L286,80.0937 L286,77.7604 L288.3333,77.7604 L288.3333,76.5937 L288.3683,76.5587 C288.5433,76.5937 288.73,76.5937 288.9167,76.5937 C290.5267,76.5937 291.8333,75.2871 291.8333,73.6771 C291.8333,72.0671 290.5267,70.7604 288.9167,70.7604 M289.5,71.9271 C290.1417,71.9271 290.6667,72.4521 290.6667,73.0937 C290.6667,73.7354 290.1417,74.2604 289.5,74.2604 C288.8583,74.2604 288.3333,73.7354 288.3333,73.0937 C288.3333,72.4521 288.8583,71.9271 289.5,71.9271 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="44" x="297.8333" y="80.292">name
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62"
-                  x="341.8333" y="80.292">: varchar
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="276.5" x2="408.8333" y1="87.5938" y2="87.5938"/>
-        </g><!--class futures_indicators-->
-        <g id="elem_futures_indicators">
-            <rect codeLine="43" fill="#F2F2F2" height="96.8906" id="futures_indicators" rx="5" ry="5"
-                  style="stroke:#2688D4;stroke-width:0.5;" width="178.3333" x="7" y="7"/>
-            <ellipse cx="29.8" cy="23" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
-            <path d="M30.2375,20.5313 L32.0813,20.5313 L32.0813,22.125 C32.0813,22.5156 32.1125,22.6875 32.2063,22.8281 C32.3625,23.0781 32.6438,23.2344 32.9406,23.2344 C33.2063,23.2344 33.4563,23.1094 33.6281,22.8906 C33.7688,22.7188 33.7844,22.5938 33.7844,22.125 L33.7844,18.8438 L25.0188,18.8438 L25.0188,22.125 C25.0188,22.5156 25.05,22.6875 25.1281,22.8281 C25.2844,23.0938 25.5813,23.2344 25.8625,23.2344 C26.1438,23.2344 26.3938,23.1094 26.5656,22.8906 C26.675,22.7188 26.7063,22.5781 26.7063,22.125 L26.7063,20.5313 L28.5344,20.5313 L28.5344,27.0469 L27.425,27.0469 C26.9875,27.0469 26.8625,27.0625 26.7063,27.1719 C26.4563,27.3281 26.3,27.6094 26.3,27.9063 C26.3,28.1563 26.4406,28.4219 26.6594,28.5781 C26.8156,28.7031 27.0344,28.75 27.425,28.75 L31.3625,28.75 C31.6906,28.75 31.9563,28.7031 32.0656,28.625 C32.3313,28.4844 32.4719,28.1875 32.4719,27.9063 C32.4719,27.625 32.3469,27.375 32.1125,27.2031 C31.9563,27.0781 31.8156,27.0469 31.3625,27.0469 L30.2375,27.0469 L30.2375,20.5313 Z "
-                  fill="#000000"/>
-            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129"
-                  x="45.5333" y="27.8467">futures_indicators
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="8" x2="184.3333" y1="39" y2="39"/>
-            <path d="M20.4167,46.4635 C18.8067,46.4635 17.5,47.7702 17.5,49.3802 C17.5,49.5669 17.5,49.7535 17.535,49.9285 L14,53.4635 L14,55.7969 L17.5,55.7969 L17.5,53.4635 L19.8333,53.4635 L19.8333,52.2969 L19.8683,52.2619 C20.0433,52.2969 20.23,52.2969 20.4167,52.2969 C22.0267,52.2969 23.3333,50.9902 23.3333,49.3802 C23.3333,47.7702 22.0267,46.4635 20.4167,46.4635 M21,47.6302 C21.6417,47.6302 22.1667,48.1552 22.1667,48.7969 C22.1667,49.4385 21.6417,49.9635 21,49.9635 C20.3583,49.9635 19.8333,49.4385 19.8333,48.7969 C19.8333,48.1552 20.3583,47.6302 21,47.6302 "
-                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-                  textLength="15" x="29.3333" y="55.9951">id
-            </text>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29"
-                  x="44.3333" y="55.9951">: int
-            </text>
-            <path d="M20.4167,62.7604 C18.8067,62.7604 17.5,64.0671 17.5,65.6771 C17.5,65.8638 17.5,66.0504 17.535,66.2254 L14,69.7604 L14,72.0938 L17.5,72.0938 L17.5,69.7604 L19.8333,69.7604 L19.8333,68.5938 L19.8683,68.5588 C20.0433,68.5938 20.23,68.5938 20.4167,68.5938 C22.0267,68.5938 23.3333,67.2871 23.3333,65.6771 C23.3333,64.0671 22.0267,62.7604 20.4167,62.7604 M21,63.9271 C21.6417,63.9271 22.1667,64.4521 22.1667,65.0938 C22.1667,65.7354 21.6417,66.2604 21,66.2604 C20.3583,66.2604 19.8333,65.7354 19.8333,65.0938 C19.8333,64.4521 20.3583,63.9271 21,63.9271 "
-                  fill="#AAAAAA" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151"
-                  x="28.3333" y="72.292">indicator_id: int &#171;FK&#187;
-            </text>
-            <path d="M17.5,79.0573 C15.5633,79.0573 14,80.6206 14,82.5573 C14,84.494 15.5633,86.0573 17.5,86.0573 C19.4367,86.0573 21,84.494 21,82.5573 C21,80.6206 19.4367,79.0573 17.5,79.0573 "
-                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
-            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98"
-                  x="28.3333" y="88.5889">isActive: bool
-            </text>
-            <line style="stroke:#2688D4;stroke-width:0.5;" x1="8" x2="184.3333" y1="95.8906" y2="95.8906"/>
-        </g><!--reverse link futures_symbols to symbol-->
-        <g id="link_futures_symbols_symbol">
-            <path codeLine="49" d="M187.333,327.5 C206.062,327.5 225.866,327.5 244.812,327.5 " fill="none"
-                  id="futures_symbols-backto-symbol" style="stroke:#2688D4;stroke-width:1.0;"/>
-            <line style="stroke:#2688D4;stroke-width:1.0;" x1="190.095" x2="179.095" y1="327.5" y2="327.5"/>
-            <ellipse cx="190.095" cy="327.5" fill="none" rx="4" ry="4" style="stroke:#2688D4;stroke-width:1.0;"/>
-            <line style="stroke:#2688D4;stroke-width:1.0;" x1="183.095" x2="183.095" y1="331.5" y2="323.5"/>
-        </g><!--reverse link futures_indicators to indicators-->
-        <g id="link_futures_indicators_indicators">
-            <path codeLine="50" d="M193.335,55.5 C220.768,55.5 250.026,55.5 275.234,55.5 " fill="none"
-                  id="futures_indicators-backto-indicators" style="stroke:#2688D4;stroke-width:1.0;"/>
-            <line style="stroke:#2688D4;stroke-width:1.0;" x1="196.27" x2="185.27" y1="55.5" y2="55.5"/>
-            <ellipse cx="196.27" cy="55.5" fill="none" rx="4" ry="4" style="stroke:#2688D4;stroke-width:1.0;"/>
-            <line style="stroke:#2688D4;stroke-width:1.0;" x1="189.27" x2="189.27" y1="59.5" y2="51.5"/>
-        </g><!--SRC=[ZLBBJiCm4BpxAnOXeKQYAcz15KKgI5ouSg-SUDDQJUooTleGzDzn7DEcJGkiJvxnU6SVPm9pgH3c94jEw_4CrxrL176Qn9akD0tFRnuU7yLT4byuAea77arW5G_IX9q5TQu9vKHjrK7AVNIaMva3gbAr5PZNnobA59Bt2JDDufZKyhJ0MedAIhk65SGnzDuluJo_gKy4IS8Ap2rO3IGdKmj2kk-ir8gPcLHpJho4JmOkHaHw-LAdW52kXvzTRgGZECzc4zAL4e7BVNZEmywqGeBhAmzDkH9BajQYWfmN1ZsQ5ToOaF_ufxwE7N_2p2_-wtZLoWRcreTdDcp3cWwQTPdg8Wf6sbiWHJG4gMo7KBn4HoquPLDElQUegQUPPSeDZbrbQ5jFxlUUV5JQ7dspOS5KNjcAq8mRSwPnr_5MLLAmxQ_xhdQuD2Ctz4NDfLeNZcWlQvDX_5EhMwBNDxSu7IVUhObET2au-QrD-mtWVcb3Vtz68PMG6RUQJkRvUnfTv___jTsNhQhJcbOTXwrrkGyc1r-wtuVcmhgE6dft_mO0]-->
+    <g>
+        <rect fill="#150F10" height="1" style="stroke:#150F10;stroke-width:1.0;" width="1" x="0" y="0"/>
+        <text fill="#33FF02" font-family="sans-serif" font-size="12" font-style="italic" font-weight="bold"
+              lengthAdjust="spacing" textLength="167" x="5" y="17">PlantUML 1.2023.6beta4
+        </text>
+        <rect fill="#33FF02" height="21.2969" style="stroke:#33FF02;stroke-width:1.0;" width="539" x="5" y="26.9688"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="185" x="6" y="41.9688">[From string (line 26) ]
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="5" x="5" y="62.2656">&#160;
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="86" x="5" y="78.5625">@startuml
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="539" x="5" y="94.8594">!define primary_key(x) &lt;b&gt;&lt;color:#2688d4&gt;&lt;&amp;key&gt;&lt;/color&gt;
+            x&lt;/b&gt;
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="465" x="5" y="111.1563">!define foreign_key(x) &lt;color:#aaaaaa&gt;&lt;&amp;key&gt;&lt;/color&gt;
+            x
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="500" x="5" y="127.4531">!define column(x) &lt;color:#efefef&gt;&lt;&amp;media-record&gt;&lt;/color&gt;
+            x
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="350" x="5" y="143.75">!define table(x) entity x &lt;&lt; (T, #f2f2f2) &gt;&gt;
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="175" x="5" y="160.0469">left to right direction
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="100" x="5" y="176.3438">skinparam {
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="167" x="25" y="192.6406">ArrowColor #2688d4
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="173" x="25" y="208.9375">BorderColor #2688d4
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="197" x="25" y="225.2344">BackgroundColor #ffffff
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="124" x="25" y="241.5313">roundcorner 10
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="145" x="25" y="257.8281">handwritten false
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="57" x="25" y="274.125">class {
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="206" x="45" y="290.4219">BackgroundColor #f2f2f2
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="173" x="45" y="306.7188">BorderColor #2688d4
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="167" x="45" y="323.0156">ArrowColor #2688d4
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="156" x="45" y="339.3125">FontColor #333333
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="10" x="25" y="355.6094">}
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="10" x="5" y="371.9063">}
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="128" x="5" y="388.2031">table(symbol) {
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="159" x="25" y="404.5">primary_key(id): int
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="250" x="25" y="420.7969">primary_key(name): varchar(9)
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="258" x="25" y="437.0938">column(base_asset): varchar(5)
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="267" x="25" y="453.3906">column(quote_asset): varchar(5)
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="259" x="25" y="469.6875">column(created_at): timestamp
+        </text>
+        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              text-decoration="wavy underline" textLength="265" x="25" y="485.9844">column((updated_at):timestamp
+        </text>
+        <text fill="#FF0000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="68" x="10" y="502.2813">until001
+        </text><!--SRC=[fLBlQzj03Fr-VuLWC6nO-YFDGXQCOUtQZP90MP9-BRAj94TiNIRB2M7qVz_vuf8lxUYOxjEzf_UaEwcafO8w4BjQAnHMA5VhsDGRoriKhE2t0HzVHTp-nfLEu4D_E1eLWm1VEob8Ni4ntwp4DLnqt394u0ASEs4IkBm8q1gvs8jL9OObbZK5D2-nhhlwhvlsstFYtsZcB_stSUTOE-OgH62UpRCXLgi7g0zLvaf84eZcdrwgnf2cNMz9bYPvQp3khDFauuOEQN8Uq1HiaPndwHWiw_i4Z1KT9JkKV8qIVOcFoav6o_PuMKM5nPwVcd_xIPzXJK_-yqXF3f__oU5Nu_G_BN8XL2gUq3kehQXMhBR7mRgogJYAcctHPSJZKuPvA95rCPt0ZgJsomYNP_sB_jNPC2F5GRJW3RizUvTgQqiAth69lZzCe7QDvEJNk5QnMTDkScpkSOVmi-4sRmpjBPfFOvZTle1mopihZYi_RtF_E3qcmG-diwtJa3mSzAwjmep4zmIFK_EDbjYKwgMvAoolnh2Ot_L6PeAyQd3b2n6R6x-hAWVFpVu0]-->
     </g>
 </svg>

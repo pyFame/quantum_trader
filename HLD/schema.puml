@@ -23,14 +23,25 @@ table(symbol) {
     column(base_asset): varchar(5)
     column(quote_asset): varchar(5)
     column(created_at): timestamp
-    column((updated_at):timestamp
+    column(updated_at):timestamp
 }
 
 table(futures_symbols) {
     primary_key(id): uuid
-    column(name): varchar
-    column(isActive): bool
     foreign_key(symbol_id): int <<FK>>
+'    column(name): varchar
+    column(isActive): bool
+    column(hedge): bool
+    column(created_at): timestamp
+    column(updated_at): timestamp
+}
+
+table(futures_positions){
+    primary_key(id): uuid
+    foreign_key(futures_symbol_id): int <<FK>>
+    column(mode): char(4)
+    column(disable_open): bool
+
     column(created_at): timestamp
     column(updated_at): timestamp
 }
@@ -42,6 +53,7 @@ table(futures_assets){
     column(created_at): timestamp
     column(updated_at): timestamp
 }
+
 table(indicators){
     primary_key(id): int
     primary_key(name): varchar
@@ -66,13 +78,15 @@ table(binance_errors){
 
 futures_symbols |o-- symbol
 futures_indicators |o-- indicators
+futures_positions }|-- futures_symbols
 
 @enduml
 
 'Type	Symbol
-'Zero or One	|o--
 'Exactly One	||--
-'Zero or Many	}o--
 'One or Many	}|--
+
+'Zero or One	|o--
+'Zero or Many	}o--
 
 'https://plantuml.com/ie-diagram
