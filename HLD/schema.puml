@@ -22,29 +22,46 @@ table(symbol) {
     primary_key(name): varchar(9)
     column(base_asset): varchar(5)
     column(quote_asset): varchar(5)
+    column(created_at): timestamp
+    column((updated_at):timestamp
 }
 
 table(futures_symbols) {
-  primary_key(id): uuid
-  column(name): varchar
-  column(isActive): bool
-  foreign_key(symbol_id): int <<FK>>
+    primary_key(id): uuid
+    column(name): varchar
+    column(isActive): bool
+    foreign_key(symbol_id): int <<FK>>
+    column(created_at): timestamp
+    column(updated_at): timestamp
 }
 
 table(futures_assets){
-    primary_key(id): uuid
+    primary_key(id): id
     primary_key(name): varchar
     column(quantity): int
+    column(created_at): timestamp
+    column(updated_at): timestamp
 }
 table(indicators){
     primary_key(id): int
     primary_key(name): varchar
+    column(created_at): timestamp
+    column(updated_at): timestamp
 }
 
 table(futures_indicators){
     primary_key(id): int
     foreign_key(indicator_id): int <<FK>>
     column(isActive): bool
+    column(created_at): timestamp
+    column(updated_at): timestamp
+}
+
+table(binance_errors){
+    primary_key(id): uuid
+    column(code): int
+    column(description): text
+    column(created_at): timestamp
 }
 
 futures_symbols |o-- symbol
