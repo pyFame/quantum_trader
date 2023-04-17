@@ -34,7 +34,7 @@ def consume_signal(key: str, val: str):
 
     buy_sell_signal = signal_message.signal
 
-    quantity: float = .01
+    quantity: float = 0.001
 
     orders: List[Order] = []
 
