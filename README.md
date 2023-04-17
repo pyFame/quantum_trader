@@ -1,10 +1,9 @@
 # Monorepo for my binance futures bot trading
 
 <div>
-<span>
+
 [![Github](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml/badge.svg?branch=main)](https://github.com/pythoneerHiro/binance/actions/workflows/python-package.yml)
 [![Github](https://github.com/pythoneerHiro/binance/actions/workflows/conda.yml/badge.svg?branch=main)](https://github.com/pythoneerHiro/binance/actions/workflows/conda.yml)
-</span>
 
 <span> <img  align="right" src="static/logo.png" width="200" height="200" /> </span>
 </div>
