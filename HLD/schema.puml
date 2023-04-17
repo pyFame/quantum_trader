@@ -1,34 +1,61 @@
 @startuml
-!define primary_key(x) <b><color:#b8861b><&key></color> x</b>
+!define primary_key(x) <b><color:#2688d4><&key></color> x</b>
 !define foreign_key(x) <color:#aaaaaa><&key></color> x
 !define column(x) <color:#efefef><&media-record></color> x
-!define table(x) entity x << (T, white) >>
-
+!define table(x) entity x << (T, #f2f2f2) >>
 left to right direction
-skinparam roundcorner 5
-skinparam linetype ortho
-skinparam shadowing false
-skinparam handwritten false
-skinparam class {
-    BackgroundColor white
+skinparam {
     ArrowColor #2688d4
     BorderColor #2688d4
+    BackgroundColor #ffffff
+    roundcorner 10
+    handwritten false
+    class {
+        BackgroundColor #f2f2f2
+        BorderColor #2688d4
+        ArrowColor #2688d4
+        FontColor #333333
+    }
+}
+table(symbol) {
+    primary_key(id): int
+    primary_key(name): varchar(9)
+    column(base_asset): varchar(5)
+    column(quote_asset): varchar(5)
 }
 
+table(futures_symbols) {
+  primary_key(id): uuid
+  column(name): varchar
+  column(isActive): bool
+  foreign_key(symbol_id): int <<FK>>
+}
 
-table( futures_symbols ) {
-  primary_key( id ): int
-  column( name): varchar
-  column( isActive ): BOOLEAN
-  foreign_key( cityId ): INTEGER <<FK>>
+table(futures_assets){
+    primary_key(id): uuid
+    primary_key(name): varchar
+    column(quantity): int
 }
-table( city ) {
-  primary_key( id ): UUID
-  column( name ): varchar
-  column( country ): varchar
-  column( postCode ): INTEGER
+table(indicators){
+    primary_key(id): int
+    primary_key(name): varchar
 }
-user }|--|| city
+
+table(futures_indicators){
+    primary_key(id): int
+    foreign_key(indicator_id): int <<FK>>
+    column(isActive): bool
+}
+
+futures_symbols |o-- symbol
+futures_indicators |o-- indicators
+
 @enduml
 
-' futures_symbols #active
+'Type	Symbol
+'Zero or One	|o--
+'Exactly One	||--
+'Zero or Many	}o--
+'One or Many	}|--
+
+'https://plantuml.com/ie-diagram
