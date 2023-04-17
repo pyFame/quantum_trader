@@ -5,9 +5,10 @@ from binance.exceptions import BinanceAPIException
 from dask import delayed
 from icecream import ic
 
-from conf import client, alog
+from conf import client
 from conf.kafka import TOPIC_ORDERS_DLQ
 from lib.kafka import Kafka, KafkaMessage
+from . import alog
 
 kafka_client = Kafka()
 
