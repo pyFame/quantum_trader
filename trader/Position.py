@@ -97,7 +97,7 @@ class Position:
     def close_signal(self, p: float, q: float = None) -> bool:
         if self.quantity <= 0: return False
 
-        return self.pnl(p, q) > 0  # > self.cost  # FIXME self.profit
+        return self.pnl(p, q) > 0
 
     @property
     def liquidation_price(self) -> float:

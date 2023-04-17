@@ -18,13 +18,15 @@ def consume_signal(key: str, val: str):
     positions = cache_positions.get(symbol)  # LONG,SHORT
 
     if positions is None:
-        long = Position(symbol, LONG)
-        short = Position(symbol, SHORT)
+        long = Position(symbol, LONG, disable_open=True)
+        short = Position(symbol, SHORT, disable_open=False)
         positions = [long, short]
     else:
         long, short = positions
         long.refresh()  # FIXME - these are all blocking calls async ...
         short.refresh()
+
+    alog.debug(positions)
 
     signal_message = Message_Signal.Loads(val)
     low_price = signal_message.low
@@ -63,6 +65,7 @@ def consume_signal(key: str, val: str):
     cache_positions.set(symbol, positions)
 
     for o in orders:
+        alog.info(f"order {o}")
         d_o = publish_order(symbol, o)
         delayed_orders.put(d_o)
 
