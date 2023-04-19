@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
-
+      fail-fast: false
       matrix:
         include:
           - os: ubuntu-latest
@@ -51,7 +51,9 @@ jobs:
         id: cache
 
       - name: Update environment
-        run: mamba env update -n my-env -f environment.yml
+        run: |
+          mamba activate my-env
+          mamba env update -f environment.yml
         if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Install dependencies
