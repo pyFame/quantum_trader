@@ -29,6 +29,7 @@ jobs:
       - name: Install Test dependencies
         run: |
           pip install -r  requirements-test.txt
+          conda install pytest
 
       - name: Lint with flake8
         run: |
