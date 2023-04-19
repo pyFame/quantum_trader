@@ -36,7 +36,8 @@ jobs:
           python -m pip install -r  requirements-test.txt
       - name: Test
         run: |
-          pytest -p no:cacheprovider -q --ignore=lib/
+          pytest --ignore=lib/
+
       - name: Test Intensive (Cached)
         with:
           cache: "pytest_cache"
@@ -44,7 +45,7 @@ jobs:
           pytest
       - name: Test Intensive
         run: |
-          pytest p no:cacheprovider -q 
+          pytest 
 
   
 
