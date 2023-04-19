@@ -39,6 +39,7 @@ jobs:
           pytest --ignore=lib/
 
       - name: Test Intensive (Cached)
+      - uses: actions/checkout@v4
         with:
           cache: "pytest_cache"
         run: |
