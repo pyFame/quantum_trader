@@ -56,11 +56,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          mkdir -p env/hiro
-          conda env create --name hiro -f environment.yml --prefix conda/env
+          #mkdir -p env/hiro
+          #conda env create --name hiro -f environment.yml --prefix conda/env
           #conda install -c conda-forge ta-lib
           python -m pip install --upgrade pip
-          python -m pip install -r  requirements.txt
+          #python -m pip install -r  requirements.txt
           # conda env update --file environment.yml --name base
       - name: Install Test dependencies
         run: |
