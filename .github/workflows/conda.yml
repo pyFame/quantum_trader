@@ -1,6 +1,16 @@
 name: Conda
 
-on: [ push ]
+on:
+  push:
+    branches:
+      - '*'
+
+  pull_request:
+    branches:
+      - '*'
+
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   build:
@@ -8,20 +18,46 @@ jobs:
     strategy:
       max-parallel: 5
 
+    matrix:
+      include:
+        - os: ubuntu-latest
+          label: linux-64
+          prefix: /usr/share/miniconda3/envs/my-env
+
+        - os: macos-latest
+          label: osx-64
+          prefix: /Users/runner/miniconda3/envs/my-env
+
+        - os: windows-latest
+          label: win-64
+          prefix: C:\Miniconda3\envs\my-env
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v4
+      - name: Setup Mambaforge
+        uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: '3.9'
-          cache: 'pip'
-      - name: Add conda to system path
-        run: |
-          # $CONDA is an environment variable pointing to the root of the miniconda directory
-          echo $CONDA/bin >> $GITHUB_PATH
+          miniforge-variant: Mambaforge
+          miniforge-version: latest
+          activate-environment: my-env
+          use-mamba: true
+
+      - name: Set cache date
+        run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV
+
+      - uses: actions/cache@v2
+        with:
+          path: ${{ matrix.prefix }}
+          key: ${{ matrix.label }}-conda-${{ hashFiles('environment.yml') }}-${{ env.DATE }}-${{ env.CACHE_NUMBER }}
+        id: cache
+
+      - name: Update environment
+        run: mamba env update -n my-env -f environment.yml
+        if: steps.cache.outputs.cache-hit != 'true'
+
       - name: Install dependencies
         run: |
-          conda env create --name hiro -f environment.yml
+          mkdir -p env/hiro
+          conda env create --name hiro -f environment.yml --prefix conda/env
           #conda install -c conda-forge ta-lib
           python -m pip install --upgrade pip
           python -m pip install -r  requirements.txt
@@ -47,6 +83,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test
+        shell: bash -l {0}
         run: pytest --ignore=lib/
 
   test-intensive:
@@ -55,4 +92,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test Intensive
+        shell: bash -l {0}
         run: pytest
+
+#      https://dev.to/epassaro/caching-anaconda-environments-in-github-actions-5hde
