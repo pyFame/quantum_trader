@@ -1,16 +1,7 @@
-from uuid import UUID, uuid4
-
-from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, Index
+from sqlalchemy import Column, Integer, String, ForeignKey, Boolean, Index
 from sqlalchemy.orm import relationship
 
-from . import Base
-
-
-class Symbol(Base):
-    __tablename__ = 'symbol'
-    name = Column(String(9), primary_key=True)
-    base_asset = Column(String(5))
-    quote_asset = Column(String(5))
+from models import Base
 
 
 class FuturesSymbol(Base):
@@ -38,12 +29,6 @@ class FuturesAsset(Base):
     quantity = Column(Integer)
 
 
-class Indicator(Base):
-    __tablename__ = 'indicators'
-    indicator_id = Column(Integer, primary_key=True)
-    name = Column(String)
-
-
 class FuturesIndicator(Base):
     __tablename__ = 'futures_indicators'
     futures_indicator_id = Column(Integer, primary_key=True)
@@ -58,11 +43,3 @@ class FuturesIndicator(Base):
         Index('idx_indicator_id', indicator_id, unique=True),
         Index('idx_indicator_active', indicator_id, isActive, unique=True),
     )
-
-
-class BinanceError(Base):
-    __tablename__ = 'binance_errors'
-    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid4)
-    binance_error_id = Column(Integer, primary_key=True)
-    code = Column(Integer)
-    description = Column(String)

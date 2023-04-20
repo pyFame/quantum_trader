@@ -28,7 +28,7 @@ _Session = sessionmaker(bind=engine)
 
 session = _Session()
 
-from models.indicator_model import *
+from models.indicator import *
 
 # session.add(User(username="XXXX", password="1yfeMlIWnr7xxiqUeXw5Qw"))
 # session.add(.User(username="XXXX", password="1yfeMlIWnr7xxiqUeXw5Qw"))
