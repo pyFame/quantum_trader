@@ -1,13 +1,21 @@
-from uuid import UUID, uuid4
+import logging as log
+from uuid import uuid4
 
 from sqlalchemy import Column, Integer, String
+from sqlalchemy.dialects.postgresql import UUID
 
 from models import Base
+
+schema = "sqlite"
+
+UUID_CLASS = UUID(as_uuid=True) if schema is "postgres" else String
+
+log.warn(f"schema - {schema} uid {UUID_CLASS}")
 
 
 class BinanceError(Base):
     __tablename__ = 'binance_errors'
-    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid4)
+    id = Column(String, primary_key=True, default=uuid4)
     binance_error_id = Column(Integer, primary_key=True)
     code = Column(Integer)
     description = Column(String)

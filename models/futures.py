@@ -1,22 +1,21 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Boolean, Index
 from sqlalchemy.orm import relationship
 
-from models import Base
+from models import Base, Symbol
 
 
 class FuturesSymbol(Base):
     __tablename__ = 'futures_symbols'
     futures_symbol_id = Column(Integer, primary_key=True)
-    symbol_id = Column(String, ForeignKey('symbol.name'))
+    symbol_id = Column(String, ForeignKey('symbols.name'))
     isActive = Column(Boolean)
     hedge = Column(Boolean)
-    symbol = relationship('Symbol', backref='futures_symbols')
+    symbol = relationship(Symbol, backref='futures_symbols')
 
 
 class FuturesPosition(Base):
     __tablename__ = 'futures_positions'
-    futures_position_id = Column(Integer, primary_key=True)
-    futures_symbol_id = Column(Integer, ForeignKey('futures_symbols.futures_symbol_id'), nullable=False)
+    futures_symbol_id = Column(Integer, ForeignKey('futures_symbols.id'), nullable=False)
     mode = Column(String(4))
     disable_open = Column(Boolean)
     futures_symbol = relationship('FuturesSymbol', backref='futures_positions')
@@ -24,15 +23,13 @@ class FuturesPosition(Base):
 
 class FuturesAsset(Base):
     __tablename__ = 'futures_assets'
-    futures_asset_id = Column(Integer, primary_key=True)
     name = Column(String)
     quantity = Column(Integer)
 
 
 class FuturesIndicator(Base):
     __tablename__ = 'futures_indicators'
-    futures_indicator_id = Column(Integer, primary_key=True)
-    indicator_id = Column(Integer, ForeignKey('indicators.indicator_id'), nullable=False)
+    indicator_id = Column(Integer, ForeignKey('indicators.id'), nullable=False)
     isActive = Column(Boolean)
     indicator = relationship('Indicator', backref='futures_indicators')
 
