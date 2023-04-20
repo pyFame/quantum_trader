@@ -1,103 +1,327 @@
 <?xml version="1.0" encoding="us-ascii" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
-     height="511px" preserveAspectRatio="none" style="width:551px;height:511px;background:#000000;" version="1.1"
-     viewBox="0 0 551 511" width="551px" zoomAndPan="magnify">
+     height="652px" preserveAspectRatio="none" style="width:751px;height:652px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 751 652" width="751px" zoomAndPan="magnify">
     <defs/>
-    <g>
-        <rect fill="#150F10" height="1" style="stroke:#150F10;stroke-width:1.0;" width="1" x="0" y="0"/>
-        <text fill="#33FF02" font-family="sans-serif" font-size="12" font-style="italic" font-weight="bold"
-              lengthAdjust="spacing" textLength="167" x="5" y="17">PlantUML 1.2023.6beta4
-        </text>
-        <rect fill="#33FF02" height="21.2969" style="stroke:#33FF02;stroke-width:1.0;" width="539" x="5" y="26.9688"/>
-        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="185" x="6" y="41.9688">[From string (line 26) ]
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="5" x="5" y="62.2656">&#160;
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="86" x="5" y="78.5625">@startuml
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="539" x="5" y="94.8594">!define primary_key(x) &lt;b&gt;&lt;color:#2688d4&gt;&lt;&amp;key&gt;&lt;/color&gt;
-            x&lt;/b&gt;
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="465" x="5" y="111.1563">!define foreign_key(x) &lt;color:#aaaaaa&gt;&lt;&amp;key&gt;&lt;/color&gt;
-            x
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="500" x="5" y="127.4531">!define column(x) &lt;color:#efefef&gt;&lt;&amp;media-record&gt;&lt;/color&gt;
-            x
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="350" x="5" y="143.75">!define table(x) entity x &lt;&lt; (T, #f2f2f2) &gt;&gt;
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="175" x="5" y="160.0469">left to right direction
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="100" x="5" y="176.3438">skinparam {
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="167" x="25" y="192.6406">ArrowColor #2688d4
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="173" x="25" y="208.9375">BorderColor #2688d4
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="197" x="25" y="225.2344">BackgroundColor #ffffff
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="124" x="25" y="241.5313">roundcorner 10
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="145" x="25" y="257.8281">handwritten false
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="57" x="25" y="274.125">class {
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="206" x="45" y="290.4219">BackgroundColor #f2f2f2
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="173" x="45" y="306.7188">BorderColor #2688d4
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="167" x="45" y="323.0156">ArrowColor #2688d4
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="156" x="45" y="339.3125">FontColor #333333
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="10" x="25" y="355.6094">}
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="10" x="5" y="371.9063">}
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="128" x="5" y="388.2031">table(symbol) {
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="159" x="25" y="404.5">primary_key(id): int
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="250" x="25" y="420.7969">primary_key(name): varchar(9)
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="258" x="25" y="437.0938">column(base_asset): varchar(5)
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="267" x="25" y="453.3906">column(quote_asset): varchar(5)
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="259" x="25" y="469.6875">column(created_at): timestamp
-        </text>
-        <text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              text-decoration="wavy underline" textLength="265" x="25" y="485.9844">column((updated_at):timestamp
-        </text>
-        <text fill="#FF0000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="68" x="10" y="502.2813">until001
-        </text><!--SRC=[fLBlQzj03Fr-VuLWC6nO-YFDGXQCOUtQZP90MP9-BRAj94TiNIRB2M7qVz_vuf8lxUYOxjEzf_UaEwcafO8w4BjQAnHMA5VhsDGRoriKhE2t0HzVHTp-nfLEu4D_E1eLWm1VEob8Ni4ntwp4DLnqt394u0ASEs4IkBm8q1gvs8jL9OObbZK5D2-nhhlwhvlsstFYtsZcB_stSUTOE-OgH62UpRCXLgi7g0zLvaf84eZcdrwgnf2cNMz9bYPvQp3khDFauuOEQN8Uq1HiaPndwHWiw_i4Z1KT9JkKV8qIVOcFoav6o_PuMKM5nPwVcd_xIPzXJK_-yqXF3f__oU5Nu_G_BN8XL2gUq3kehQXMhBR7mRgogJYAcctHPSJZKuPvA95rCPt0ZgJsomYNP_sB_jNPC2F5GRJW3RizUvTgQqiAth69lZzCe7QDvEJNk5QnMTDkScpkSOVmi-4sRmpjBPfFOvZTle1mopihZYi_RtF_E3qcmG-diwtJa3mSzAwjmep4zmIFK_EDbjYKwgMvAoolnh2Ot_L6PeAyQd3b2n6R6x-hAWVFpVu0]-->
+    <g><!--class symbol-->
+        <g id="elem_symbol">
+            <rect codeLine="19" fill="#F2F2F2" height="145.7813" id="symbol" rx="5" ry="5"
+                  style="stroke:#2688D4;stroke-width:0.5;" width="195.3333" x="549" y="491.5"/>
+            <ellipse cx="616.4167" cy="507.5" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M616.8542,505.0313 L618.6979,505.0313 L618.6979,506.625 C618.6979,507.0156 618.7292,507.1875 618.8229,507.3281 C618.9792,507.5781 619.2604,507.7344 619.5573,507.7344 C619.8229,507.7344 620.0729,507.6094 620.2448,507.3906 C620.3854,507.2188 620.401,507.0938 620.401,506.625 L620.401,503.3438 L611.6354,503.3438 L611.6354,506.625 C611.6354,507.0156 611.6667,507.1875 611.7448,507.3281 C611.901,507.5938 612.1979,507.7344 612.4792,507.7344 C612.7604,507.7344 613.0104,507.6094 613.1823,507.3906 C613.2917,507.2188 613.3229,507.0781 613.3229,506.625 L613.3229,505.0313 L615.151,505.0313 L615.151,511.5469 L614.0417,511.5469 C613.6042,511.5469 613.4792,511.5625 613.3229,511.6719 C613.0729,511.8281 612.9167,512.1094 612.9167,512.4063 C612.9167,512.6563 613.0573,512.9219 613.276,513.0781 C613.4323,513.2031 613.651,513.25 614.0417,513.25 L617.9792,513.25 C618.3073,513.25 618.5729,513.2031 618.6823,513.125 C618.9479,512.9844 619.0885,512.6875 619.0885,512.4063 C619.0885,512.125 618.9635,511.875 618.7292,511.7031 C618.5729,511.5781 618.4323,511.5469 617.9792,511.5469 L616.8542,511.5469 L616.8542,505.0313 Z "
+                  fill="#000000"/>
+            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52"
+                  x="636.9167" y="512.3467">symbol
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="550" x2="743.3333" y1="523.5" y2="523.5"/>
+            <path d="M562.4167,530.9635 C560.8067,530.9635 559.5,532.2702 559.5,533.8802 C559.5,534.0669 559.5,534.2535 559.535,534.4285 L556,537.9635 L556,540.2969 L559.5,540.2969 L559.5,537.9635 L561.8333,537.9635 L561.8333,536.7969 L561.8683,536.7619 C562.0433,536.7969 562.23,536.7969 562.4167,536.7969 C564.0267,536.7969 565.3333,535.4902 565.3333,533.8802 C565.3333,532.2702 564.0267,530.9635 562.4167,530.9635 M563,532.1302 C563.6417,532.1302 564.1667,532.6552 564.1667,533.2969 C564.1667,533.9385 563.6417,534.4635 563,534.4635 C562.3583,534.4635 561.8333,533.9385 561.8333,533.2969 C561.8333,532.6552 562.3583,532.1302 563,532.1302 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="15" x="571.3333" y="540.4951">id
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29"
+                  x="586.3333" y="540.4951">: int
+            </text>
+            <path d="M559.5,547.2604 C557.5633,547.2604 556,548.8238 556,550.7604 C556,552.6971 557.5633,554.2604 559.5,554.2604 C561.4367,554.2604 563,552.6971 563,550.7604 C563,548.8238 561.4367,547.2604 559.5,547.2604 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="570.3333" y="556.792">created_at: timestamp
+            </text>
+            <path d="M559.5,563.5573 C557.5633,563.5573 556,565.1206 556,567.0573 C556,568.994 557.5633,570.5573 559.5,570.5573 C561.4367,570.5573 563,568.994 563,567.0573 C563,565.1206 561.4367,563.5573 559.5,563.5573 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="570.3333" y="573.0889">updated_at:timestamp
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="550" x2="743.3333" y1="580.3906" y2="580.3906"/>
+            <path d="M562.4167,587.8542 C560.8067,587.8542 559.5,589.1608 559.5,590.7708 C559.5,590.9575 559.5,591.1442 559.535,591.3192 L556,594.8542 L556,597.1875 L559.5,597.1875 L559.5,594.8542 L561.8333,594.8542 L561.8333,593.6875 L561.8683,593.6525 C562.0433,593.6875 562.23,593.6875 562.4167,593.6875 C564.0267,593.6875 565.3333,592.3808 565.3333,590.7708 C565.3333,589.1608 564.0267,587.8542 562.4167,587.8542 M563,589.0208 C563.6417,589.0208 564.1667,589.5458 564.1667,590.1875 C564.1667,590.8292 563.6417,591.3542 563,591.3542 C562.3583,591.3542 561.8333,590.8292 561.8333,590.1875 C561.8333,589.5458 562.3583,589.0208 563,589.0208 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="44" x="571.3333" y="597.3857">name
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81"
+                  x="615.3333" y="597.3857">: varchar(9)
+            </text>
+            <path d="M559.5,604.151 C557.5633,604.151 556,605.7144 556,607.651 C556,609.5877 557.5633,611.151 559.5,611.151 C561.4367,611.151 563,609.5877 563,607.651 C563,605.7144 561.4367,604.151 559.5,604.151 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160"
+                  x="570.3333" y="613.6826">base_asset: varchar(5)
+            </text>
+            <path d="M559.5,620.4479 C557.5633,620.4479 556,622.0113 556,623.9479 C556,625.8846 557.5633,627.4479 559.5,627.4479 C561.4367,627.4479 563,625.8846 563,623.9479 C563,622.0113 561.4367,620.4479 559.5,620.4479 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168"
+                  x="570.3333" y="629.9795">quote_asset: varchar(5)
+            </text>
+        </g><!--class futures_symbols-->
+        <g id="elem_futures_symbols">
+            <rect codeLine="28" fill="#F2F2F2" height="145.7813" id="futures_symbols" rx="5" ry="5"
+                  style="stroke:#2688D4;stroke-width:0.5;" width="198.3333" x="291" y="491.5"/>
+            <ellipse cx="328.2" cy="507.5" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M328.6375,505.0313 L330.4813,505.0313 L330.4813,506.625 C330.4813,507.0156 330.5125,507.1875 330.6063,507.3281 C330.7625,507.5781 331.0438,507.7344 331.3406,507.7344 C331.6063,507.7344 331.8563,507.6094 332.0281,507.3906 C332.1688,507.2188 332.1844,507.0938 332.1844,506.625 L332.1844,503.3438 L323.4188,503.3438 L323.4188,506.625 C323.4188,507.0156 323.45,507.1875 323.5281,507.3281 C323.6844,507.5938 323.9813,507.7344 324.2625,507.7344 C324.5438,507.7344 324.7938,507.6094 324.9656,507.3906 C325.075,507.2188 325.1063,507.0781 325.1063,506.625 L325.1063,505.0313 L326.9344,505.0313 L326.9344,511.5469 L325.825,511.5469 C325.3875,511.5469 325.2625,511.5625 325.1063,511.6719 C324.8563,511.8281 324.7,512.1094 324.7,512.4063 C324.7,512.6563 324.8406,512.9219 325.0594,513.0781 C325.2156,513.2031 325.4344,513.25 325.825,513.25 L329.7625,513.25 C330.0906,513.25 330.3563,513.2031 330.4656,513.125 C330.7313,512.9844 330.8719,512.6875 330.8719,512.4063 C330.8719,512.125 330.7469,511.875 330.5125,511.7031 C330.3563,511.5781 330.2156,511.5469 329.7625,511.5469 L328.6375,511.5469 L328.6375,505.0313 Z "
+                  fill="#000000"/>
+            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117"
+                  x="347.1333" y="512.3467">futures_symbols
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="292" x2="488.3333" y1="523.5" y2="523.5"/>
+            <path d="M304.4167,530.9635 C302.8067,530.9635 301.5,532.2702 301.5,533.8802 C301.5,534.0669 301.5,534.2535 301.535,534.4285 L298,537.9635 L298,540.2969 L301.5,540.2969 L301.5,537.9635 L303.8333,537.9635 L303.8333,536.7969 L303.8683,536.7619 C304.0433,536.7969 304.23,536.7969 304.4167,536.7969 C306.0267,536.7969 307.3333,535.4902 307.3333,533.8802 C307.3333,532.2702 306.0267,530.9635 304.4167,530.9635 M305,532.1302 C305.6417,532.1302 306.1667,532.6552 306.1667,533.2969 C306.1667,533.9385 305.6417,534.4635 305,534.4635 C304.3583,534.4635 303.8333,533.9385 303.8333,533.2969 C303.8333,532.6552 304.3583,532.1302 305,532.1302 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="15" x="313.3333" y="540.4951">id
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38"
+                  x="328.3333" y="540.4951">: uuid
+            </text>
+            <path d="M304.4167,547.2604 C302.8067,547.2604 301.5,548.5671 301.5,550.1771 C301.5,550.3638 301.5,550.5504 301.535,550.7254 L298,554.2604 L298,556.5938 L301.5,556.5938 L301.5,554.2604 L303.8333,554.2604 L303.8333,553.0938 L303.8683,553.0587 C304.0433,553.0938 304.23,553.0938 304.4167,553.0938 C306.0267,553.0938 307.3333,551.7871 307.3333,550.1771 C307.3333,548.5671 306.0267,547.2604 304.4167,547.2604 M305,548.4271 C305.6417,548.4271 306.1667,548.9521 306.1667,549.5938 C306.1667,550.2354 305.6417,550.7604 305,550.7604 C304.3583,550.7604 303.8333,550.2354 303.8333,549.5938 C303.8333,548.9521 304.3583,548.4271 305,548.4271 "
+                  fill="#AAAAAA" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139"
+                  x="312.3333" y="556.792">symbol_id: int &#171;FK&#187;
+            </text>
+            <path d="M301.5,563.5573 C299.5633,563.5573 298,565.1206 298,567.0573 C298,568.994 299.5633,570.5573 301.5,570.5573 C303.4367,570.5573 305,568.994 305,567.0573 C305,565.1206 303.4367,563.5573 301.5,563.5573 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98"
+                  x="312.3333" y="573.0889">isActive: bool
+            </text>
+            <path d="M301.5,579.8542 C299.5633,579.8542 298,581.4175 298,583.3542 C298,585.2908 299.5633,586.8542 301.5,586.8542 C303.4367,586.8542 305,585.2908 305,583.3542 C305,581.4175 303.4367,579.8542 301.5,579.8542 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86"
+                  x="312.3333" y="589.3857">hedge: bool
+            </text>
+            <path d="M301.5,596.151 C299.5633,596.151 298,597.7144 298,599.651 C298,601.5877 299.5633,603.151 301.5,603.151 C303.4367,603.151 305,601.5877 305,599.651 C305,597.7144 303.4367,596.151 301.5,596.151 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="312.3333" y="605.6826">created_at: timestamp
+            </text>
+            <path d="M301.5,612.4479 C299.5633,612.4479 298,614.0113 298,615.9479 C298,617.8846 299.5633,619.4479 301.5,619.4479 C303.4367,619.4479 305,617.8846 305,615.9479 C305,614.0113 303.4367,612.4479 301.5,612.4479 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171"
+                  x="312.3333" y="621.9795">updated_at: timestamp
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="292" x2="488.3333" y1="629.2813" y2="629.2813"/>
+        </g><!--class futures_positions-->
+        <g id="elem_futures_positions">
+            <rect codeLine="38" fill="#F2F2F2" height="162.0781" id="futures_positions" rx="5" ry="5"
+                  style="stroke:#2688D4;stroke-width:0.5;" width="224.3333" x="7" y="483.5"/>
+            <ellipse cx="52.9167" cy="499.5" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M53.3542,497.0313 L55.1979,497.0313 L55.1979,498.625 C55.1979,499.0156 55.2292,499.1875 55.3229,499.3281 C55.4792,499.5781 55.7604,499.7344 56.0573,499.7344 C56.3229,499.7344 56.5729,499.6094 56.7448,499.3906 C56.8854,499.2188 56.901,499.0938 56.901,498.625 L56.901,495.3438 L48.1354,495.3438 L48.1354,498.625 C48.1354,499.0156 48.1667,499.1875 48.2448,499.3281 C48.401,499.5938 48.6979,499.7344 48.9792,499.7344 C49.2604,499.7344 49.5104,499.6094 49.6823,499.3906 C49.7917,499.2188 49.8229,499.0781 49.8229,498.625 L49.8229,497.0313 L51.651,497.0313 L51.651,503.5469 L50.5417,503.5469 C50.1042,503.5469 49.9792,503.5625 49.8229,503.6719 C49.5729,503.8281 49.4167,504.1094 49.4167,504.4063 C49.4167,504.6563 49.5573,504.9219 49.776,505.0781 C49.9323,505.2031 50.151,505.25 50.5417,505.25 L54.4792,505.25 C54.8073,505.25 55.0729,505.2031 55.1823,505.125 C55.4479,504.9844 55.5885,504.6875 55.5885,504.4063 C55.5885,504.125 55.4635,503.875 55.2292,503.7031 C55.0729,503.5781 54.9323,503.5469 54.4792,503.5469 L53.3542,503.5469 L53.3542,497.0313 Z "
+                  fill="#000000"/>
+            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124"
+                  x="73.4167" y="504.3467">futures_positions
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="8" x2="230.3333" y1="515.5" y2="515.5"/>
+            <path d="M20.4167,522.9635 C18.8067,522.9635 17.5,524.2702 17.5,525.8802 C17.5,526.0669 17.5,526.2535 17.535,526.4285 L14,529.9635 L14,532.2969 L17.5,532.2969 L17.5,529.9635 L19.8333,529.9635 L19.8333,528.7969 L19.8683,528.7619 C20.0433,528.7969 20.23,528.7969 20.4167,528.7969 C22.0267,528.7969 23.3333,527.4902 23.3333,525.8802 C23.3333,524.2702 22.0267,522.9635 20.4167,522.9635 M21,524.1302 C21.6417,524.1302 22.1667,524.6552 22.1667,525.2969 C22.1667,525.9385 21.6417,526.4635 21,526.4635 C20.3583,526.4635 19.8333,525.9385 19.8333,525.2969 C19.8333,524.6552 20.3583,524.1302 21,524.1302 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="15" x="29.3333" y="532.4951">id
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38"
+                  x="44.3333" y="532.4951">: uuid
+            </text>
+            <path d="M20.4167,539.2604 C18.8067,539.2604 17.5,540.5671 17.5,542.1771 C17.5,542.3638 17.5,542.5504 17.535,542.7254 L14,546.2604 L14,548.5938 L17.5,548.5938 L17.5,546.2604 L19.8333,546.2604 L19.8333,545.0938 L19.8683,545.0587 C20.0433,545.0938 20.23,545.0938 20.4167,545.0938 C22.0267,545.0938 23.3333,543.7871 23.3333,542.1771 C23.3333,540.5671 22.0267,539.2604 20.4167,539.2604 M21,540.4271 C21.6417,540.4271 22.1667,540.9521 22.1667,541.5938 C22.1667,542.2354 21.6417,542.7604 21,542.7604 C20.3583,542.7604 19.8333,542.2354 19.8333,541.5938 C19.8333,540.9521 20.3583,540.4271 21,540.4271 "
+                  fill="#AAAAAA" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197"
+                  x="28.3333" y="548.792">futures_symbol_id: int &#171;FK&#187;
+            </text>
+            <path d="M17.5,555.5573 C15.5633,555.5573 14,557.1206 14,559.0573 C14,560.994 15.5633,562.5573 17.5,562.5573 C19.4367,562.5573 21,560.994 21,559.0573 C21,557.1206 19.4367,555.5573 17.5,555.5573 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136"
+                  x="28.3333" y="565.0889">disable_open: bool
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="13"
+                  y="581.3857">&#160;
+            </text>
+            <path d="M17.5,588.151 C15.5633,588.151 14,589.7144 14,591.651 C14,593.5877 15.5633,595.151 17.5,595.151 C19.4367,595.151 21,593.5877 21,591.651 C21,589.7144 19.4367,588.151 17.5,588.151 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="28.3333" y="597.6826">created_at: timestamp
+            </text>
+            <path d="M17.5,604.4479 C15.5633,604.4479 14,606.0113 14,607.9479 C14,609.8846 15.5633,611.4479 17.5,611.4479 C19.4367,611.4479 21,609.8846 21,607.9479 C21,606.0113 19.4367,604.4479 17.5,604.4479 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171"
+                  x="28.3333" y="613.9795">updated_at: timestamp
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="8" x2="230.3333" y1="621.2813" y2="621.2813"/>
+            <path d="M17.5,628.7448 C15.5633,628.7448 14,630.3081 14,632.2448 C14,634.1815 15.5633,635.7448 17.5,635.7448 C19.4367,635.7448 21,634.1815 21,632.2448 C21,630.3081 19.4367,628.7448 17.5,628.7448 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99"
+                  x="28.3333" y="638.2764">mode: char(4)
+            </text>
+        </g><!--class futures_assets-->
+        <g id="elem_futures_assets">
+            <rect codeLine="48" fill="#F2F2F2" height="129.4844" id="futures_assets" rx="5" ry="5"
+                  style="stroke:#2688D4;stroke-width:0.5;" width="198.3333" x="20" y="319"/>
+            <ellipse cx="63.5" cy="335" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M63.9375,332.5313 L65.7813,332.5313 L65.7813,334.125 C65.7813,334.5156 65.8125,334.6875 65.9063,334.8281 C66.0625,335.0781 66.3438,335.2344 66.6406,335.2344 C66.9063,335.2344 67.1563,335.1094 67.3281,334.8906 C67.4688,334.7188 67.4844,334.5938 67.4844,334.125 L67.4844,330.8438 L58.7188,330.8438 L58.7188,334.125 C58.7188,334.5156 58.75,334.6875 58.8281,334.8281 C58.9844,335.0938 59.2813,335.2344 59.5625,335.2344 C59.8438,335.2344 60.0938,335.1094 60.2656,334.8906 C60.375,334.7188 60.4063,334.5781 60.4063,334.125 L60.4063,332.5313 L62.2344,332.5313 L62.2344,339.0469 L61.125,339.0469 C60.6875,339.0469 60.5625,339.0625 60.4063,339.1719 C60.1563,339.3281 60,339.6094 60,339.9063 C60,340.1563 60.1406,340.4219 60.3594,340.5781 C60.5156,340.7031 60.7344,340.75 61.125,340.75 L65.0625,340.75 C65.3906,340.75 65.6563,340.7031 65.7656,340.625 C66.0313,340.4844 66.1719,340.1875 66.1719,339.9063 C66.1719,339.625 66.0469,339.375 65.8125,339.2031 C65.6563,339.0781 65.5156,339.0469 65.0625,339.0469 L63.9375,339.0469 L63.9375,332.5313 Z "
+                  fill="#000000"/>
+            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103"
+                  x="83.8333" y="339.8467">futures_assets
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="21" x2="217.3333" y1="351" y2="351"/>
+            <path d="M33.4167,358.4635 C31.8067,358.4635 30.5,359.7702 30.5,361.3802 C30.5,361.5669 30.5,361.7535 30.535,361.9285 L27,365.4635 L27,367.7969 L30.5,367.7969 L30.5,365.4635 L32.8333,365.4635 L32.8333,364.2969 L32.8683,364.2619 C33.0433,364.2969 33.23,364.2969 33.4167,364.2969 C35.0267,364.2969 36.3333,362.9902 36.3333,361.3802 C36.3333,359.7702 35.0267,358.4635 33.4167,358.4635 M34,359.6302 C34.6417,359.6302 35.1667,360.1552 35.1667,360.7969 C35.1667,361.4385 34.6417,361.9635 34,361.9635 C33.3583,361.9635 32.8333,361.4385 32.8333,360.7969 C32.8333,360.1552 33.3583,359.6302 34,359.6302 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="15" x="42.3333" y="367.9951">id
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22"
+                  x="57.3333" y="367.9951">: id
+            </text>
+            <path d="M33.4167,374.7604 C31.8067,374.7604 30.5,376.0671 30.5,377.6771 C30.5,377.8638 30.5,378.0504 30.535,378.2254 L27,381.7604 L27,384.0938 L30.5,384.0938 L30.5,381.7604 L32.8333,381.7604 L32.8333,380.5938 L32.8683,380.5588 C33.0433,380.5938 33.23,380.5938 33.4167,380.5938 C35.0267,380.5938 36.3333,379.2871 36.3333,377.6771 C36.3333,376.0671 35.0267,374.7604 33.4167,374.7604 M34,375.9271 C34.6417,375.9271 35.1667,376.4521 35.1667,377.0938 C35.1667,377.7354 34.6417,378.2604 34,378.2604 C33.3583,378.2604 32.8333,377.7354 32.8333,377.0938 C32.8333,376.4521 33.3583,375.9271 34,375.9271 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="44" x="42.3333" y="384.292">name
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62"
+                  x="86.3333" y="384.292">: varchar
+            </text>
+            <path d="M30.5,391.0573 C28.5633,391.0573 27,392.6206 27,394.5573 C27,396.494 28.5633,398.0573 30.5,398.0573 C32.4367,398.0573 34,396.494 34,394.5573 C34,392.6206 32.4367,391.0573 30.5,391.0573 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89"
+                  x="41.3333" y="400.5889">quantity: int
+            </text>
+            <path d="M30.5,407.3542 C28.5633,407.3542 27,408.9175 27,410.8542 C27,412.7908 28.5633,414.3542 30.5,414.3542 C32.4367,414.3542 34,412.7908 34,410.8542 C34,408.9175 32.4367,407.3542 30.5,407.3542 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="41.3333" y="416.8857">created_at: timestamp
+            </text>
+            <path d="M30.5,423.651 C28.5633,423.651 27,425.2144 27,427.151 C27,429.0877 28.5633,430.651 30.5,430.651 C32.4367,430.651 34,429.0877 34,427.151 C34,425.2144 32.4367,423.651 30.5,423.651 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171"
+                  x="41.3333" y="433.1826">updated_at: timestamp
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="21" x2="217.3333" y1="440.4844" y2="440.4844"/>
+        </g><!--class indicators-->
+        <g id="elem_indicators">
+            <rect codeLine="56" fill="#F2F2F2" height="113.1875" id="indicators" rx="5" ry="5"
+                  style="stroke:#2688D4;stroke-width:0.5;" width="198.3333" x="291" y="163"/>
+            <ellipse cx="350.4167" cy="179" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M350.8542,176.5313 L352.6979,176.5313 L352.6979,178.125 C352.6979,178.5156 352.7292,178.6875 352.8229,178.8281 C352.9792,179.0781 353.2604,179.2344 353.5573,179.2344 C353.8229,179.2344 354.0729,179.1094 354.2448,178.8906 C354.3854,178.7188 354.401,178.5938 354.401,178.125 L354.401,174.8438 L345.6354,174.8438 L345.6354,178.125 C345.6354,178.5156 345.6667,178.6875 345.7448,178.8281 C345.901,179.0938 346.1979,179.2344 346.4792,179.2344 C346.7604,179.2344 347.0104,179.1094 347.1823,178.8906 C347.2917,178.7188 347.3229,178.5781 347.3229,178.125 L347.3229,176.5313 L349.151,176.5313 L349.151,183.0469 L348.0417,183.0469 C347.6042,183.0469 347.4792,183.0625 347.3229,183.1719 C347.0729,183.3281 346.9167,183.6094 346.9167,183.9063 C346.9167,184.1563 347.0573,184.4219 347.276,184.5781 C347.4323,184.7031 347.651,184.75 348.0417,184.75 L351.9792,184.75 C352.3073,184.75 352.5729,184.7031 352.6823,184.625 C352.9479,184.4844 353.0885,184.1875 353.0885,183.9063 C353.0885,183.625 352.9635,183.375 352.7292,183.2031 C352.5729,183.0781 352.4323,183.0469 351.9792,183.0469 L350.8542,183.0469 L350.8542,176.5313 Z "
+                  fill="#000000"/>
+            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71"
+                  x="370.9167" y="183.8467">indicators
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="292" x2="488.3333" y1="195" y2="195"/>
+            <path d="M304.4167,202.4635 C302.8067,202.4635 301.5,203.7702 301.5,205.3802 C301.5,205.5669 301.5,205.7535 301.535,205.9285 L298,209.4635 L298,211.7969 L301.5,211.7969 L301.5,209.4635 L303.8333,209.4635 L303.8333,208.2969 L303.8683,208.2619 C304.0433,208.2969 304.23,208.2969 304.4167,208.2969 C306.0267,208.2969 307.3333,206.9902 307.3333,205.3802 C307.3333,203.7702 306.0267,202.4635 304.4167,202.4635 M305,203.6302 C305.6417,203.6302 306.1667,204.1552 306.1667,204.7969 C306.1667,205.4385 305.6417,205.9635 305,205.9635 C304.3583,205.9635 303.8333,205.4385 303.8333,204.7969 C303.8333,204.1552 304.3583,203.6302 305,203.6302 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="15" x="313.3333" y="211.9951">id
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29"
+                  x="328.3333" y="211.9951">: int
+            </text>
+            <path d="M304.4167,218.7604 C302.8067,218.7604 301.5,220.0671 301.5,221.6771 C301.5,221.8637 301.5,222.0504 301.535,222.2254 L298,225.7604 L298,228.0938 L301.5,228.0938 L301.5,225.7604 L303.8333,225.7604 L303.8333,224.5938 L303.8683,224.5588 C304.0433,224.5938 304.23,224.5938 304.4167,224.5938 C306.0267,224.5938 307.3333,223.2871 307.3333,221.6771 C307.3333,220.0671 306.0267,218.7604 304.4167,218.7604 M305,219.9271 C305.6417,219.9271 306.1667,220.4521 306.1667,221.0938 C306.1667,221.7354 305.6417,222.2604 305,222.2604 C304.3583,222.2604 303.8333,221.7354 303.8333,221.0938 C303.8333,220.4521 304.3583,219.9271 305,219.9271 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="44" x="313.3333" y="228.292">name
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62"
+                  x="357.3333" y="228.292">: varchar
+            </text>
+            <path d="M301.5,235.0573 C299.5633,235.0573 298,236.6206 298,238.5573 C298,240.494 299.5633,242.0573 301.5,242.0573 C303.4367,242.0573 305,240.494 305,238.5573 C305,236.6206 303.4367,235.0573 301.5,235.0573 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="312.3333" y="244.5889">created_at: timestamp
+            </text>
+            <path d="M301.5,251.3542 C299.5633,251.3542 298,252.9175 298,254.8542 C298,256.7908 299.5633,258.3542 301.5,258.3542 C303.4367,258.3542 305,256.7908 305,254.8542 C305,252.9175 303.4367,251.3542 301.5,251.3542 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171"
+                  x="312.3333" y="260.8857">updated_at: timestamp
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="292" x2="488.3333" y1="268.1875" y2="268.1875"/>
+        </g><!--class futures_indicators-->
+        <g id="elem_futures_indicators">
+            <rect codeLine="63" fill="#F2F2F2" height="129.4844" id="futures_indicators" rx="5" ry="5"
+                  style="stroke:#2688D4;stroke-width:0.5;" width="198.3333" x="20" y="155"/>
+            <ellipse cx="51.8" cy="171" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M52.2375,168.5313 L54.0813,168.5313 L54.0813,170.125 C54.0813,170.5156 54.1125,170.6875 54.2063,170.8281 C54.3625,171.0781 54.6438,171.2344 54.9406,171.2344 C55.2063,171.2344 55.4563,171.1094 55.6281,170.8906 C55.7688,170.7188 55.7844,170.5938 55.7844,170.125 L55.7844,166.8438 L47.0188,166.8438 L47.0188,170.125 C47.0188,170.5156 47.05,170.6875 47.1281,170.8281 C47.2844,171.0938 47.5813,171.2344 47.8625,171.2344 C48.1438,171.2344 48.3938,171.1094 48.5656,170.8906 C48.675,170.7188 48.7063,170.5781 48.7063,170.125 L48.7063,168.5313 L50.5344,168.5313 L50.5344,175.0469 L49.425,175.0469 C48.9875,175.0469 48.8625,175.0625 48.7063,175.1719 C48.4563,175.3281 48.3,175.6094 48.3,175.9063 C48.3,176.1563 48.4406,176.4219 48.6594,176.5781 C48.8156,176.7031 49.0344,176.75 49.425,176.75 L53.3625,176.75 C53.6906,176.75 53.9563,176.7031 54.0656,176.625 C54.3313,176.4844 54.4719,176.1875 54.4719,175.9063 C54.4719,175.625 54.3469,175.375 54.1125,175.2031 C53.9563,175.0781 53.8156,175.0469 53.3625,175.0469 L52.2375,175.0469 L52.2375,168.5313 Z "
+                  fill="#000000"/>
+            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129"
+                  x="69.5333" y="175.8467">futures_indicators
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="21" x2="217.3333" y1="187" y2="187"/>
+            <path d="M33.4167,194.4635 C31.8067,194.4635 30.5,195.7702 30.5,197.3802 C30.5,197.5669 30.5,197.7535 30.535,197.9285 L27,201.4635 L27,203.7969 L30.5,203.7969 L30.5,201.4635 L32.8333,201.4635 L32.8333,200.2969 L32.8683,200.2619 C33.0433,200.2969 33.23,200.2969 33.4167,200.2969 C35.0267,200.2969 36.3333,198.9902 36.3333,197.3802 C36.3333,195.7702 35.0267,194.4635 33.4167,194.4635 M34,195.6302 C34.6417,195.6302 35.1667,196.1552 35.1667,196.7969 C35.1667,197.4385 34.6417,197.9635 34,197.9635 C33.3583,197.9635 32.8333,197.4385 32.8333,196.7969 C32.8333,196.1552 33.3583,195.6302 34,195.6302 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="15" x="42.3333" y="203.9951">id
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29"
+                  x="57.3333" y="203.9951">: int
+            </text>
+            <path d="M33.4167,210.7604 C31.8067,210.7604 30.5,212.0671 30.5,213.6771 C30.5,213.8637 30.5,214.0504 30.535,214.2254 L27,217.7604 L27,220.0938 L30.5,220.0938 L30.5,217.7604 L32.8333,217.7604 L32.8333,216.5938 L32.8683,216.5588 C33.0433,216.5938 33.23,216.5938 33.4167,216.5938 C35.0267,216.5938 36.3333,215.2871 36.3333,213.6771 C36.3333,212.0671 35.0267,210.7604 33.4167,210.7604 M34,211.9271 C34.6417,211.9271 35.1667,212.4521 35.1667,213.0938 C35.1667,213.7354 34.6417,214.2604 34,214.2604 C33.3583,214.2604 32.8333,213.7354 32.8333,213.0938 C32.8333,212.4521 33.3583,211.9271 34,211.9271 "
+                  fill="#AAAAAA" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151"
+                  x="41.3333" y="220.292">indicator_id: int &#171;FK&#187;
+            </text>
+            <path d="M30.5,227.0573 C28.5633,227.0573 27,228.6206 27,230.5573 C27,232.494 28.5633,234.0573 30.5,234.0573 C32.4367,234.0573 34,232.494 34,230.5573 C34,228.6206 32.4367,227.0573 30.5,227.0573 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98"
+                  x="41.3333" y="236.5889">isActive: bool
+            </text>
+            <path d="M30.5,243.3542 C28.5633,243.3542 27,244.9175 27,246.8542 C27,248.7908 28.5633,250.3542 30.5,250.3542 C32.4367,250.3542 34,248.7908 34,246.8542 C34,244.9175 32.4367,243.3542 30.5,243.3542 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="41.3333" y="252.8857">created_at: timestamp
+            </text>
+            <path d="M30.5,259.651 C28.5633,259.651 27,261.2144 27,263.151 C27,265.0877 28.5633,266.651 30.5,266.651 C32.4367,266.651 34,265.0877 34,263.151 C34,261.2144 32.4367,259.651 30.5,259.651 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171"
+                  x="41.3333" y="269.1826">updated_at: timestamp
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="21" x2="217.3333" y1="276.4844" y2="276.4844"/>
+        </g><!--class binance_errors-->
+        <g id="elem_binance_errors">
+            <rect codeLine="71" fill="#F2F2F2" height="113.1875" id="binance_errors" rx="5" ry="5"
+                  style="stroke:#2688D4;stroke-width:0.5;" width="194.3333" x="22" y="7"/>
+            <ellipse cx="61.9" cy="23" fill="#F2F2F2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M62.3375,20.5313 L64.1813,20.5313 L64.1813,22.125 C64.1813,22.5156 64.2125,22.6875 64.3063,22.8281 C64.4625,23.0781 64.7438,23.2344 65.0406,23.2344 C65.3063,23.2344 65.5563,23.1094 65.7281,22.8906 C65.8688,22.7188 65.8844,22.5938 65.8844,22.125 L65.8844,18.8438 L57.1188,18.8438 L57.1188,22.125 C57.1188,22.5156 57.15,22.6875 57.2281,22.8281 C57.3844,23.0938 57.6813,23.2344 57.9625,23.2344 C58.2438,23.2344 58.4938,23.1094 58.6656,22.8906 C58.775,22.7188 58.8063,22.5781 58.8063,22.125 L58.8063,20.5313 L60.6344,20.5313 L60.6344,27.0469 L59.525,27.0469 C59.0875,27.0469 58.9625,27.0625 58.8063,27.1719 C58.5563,27.3281 58.4,27.6094 58.4,27.9063 C58.4,28.1563 58.5406,28.4219 58.7594,28.5781 C58.9156,28.7031 59.1344,28.75 59.525,28.75 L63.4625,28.75 C63.7906,28.75 64.0563,28.7031 64.1656,28.625 C64.4313,28.4844 64.5719,28.1875 64.5719,27.9063 C64.5719,27.625 64.4469,27.375 64.2125,27.2031 C64.0563,27.0781 63.9156,27.0469 63.4625,27.0469 L62.3375,27.0469 L62.3375,20.5313 Z "
+                  fill="#000000"/>
+            <text fill="#333333" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107"
+                  x="81.4333" y="27.8467">binance_errors
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="23" x2="215.3333" y1="39" y2="39"/>
+            <path d="M35.4167,46.4635 C33.8067,46.4635 32.5,47.7702 32.5,49.3802 C32.5,49.5669 32.5,49.7535 32.535,49.9285 L29,53.4635 L29,55.7969 L32.5,55.7969 L32.5,53.4635 L34.8333,53.4635 L34.8333,52.2969 L34.8683,52.2619 C35.0433,52.2969 35.23,52.2969 35.4167,52.2969 C37.0267,52.2969 38.3333,50.9902 38.3333,49.3802 C38.3333,47.7702 37.0267,46.4635 35.4167,46.4635 M36,47.6302 C36.6417,47.6302 37.1667,48.1552 37.1667,48.7969 C37.1667,49.4385 36.6417,49.9635 36,49.9635 C35.3583,49.9635 34.8333,49.4385 34.8333,48.7969 C34.8333,48.1552 35.3583,47.6302 36,47.6302 "
+                  fill="#2688D4" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="15" x="44.3333" y="55.9951">id
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38"
+                  x="59.3333" y="55.9951">: uuid
+            </text>
+            <path d="M32.5,62.7604 C30.5633,62.7604 29,64.3238 29,66.2604 C29,68.1971 30.5633,69.7604 32.5,69.7604 C34.4367,69.7604 36,68.1971 36,66.2604 C36,64.3238 34.4367,62.7604 32.5,62.7604 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64"
+                  x="43.3333" y="72.292">code: int
+            </text>
+            <path d="M32.5,79.0573 C30.5633,79.0573 29,80.6206 29,82.5573 C29,84.494 30.5633,86.0573 32.5,86.0573 C34.4367,86.0573 36,84.494 36,82.5573 C36,80.6206 34.4367,79.0573 32.5,79.0573 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122"
+                  x="43.3333" y="88.5889">description: text
+            </text>
+            <path d="M32.5,95.3542 C30.5633,95.3542 29,96.9175 29,98.8542 C29,100.7908 30.5633,102.3542 32.5,102.3542 C34.4367,102.3542 36,100.7908 36,98.8542 C36,96.9175 34.4367,95.3542 32.5,95.3542 "
+                  fill="#EFEFEF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167"
+                  x="43.3333" y="104.8857">created_at: timestamp
+            </text>
+            <line style="stroke:#2688D4;stroke-width:0.5;" x1="23" x2="215.3333" y1="112.1875" y2="112.1875"/>
+        </g><!--reverse link futures_symbols to symbol-->
+        <g id="link_futures_symbols_symbol">
+            <path codeLine="78" d="M497.355,564.5 C514.404,564.5 531.968,564.5 548.777,564.5 " fill="none"
+                  id="futures_symbols-backto-symbol" style="stroke:#2688D4;stroke-width:1.0;"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="500.032" x2="489.032" y1="564.5" y2="564.5"/>
+            <ellipse cx="500.032" cy="564.5" fill="none" rx="4" ry="4" style="stroke:#2688D4;stroke-width:1.0;"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="493.032" x2="493.032" y1="568.5" y2="560.5"/>
+        </g><!--reverse link futures_indicators to indicators-->
+        <g id="link_futures_indicators_indicators">
+            <path codeLine="79" d="M226.322,219.5 C247.502,219.5 269.658,219.5 290.559,219.5 " fill="none"
+                  id="futures_indicators-backto-indicators" style="stroke:#2688D4;stroke-width:1.0;"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="229.257" x2="218.257" y1="219.5" y2="219.5"/>
+            <ellipse cx="229.257" cy="219.5" fill="none" rx="4" ry="4" style="stroke:#2688D4;stroke-width:1.0;"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="222.257" x2="222.257" y1="223.5" y2="215.5"/>
+        </g><!--reverse link futures_positions to futures_symbols-->
+        <g id="link_futures_positions_futures_symbols">
+            <path codeLine="80" d="M239.683,564.5 C256.71,564.5 274.059,564.5 290.618,564.5 " fill="none"
+                  id="futures_positions-backto-futures_symbols" style="stroke:#2688D4;stroke-width:1.0;"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="239.354" x2="231.354" y1="564.5" y2="570.5"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="239.354" x2="231.354" y1="564.5" y2="558.5"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="239.354" x2="231.354" y1="564.5" y2="564.5"/>
+            <line style="stroke:#2688D4;stroke-width:1.0;" x1="241.354" x2="241.354" y1="568.5" y2="560.5"/>
+        </g><!--SRC=[jLJ1Rjim3BtxArWKs69WGRUk6xh2CD0Dw6NNtGtPeXCXjkHHSfjWpRzFafr4JkAanLRvP3vIV8zwqWN7KaY4XaJDQ9KjS3LPnf3aQLAeIj7TvVNNsrj-aoRlB9GcLpwQmZAvojFeegyk5Q6OoMrrNyhyEYZTbjb0Mykm0altsOeQkM1Jma8HFrPgM5wXgqHfX5d14f849hy-m6LvxRuOqZIgi3HW592OpGrmORSpGib8BuHi6B4Q_aHWrpsHUlhXMa0lruU_szv8H-AiMCn8jPBtMEcNntpOafP8yEcZ3ysPv4yaZ4499Qiq-cXHCQtx_iStzJfs-0YP4_pTUb3IzCXdlpooZjPHDq6zgdDLnJsHq0M2ntSWf3a09AlHGe-CYZcZoRUuqzETPSuqPbOPcY3boo3bTwlCkPo2a1da6NCfHjIe3QkRCADj-3PZbx2EUbrbQrf2dNNwzAZ0jXNS8w65kw9iCm5hhOUVraxlW_R38OJ4XBwtBdjqQAvK5K9pvBDZyTUfXHDo6wM5ixYENwDtEAm3tG6FMd4dm9_OpU34kD2EIQOQb1k9RwFHEsTKO2zltB13ApB_V0HE_szqXUIYO4RHEDMpb-jj1lXoPg59jbMd_772_F_EFnUIoG8pjCyTdNVufczdsRtpvQWB4esxAwuPBbzo-fR9thi2psewXUudEfnl1-_-euDx2kjdcx6twry0]-->
     </g>
 </svg>
