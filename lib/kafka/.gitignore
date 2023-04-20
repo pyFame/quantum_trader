@@ -1,5 +1,0 @@
-venv/
-.idea/
-/kafka.txt
-/delivery-test.log
-/kafka_test_consume.json
