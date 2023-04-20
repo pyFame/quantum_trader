@@ -30,6 +30,7 @@ jobs:
           git submodule update --init --recursive
           git submodule foreach --recursive 'echo $path'
 
+
   build:
     runs-on: ubuntu-latest
     needs: [ retrieve_submodules ]
@@ -55,6 +56,15 @@ jobs:
             prefix: C:\Miniconda3\envs\my-env
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Retrieve Git Submodules
+        run: |
+          git submodule sync
+          git submodule update --init --recursive
+          git submodule foreach --recursive 'echo $path'
+
       - name: Setup Mambaforge
         uses: conda-incubator/setup-miniconda@v2
         with:
