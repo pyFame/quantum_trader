@@ -29,6 +29,9 @@ _Session = sessionmaker(bind=engine)
 session = _Session()
 
 from models.indicator import *
+from models.symbol import *
+from models.binance import *
+from models.futures import *
 
 # session.add(User(username="XXXX", password="1yfeMlIWnr7xxiqUeXw5Qw"))
 # session.add(.User(username="XXXX", password="1yfeMlIWnr7xxiqUeXw5Qw"))
