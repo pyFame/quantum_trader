@@ -52,7 +52,6 @@ jobs:
 
       - name: Update environment
         run: |
-          mamba activate my-env
           mamba env update -f environment.yml
         if: steps.cache.outputs.cache-hit != 'true'
 
