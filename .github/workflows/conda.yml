@@ -12,12 +12,16 @@ on:
   schedule:
     - cron: '0 */10 * * *'
 
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}-conda
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 5
-      fail-fast: false
+      max-parallel: 3
+      fail-fast: true
       matrix:
         arch: [ x64]#, arm, arm64 ]
 
@@ -87,7 +91,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test
-        run: python -m pytest --ignore=lib/
+        run: |
+          pip install -r  requirements-test.txt
+          pytest --ignore=lib/
 
   test-intensive:
     runs-on: ubuntu-latest
@@ -95,6 +101,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test Intensive
-        run: python-m pytest
+        run: |
+          pip install -r  requirements-test.txt
+          pytest
 
 #      https://dev.to/epassaro/caching-anaconda-environments-in-github-actions-5hde
