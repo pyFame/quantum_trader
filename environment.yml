@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - ta-lib
+  - pip
 
   - pip:
       - -r requirements-test.txt
