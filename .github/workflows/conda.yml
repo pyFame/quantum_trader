@@ -64,7 +64,7 @@ jobs:
       - name: Update environment
         run: |
           mamba env update -f environment.yml
-        #if: steps.cache.outputs.cache-hit != 'true'
+          if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Install dependencies
         run: |
