@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: 8
     strategy:
-      max-parallel: 3
+      max-parallel: 5
       fail-fast: true
       matrix:
         arch: [ x64]#, arm, arm64 ]
