@@ -19,22 +19,24 @@ jobs:
       max-parallel: 5
       fail-fast: false
       matrix:
+        arch: [ x64]#, arm, arm64 ]
+
         include:
           - os: ubuntu-latest
             label: linux-64
             prefix: /usr/share/miniconda3/envs/my-env
 
-          - os: macos-latest
-            label: osx-64
-            prefix: /Users/runner/miniconda3/envs/my-env
-
-          - os: windows-latest
-            label: win-64
-            prefix: C:\Miniconda3\envs\my-env
+    #          - os: macos-latest
+    #            label: osx-64
+    #            prefix: /Users/runner/miniconda3/envs/my-env
+    #
+    #          - os: windows-latest
+    #            label: win-64
+    #            prefix: C:\Miniconda3\envs\my-env
 
     steps:
       - uses: actions/checkout@v3
-        
+
       - name: Setup Mambaforge
         uses: conda-incubator/setup-miniconda@v2
         with:
@@ -68,7 +70,6 @@ jobs:
       - name: Install Test dependencies
         run: |
           pip install -r  requirements-test.txt
-          mamba install pytest
 
       - name: Lint with flake8
         run: |
@@ -86,16 +87,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test
-        shell: bash -l {0}
-        run: pytest --ignore=lib/
+        run: python -m pytest --ignore=lib/
 
   test-intensive:
     runs-on: ubuntu-latest
-    needs: [ build,test ]
+    needs: [ build ]
     steps:
       - uses: actions/checkout@v3
       - name: Test Intensive
-        shell: bash -l {0}
-        run: pytest
+        run: python-m pytest
 
 #      https://dev.to/epassaro/caching-anaconda-environments-in-github-actions-5hde
