@@ -83,12 +83,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          #mkdir -p env/hiro
-          #conda env create --name hiro -f environment.yml --prefix conda/env
-          #conda install -c conda-forge ta-lib
-          python -m pip install --upgrade pip
-          #python -m pip install -r  requirements.txt
-          # conda env update --file environment.yml --name base
+          pip install -r  requirements-test.txt
+
 
       - name: Lint with flake8
         run: |
@@ -98,17 +94,22 @@ jobs:
       #        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       #        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
       #        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      - name: Cache Pytest
+        id: cache-pytest
+        uses: actions/cache@v3
+        with:
+          path: .pytest_cache
+          key: conda-${{ runner.os }}-${{matrix.python-version}}-${{hashFiles('test_*.py')}}.pytest_cache
 
+      - name: Test [Cached]
+        continue-on-error: true
+        run: |
+          pytest --ignore=lib/
 
-  test:
-    runs-on: ubuntu-latest
-    needs: [ build ]
-    steps:
-      - uses: actions/checkout@v3
       - name: Test
         run: |
-          pip install -r  requirements-test.txt
           pytest --ignore=lib/
+
 
   test-libs:
     runs-on: ubuntu-latest

@@ -7,3 +7,4 @@ dependencies:
 
   - pip:
       - -r requirements-test.txt
+      - -r lib/kafka/requirements-test.txt
