@@ -6,4 +6,4 @@ dependencies:
   - ta-lib
 
   - pip:
-      - icecream==2.1.3
+      - -r requirements-test.txt

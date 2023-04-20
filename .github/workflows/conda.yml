@@ -55,14 +55,16 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: ${{ matrix.prefix }}
+          path: |
+            ${{ matrix.prefix }}
+
           key: ${{ matrix.label }}-conda-${{ hashFiles('environment.yml') }}-${{ env.DATE }}-${{ env.CACHE_NUMBER }}
         id: cache
 
       - name: Update environment
         run: |
           mamba env update -f environment.yml
-        if: steps.cache.outputs.cache-hit != 'true'
+        #if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Install dependencies
         run: |
