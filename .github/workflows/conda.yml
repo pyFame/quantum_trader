@@ -87,7 +87,6 @@ jobs:
 
 
   test:
-    runs-on: ubuntu-latest
     needs: [ build ]
     steps:
       - uses: actions/checkout@v3
@@ -97,7 +96,6 @@ jobs:
           pytest --ignore=lib/
 
   test-intensive:
-    runs-on: ubuntu-latest
     needs: [ build ]
     steps:
       - uses: actions/checkout@v3
