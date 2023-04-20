@@ -17,8 +17,23 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  retrieve_submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Retrieve Git Submodules
+        run: |
+          git submodule sync
+          git submodule update --init --recursive
+          git submodule foreach --recursive 'echo $path'
+
   build:
     runs-on: ubuntu-latest
+    needs: [ retrieve_submodules ]
+
     concurrency: 8
     strategy:
       max-parallel: 5
