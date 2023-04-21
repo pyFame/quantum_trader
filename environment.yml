@@ -5,6 +5,7 @@ channels:
 dependencies:
   - ta-lib
   - pip
+  - pytest
 
   - pip:
       - -r requirements-test.txt
