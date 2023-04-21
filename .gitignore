@@ -1,6 +1,7 @@
 .idea/
 *.log
-/kafka_test_consume.json
-
 __pycache__/
 .DS_Store
+
+*kafka_test_consume.json
+binance/lib/kafka.txt
