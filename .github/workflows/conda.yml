@@ -66,12 +66,11 @@ jobs:
       - name: Update environment
         run: |
           mamba env update -f environment.yml
-          memba activate my-env
           #if: steps.cache.outputs.cache-hit != 'true'
 
-      #      - name: Install dependencies
-      #        run: |
-      #          pip install -r  requirements-test.txt
+      - name: Install dependencies
+        run: |
+          pip install -r  requirements-test.txt
 
       - name: Lint with flake8
         run: |
