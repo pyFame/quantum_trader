@@ -33,3 +33,7 @@ class DataClassJson:
         self_dict = dataclasses.asdict(self)
         json_str = json.dumps(self_dict)
         return json_str
+
+    # @classmethod doesn't work
+    # def loads(cls, json_str: str) -> object:
+    #     return cls()
