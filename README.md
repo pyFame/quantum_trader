@@ -16,11 +16,15 @@ You can file an [Issue](https://github.com/pythoneerHiro/quantum_trader/issues/n
 ## Getting Started
 
 ```shell
-git clone https://github.com/pythoneerHiro/quantum_trader
+git clone --recurse-submodules https://github.com/pythoneerHiro/quantum_trader
 cd quantum_trader
 pip install requirements.txt
 pip install requirements-test.txt
 conda env create --name hiro -f environment.yml --prefix conda/env
+```
+
+```shell
+git submodule update --init --recursive
 ```
 
 ## Important Notes/Caveats/Pitfalls
