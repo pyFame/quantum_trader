@@ -14,7 +14,7 @@ LONG: Final[str] = "LONG"
 SHORT: Final[str] = "SHORT"
 
 
-@dataclass(frozen=False)  # TODO: should be true
+@dataclass(slots=True, frozen=False)  # TODO: should be true
 class Order:
     symbol: Symbol
     side: Union[OPEN, CLOSE]

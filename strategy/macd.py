@@ -9,7 +9,7 @@ from strategy.Strategy import Strategy
 from . import alog
 
 
-@dataclass
+@dataclass(slots=True)
 class Macd_Strategy(Strategy):
     fast_period: int = 12
     slow_period: int = 26

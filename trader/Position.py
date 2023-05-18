@@ -11,7 +11,7 @@ from utils import Futures
 from utils.Pandas import pluck_row
 
 
-@dataclass
+@dataclass(slots=True)
 class Position:
     symbol: Symbol
     mode: Union[LONG, SHORT]

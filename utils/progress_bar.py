@@ -17,7 +17,7 @@ GREEN: Final[str] = "GREEN"
 BLACK: Final[str] = "BLACK"
 
 
-@dataclass
+@dataclass(slots=True)
 class ProgressBar:
     color: Union[BLACK, RED, MAGENTA, BLUE, WHITE, YELLOW, CYAN, GREEN] = MAGENTA
     kwargs: dict = None

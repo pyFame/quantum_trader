@@ -8,7 +8,7 @@ import talib
 from .Strategy import Strategy
 
 
-@dataclass
+@dataclass(slots=True)
 class RSI_Strategy(Strategy):
     period: int = 14
     over: int = 80

@@ -1,6 +1,7 @@
 import dataclasses
 import json
 from abc import abstractmethod
+from dataclasses import dataclass
 from typing import List
 
 from conf import log
@@ -20,7 +21,7 @@ def jsonify(obj: dataclasses.dataclass, unwanted_keys: List[str] = []) -> str:
     return json_str
 
 
-@dataclasses.dataclass
+@dataclass(slots=True)
 class DataClassJson:
 
     @staticmethod

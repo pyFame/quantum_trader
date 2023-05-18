@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 import pandas as pd
 
 
-@dataclass
+@dataclass(slots=True)
 class Strategy(ABC):
     # closes : Union[np.ndarray,List,Tuple,pd.Series]
     ohlcv: pd.DataFrame

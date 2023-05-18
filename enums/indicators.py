@@ -11,7 +11,7 @@ BUY: Final[str] = "BUY"
 SELL: Final[str] = "SELL"
 
 
-@dataclass
+@dataclass(slots=True)
 class Message_Signal(Dataclass.DataClassJson):
     indicator: Union[MACD, RSI]
     signal: Union[BUY, SELL]

@@ -1,13 +1,12 @@
 from dataclasses import dataclass
-from typing import Union
-import pytest
-
 from logging import *
+
+import pytest
 
 alog = getLogger("app")
 
 
-@dataclass
+@dataclass(slots=True)
 class Testcase:
     level: int  # Union[INFO, DEBUG, WARN, ERROR, CRITICAL]
     content: str
