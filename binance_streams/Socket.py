@@ -1,9 +1,10 @@
-import websockets
+import asyncio
 import logging as log
 
-import asyncio
+import websockets
 
-from enums import *
+from binance_streams.enums import FUTURES_DEPTH, FUTURES_KLINE, FUTURES_AGG
+from conf import async_client
 
 
 class Socket():
