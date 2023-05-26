@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 
-@dataclass(slots=True, frozen=True)
+@dataclass(slots=False, frozen=True)
 class Symbol(str):
     base: str
     quote: str = "USDT"

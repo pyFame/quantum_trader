@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Final, Union, Optional
 
 from tqdm import tqdm
@@ -17,16 +17,14 @@ GREEN: Final[str] = "GREEN"
 BLACK: Final[str] = "BLACK"
 
 
-@dataclass(slots=True)
+@dataclass(slots=True, frozen=False)
 class ProgressBar:
     color: Union[BLACK, RED, MAGENTA, BLUE, WHITE, YELLOW, CYAN, GREEN] = MAGENTA
-    kwargs: dict = None
-
-    pb = None
+    kwargs: dict = field(default_factory=dict)
+    pb: tqdm = None
 
     def __post_init__(self):
         kwargs = self.kwargs or {}
-
         self.pb = tqdm([], colour=self.color, **kwargs)
 
     def add(self, increment: float = 1):
