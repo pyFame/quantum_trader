@@ -2,5 +2,5 @@
 bootstrap.servers=pkc-6ojv2.us-west4.gcp.confluent.cloud:9092
 security.protocol=SASL_SSL
 sasl.mechanisms=PLAIN
-sasl.username=EG3QSB5J2OE7U3YE
-sasl.password=RLqr6SNtA1MHQRd/7D5Fp4652kMDkgrKWH1wJ1DuSfcLRrzfFeXpIwdOkFMYd6hH
+sasl.username=MKRNWEXGF7BJ2RX7
+sasl.password=grdcnZsLxuv26Z1KYBEJGVKJ0EIfXbRXBPFbzzOY8b8Lj3NgVYgCiRaH7hu1vEri
