@@ -11,7 +11,7 @@ def test_order():
     # log.basicConfig(filename='test.log', level=log.INFO)
     # log.info("Starting test...")
 
-    symbol = Symbol("EOS")
+    symbol = Symbol("BTC")
     AMOUNT: float = 5
 
     o = Order(symbol, CLOSE, SHORT, AMOUNT, profit=2)

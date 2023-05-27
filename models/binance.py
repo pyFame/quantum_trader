@@ -8,7 +8,7 @@ from models import Base
 
 schema = "sqlite"
 
-UUID_CLASS = UUID(as_uuid=True) if schema is "postgres" else String
+UUID_CLASS = UUID(as_uuid=True) if schema == "postgres" else String
 
 log.warn(f"schema - {schema} uid {UUID_CLASS}")
 

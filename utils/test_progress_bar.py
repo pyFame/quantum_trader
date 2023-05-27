@@ -38,7 +38,7 @@ class TestProgresBar:
     def test_create_default_instance(self):
         pb = ProgressBar()
         assert pb.color == MAGENTA
-        assert pb.kwargs is None
+        assert pb.kwargs == {}
 
     def test_colors(self):
         color = "#36D7B7"
